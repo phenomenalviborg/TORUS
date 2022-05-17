@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\_UNITY_FAST\TORUS" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Shared" t="Include">
+          <e p="_General" t="Include">
+            <e p="AccessRandomizer.cs" t="Include" />
+            <e p="Assets.cs" t="Include" />
+            <e p="AxisRot.cs" t="Include" />
+            <e p="AxisSway.cs" t="Include" />
+            <e p="CollectionInit.cs" t="Include" />
+            <e p="DesktopTxt.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="BlankSpace.cs" t="Include" />
+              <e p="ClearConsole.cs" t="Include" />
+              <e p="GroupSelection.cs" t="Include" />
+              <e p="GuidedImport" t="Include">
+                <e p="GuidedImport.cs" t="Include" />
+              </e>
+              <e p="HirarchyBlurbEditor.cs" t="Include" />
+              <e p="ListUnusedAssets.cs" t="Include" />
+              <e p="NameGameObjectLikeScript.cs" t="Include" />
+              <e p="QuickBuild.cs" t="Include" />
+              <e p="SceneMenu.cs" t="Include" />
+              <e p="ZeroTransform.cs" t="Include" />
+            </e>
+            <e p="Emoji.cs" t="Include" />
+            <e p="Encryption.cs" t="Include" />
+            <e p="ExeEscQuit.cs" t="Include" />
+            <e p="Exp.cs" t="Include" />
+            <e p="Extensions" t="Include">
+              <e p="arrayExt.cs" t="Include" />
+              <e p="boolExt.cs" t="Include" />
+              <e p="byteArrayExt.cs" t="Include" />
+              <e p="byteExt.cs" t="Include" />
+              <e p="colorExt.cs" t="Include" />
+              <e p="computeExt.cs" t="Include" />
+              <e p="floatExt.cs" t="Include" />
+              <e p="gameobjectExt.cs" t="Include" />
+              <e p="HashSetInit.cs" t="Include" />
+              <e p="intExt.cs" t="Include" />
+              <e p="keycodeExt.cs" t="Include" />
+              <e p="listExt.cs" t="Include" />
+              <e p="MeshExt.cs" t="Include" />
+              <e p="placementExt.cs" t="Include" />
+              <e p="randomExt.cs" t="Include" />
+              <e p="rendererExt.cs" t="Include" />
+              <e p="serializeExt.cs" t="Include" />
+              <e p="StreamWriterExt.cs" t="Include" />
+              <e p="stringbuilderExt.cs" t="Include" />
+              <e p="timespanExt.cs" t="Include" />
+              <e p="transformExt.cs" t="Include" />
+              <e p="vector2Ext.cs" t="Include" />
+              <e p="Vector2IntExt.cs" t="Include" />
+              <e p="vector3Ext.cs" t="Include" />
+              <e p="vector4Ext.cs" t="Include" />
+              <e p="vectorComponentAccessExt.cs" t="Include" />
+            </e>
+            <e p="FancyString.cs" t="Include" />
+            <e p="FloatEasing.cs" t="Include" />
+            <e p="FuckNormcore.cs" t="Include" />
+            <e p="GUI_Txt.cs" t="Include" />
+            <e p="HirarchyBlurb.cs" t="Include" />
+            <e p="LogShow.cs" t="Include" />
+            <e p="MeshArray.cs" t="Include" />
+            <e p="MobileAspectDektopCams.cs" t="Include" />
+            <e p="Mth.cs" t="Include" />
+            <e p="PathResourceInst.cs" t="Include" />
+            <e p="Placement.cs" t="Include" />
+            <e p="PrefValue.cs" t="Include" />
+            <e p="PrintKeycode.cs" t="Include" />
+            <e p="QuickBuildVariation.cs" t="Include" />
+            <e p="QuickList.cs" t="Include" />
+            <e p="Rot.cs" t="Include" />
+            <e p="Run.cs" t="Include" />
+            <e p="SceneRestart.cs" t="Include" />
+            <e p="SignRandom.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+            <e p="SingletonReplace.cs" t="Include" />
+            <e p="ToDo.cs" t="Include" />
+            <e p="UniqueList.cs" t="Include" />
+            <e p="V2.cs" t="Include" />
+            <e p="V3.cs" t="Include" />
+            <e p="V3Volume.cs" t="Include" />
+            <e p="ValueSave.cs" t="Include" />
+          </e>
+          <e p="BoolSwitch" t="Include">
+            <e p="_BoolSwitches.cs" t="Include" />
+            <e p="BoolSwitch.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="BoolSwitchWindow.cs" t="Include" />
+              <e p="CreateEditorSwitches.cs" t="Include" />
+            </e>
+          </e>
+          <e p="COLOR" t="Include">
+            <e p="COLOR.cs" t="Include" />
+            <e p="COLOR_Info.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="COLORWindow.cs" t="Include" />
+            </e>
+          </e>
+          <e p="DRAW" t="Include">
+            <e p="DRAW.cs" t="Include" />
+            <e p="DRAW_Classes.cs" t="Include" />
+            <e p="DRAW_Info.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="+DRAW_Execution.cs" t="Include" />
+            </e>
+            <e p="EnableDRAW.cs" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="DRAW_Polygon.shader" t="Include" />
+              <e p="DRAW_Text.shader" t="Include" />
+            </e>
+            <e p="vectorArrayExt.cs" t="Include" />
+          </e>
+          <e p="FilmBlur" t="Include">
+            <e p="FilmBlur.compute" t="Include" />
+            <e p="FilmBlur.cs" t="Include" />
+            <e p="PoseRecord.cs" t="Include" />
+          </e>
+          <e p="GeoMath" t="Include">
+            <e p="Arc.cs" t="Include" />
+            <e p="Bounds2D.cs" t="Include" />
+            <e p="Circle.cs" t="Include" />
+            <e p="Line.cs" t="Include" />
+            <e p="Quad.cs" t="Include" />
+            <e p="Rectangle.cs" t="Include" />
+            <e p="ShapeCollision.cs" t="Include" />
+            <e p="Supercover.cs" t="Include" />
+            <e p="Tri.cs" t="Include" />
+            <e p="Triangulator.cs" t="Include" />
+          </e>
+          <e p="Gyro.cs" t="Include" />
+          <e p="MobileControll" t="Include">
+            <e p="MobileInput.cs" t="Include" />
+          </e>
+          <e p="Pendulum" t="Include">
+            <e p="ValueForce.cs" t="Include" />
+          </e>
+          <e p="QuickSelector" t="Include">
+            <e p="Editor" t="Include">
+              <e p="_QS_ProjectList.cs" t="Include" />
+              <e p="QS_ListManager.cs" t="Include" />
+              <e p="QuickSelector.cs" t="Include" />
+            </e>
+            <e p="Guide.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="QS_List.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SetTargetFramerate.cs" t="Include" />
+          <e p="Shaders" t="Include">
+            <e p="FZRO" t="Include">
+              <e p="BlobShader.shader" t="Include" />
+              <e p="CarShadows.cginc" t="Include" />
+              <e p="Fog.cginc" t="Include" />
+              <e p="FZERO_Car.shader" t="Include" />
+              <e p="FZERO_Device.shader" t="Include" />
+              <e p="FZERO_Screen.shader" t="Include" />
+              <e p="FZEROBoosterTex.shader" t="Include" />
+              <e p="FZEROClouds.shader" t="Include" />
+              <e p="FZEROShader.shader" t="Include" />
+              <e p="FZEROSimpleCloud.shader" t="Include" />
+              <e p="FZEROTrackTex.shader" t="Include" />
+              <e p="MipMap.cginc" t="Include" />
+            </e>
+            <e p="FZRO2D" t="Include">
+              <e p="VertexColorSurf.shader" t="Include" />
+            </e>
+            <e p="OnlyVertexColor.shader" t="Include" />
+            <e p="OnlyVertexColorShade.shader" t="Include" />
+            <e p="Q" t="Include">
+              <e p="GPUParticle.shader" t="Include" />
+              <e p="Grid.shader" t="Include" />
+              <e p="LitVertexColor.shader" t="Include" />
+              <e p="LitVertexColor2021.shader" t="Include" />
+              <e p="LitVertexColorMorph.shader" t="Include" />
+              <e p="MatCapBubble.shader" t="Include" />
+              <e p="Q.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="SwitchScreen.cs" t="Include" />
+          <e p="unity-auto-attach-component-attributes" t="Include">
+            <e p="Editor" t="Include">
+              <e p="AttachAttributesEditor.cs" t="Include" />
+              <e p="Nrjwolf.Tools.AttachAttributes.asmdef" t="Include" />
+            </e>
+            <e p="Runtime" t="Include">
+              <e p="AttachAttributes.cs" t="Include" />
+              <e p="Nrjwolf.Tools.AttachAttributes.asmdef" t="Include" />
+            </e>
+          </e>
+          <e p="ValueSync.cs" t="Include" />
+        </e>
+        <e p="TORUS" t="Include">
+          <e p="SM" t="Include">
+            <e p="T.cginc" t="Include" />
+            <e p="Torus.shader" t="Include" />
+            <e p="Torus_2.shader" t="Include" />
+            <e p="Torus_3.shader" t="Include" />
+            <e p="Torus_Rings.shader" t="Include" />
+            <e p="Torus_Rings2.shader" t="Include" />
+            <e p="TorusBlack.shader" t="Include" />
+            <e p="TorusMix.shader" t="Include" />
+            <e p="TorusPoint.shader" t="Include" />
+          </e>
+          <e p="TorusCam.cs" t="Include" />
+          <e p="TorusControll.cs" t="Include" />
+          <e p="TorusMover.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="Nrjwolf.Tools.AttachAttributes.csproj" t="IncludeRecursive" />
+      <e p="Nrjwolf.Tools.Editor.AttachAttributes.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+      </e>
+      <e p="TORUS.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\janisZappa\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\janisZappa\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_TORUS.-1510342036.00" t="ExcludeRecursive" />
+  </component>
+</project>
