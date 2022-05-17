@@ -93,7 +93,7 @@
                 p = float3(ca * p.x, p.y, sa * p.x);
                 
                 float s = (.75 + v.color.z * .5) * (sin(_Time.y * 12 + v.color.y * 1000) * .3 + .8);
-                o.vertex = UnityObjectToClipPos(Billboard(v.vertex * .0004 * s, mul(unity_ObjectToWorld, float4(p.xyz, 0))));
+                o.vertex = UnityObjectToClipPos(Billboard(v.vertex * .0004 * s, mul(unity_ObjectToWorld, float4(p.xyz, 1))));
                 o.uv = v.uv;
                 
                 return o;
