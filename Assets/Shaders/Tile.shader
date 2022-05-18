@@ -31,7 +31,7 @@ Shader "Torus/Tile"
             {
                 float2 uv     : TEXCOORD0;
                 float4 vertex : SV_POSITION;
-                float  tint   : TEXCOORD1;
+                float2  tint   : TEXCOORD1;
                 float3 wP     : TEXCOORD2;
             };
 
@@ -45,7 +45,7 @@ Shader "Torus/Tile"
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv   = v.uv;
-                o.tint = -mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).y;
+                o.tint = float2(-mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).y, v.color.x);
                 o.wP   = mul(unity_ObjectToWorld, v.vertex);
                 return o;
             }
@@ -67,24 +67,24 @@ Shader "Torus/Tile"
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed3 col = tex2D(_MainTex, i.uv);
-                fixed tint = col.z;
+                fixed tint = col.z * .85 + .15;
                 float dist = length(float2(i.wP.x, i.wP.z) - float2(HeadPos.x, HeadPos.z));
                 float d = pow(1 - pow(saturate(dist * .5), 6), 6);
-                float u  = tint * (1.0 - saturate(i.tint * 50));
+                float k = 1.0 - saturate(i.tint.x * 30);
+                float u  = tint * k;
                 
-                fixed2 n2d = fixed2(-(col.x * 2 - 1), col.y * 2 - 1);
-                fixed l = length(n2d);
-                       n2d = n2d / l * min(l, 1);
+                fixed2 n2d = fixed2(-(col.x * 2 - 1), (col.y * 2 - 1));
+                       n2d *= tint * .75 + .25;
                        
                 fixed tint2 = pow(tint, 2);
-                fixed3 n = fixed3(n2d.x, 1 - n2d.x - n2d.y, n2d.y);
+                fixed3 n = mul(unity_ObjectToWorld, normalize(fixed3(n2d.x, max(0, 1.0 - n2d.x - n2d.y), n2d.y)));
                 fixed matcap = MatCapX(n) * tint2;
                       
-                fixed t = (d * .995 + .005) * (1.0 - pow(saturate(dist * .3), 3));
+                fixed t = ((d * .995 + .005) * ((1.0 - pow(saturate(dist * .3), 3)))) * 1.2;
                 
-                float dt = saturate(dot(-normalize(i.wP - _WorldSpaceCameraPos), n)) * tint2;
-                //return dt;
-                return lerp(_Black, _White, u) * t * (dt * .5 + .5) + matcap * t * .35;
+                float dt = (1.0 - pow(1.0 - saturate(dot(-normalize(i.wP - _WorldSpaceCameraPos), n)), 2)) * tint2 * .85 + .15;
+              
+                return (lerp(_Black, _White, u) * t * dt  + matcap * t * .2 * k)* (i.tint.y * .1 + .9);
             }
             ENDCG
         }

@@ -5,6 +5,8 @@ public class FloorTiles : MonoBehaviour
 {
     private Transform cam;
     private static readonly int HeadPos = Shader.PropertyToID("HeadPos");
+    
+    private Vector3Force force = new Vector3Force(200).SetSpeed(7).SetDamp(3);
 
     private void Start()
     {
@@ -18,14 +20,18 @@ public class FloorTiles : MonoBehaviour
                 GameObject newTile = Instantiate(tile, transform);
                 newTile.transform.rotation = Quaternion.AngleAxis(Random.Range(0, 4) * 90, Vector3.up);
                 newTile.transform.position = new Vector3(x, Random.Range(-.005f, 0), z) * .6f;
+                newTile.transform.localScale = new Vector3(1, .75f, 1);
             }
         
+        tile.transform.localScale = new Vector3(1, .75f, 1);
+        
         cam = Camera.main.transform;
+        force.SetValue(cam.position);
     }
 
 
     private void LateUpdate()
     {
-        Shader.SetGlobalVector(HeadPos, cam.position);
+        Shader.SetGlobalVector(HeadPos, force.Update(cam.position, Time.deltaTime));
     }
 }
