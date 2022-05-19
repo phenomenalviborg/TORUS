@@ -201,6 +201,7 @@
           <e p="Torus.shader" t="Include" />
           <e p="Torus_2.shader" t="Include" />
           <e p="Torus_3.shader" t="Include" />
+          <e p="Torus_Math.shader" t="Include" />
           <e p="Torus_Rings.shader" t="Include" />
           <e p="Torus_Rings2.shader" t="Include" />
           <e p="TorusBlack.shader" t="Include" />
@@ -209,6 +210,7 @@
         </e>
         <e p="TORUS" t="Include">
           <e p="FloorTiles.cs" t="Include" />
+          <e p="MathTorusAnim.cs" t="Include" />
           <e p="TorusCam.cs" t="Include" />
           <e p="TorusControll.cs" t="Include" />
           <e p="TorusMover.cs" t="Include" />

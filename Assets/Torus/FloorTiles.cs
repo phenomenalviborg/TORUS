@@ -6,15 +6,19 @@ public class FloorTiles : MonoBehaviour
     private Transform cam;
     private static readonly int HeadPos = Shader.PropertyToID("HeadPos");
     
-    private Vector3Force force = new Vector3Force(200).SetSpeed(7).SetDamp(3);
+    private readonly Vector3Force force = new Vector3Force(200).SetSpeed(7).SetDamp(3);
+    
+    private const int xTiles = 16, zTiles = 32;
 
     private void Start()
     {
         GameObject tile = transform.GetChild(0).gameObject;
         
-        const int range = 4;
-        for (int x = -range; x < range + 1; x++)
-        for (int z = -range; z < range + 1; z++)
+        const int xRange = 4, zRange = 4;
+        //const int xRange = 8, zRange = 16;
+        
+        for (int x = -xRange; x < xRange + 1; x++)
+        for (int z = -zRange; z < zRange + 1; z++)
             if(!(x == 0 && z == 0))
             {
                 GameObject newTile = Instantiate(tile, transform);

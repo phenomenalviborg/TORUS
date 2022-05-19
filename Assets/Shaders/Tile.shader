@@ -69,7 +69,7 @@ Shader "Torus/Tile"
                 fixed3 col = tex2D(_MainTex, i.uv);
                 fixed tint = col.z * .85 + .15;
                 float dist = length(float2(i.wP.x, i.wP.z) - float2(HeadPos.x, HeadPos.z));
-                float d = pow(1 - pow(saturate(dist * .5), 6), 6);
+                float d = pow(1 - pow(saturate(dist * .3155), 6), 6);
                 float k = 1.0 - saturate(i.tint.x * 30);
                 float u  = tint * k;
                 
@@ -80,7 +80,7 @@ Shader "Torus/Tile"
                 fixed3 n = mul(unity_ObjectToWorld, normalize(fixed3(n2d.x, max(0, 1.0 - n2d.x - n2d.y), n2d.y)));
                 fixed matcap = MatCapX(n) * tint2;
                       
-                fixed t = ((d * .995 + .005) * ((1.0 - pow(saturate(dist * .3), 3)))) * 1.2;
+                fixed t = ((d * .895 + .105) * ((1.0 - pow(saturate(dist * .21), 3)))) * 1.2;
                 
                 float dt = (1.0 - pow(1.0 - saturate(dot(-normalize(i.wP - _WorldSpaceCameraPos), n)), 2)) * tint2 * .85 + .15;
               
