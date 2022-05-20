@@ -6,6 +6,9 @@ public class MathTorusAnim : MonoBehaviour
     public float spinSpeed;
     public float animSpeed;
     
+    [Space]
+    public bool autoLoop;
+    
     private Material copyMat;
     private float spin, anim;
     private static readonly int Spin = Shader.PropertyToID("_Spin");
@@ -26,12 +29,18 @@ public class MathTorusAnim : MonoBehaviour
     private void Update()
     {
         spin += Time.deltaTime * spinSpeed;
-        copyMat.SetFloat(Spin, spin);
+        
         
         anim += Time.deltaTime * animSpeed;
-        if(anim >= 1.2f)
+        if(autoLoop && anim >= 1.2f)
             anim -= 1.2f;
         
+        if(Input.GetKey(KeyCode.LeftControl))
+            anim = 0;
+        if(Input.GetKey(KeyCode.LeftAlt))
+            spin = 0;
+        
+        copyMat.SetFloat(Spin, spin);
         copyMat.SetFloat(Anim, anim);
     }
 }

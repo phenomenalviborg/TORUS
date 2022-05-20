@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/Meshes/FloorTorus.fbx
+Assets/Meshes/FloorTorus.fbx.meta

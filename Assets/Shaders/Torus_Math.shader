@@ -108,13 +108,12 @@ Shader "Torus/Math"
                        p += rDir * (-1 - (1 - _Thickness) + _Radius);
                 
                 
-                float dist = length(mul(unity_ObjectToWorld, float4(p, 1)).xyz - _WorldSpaceCameraPos);
-                float size = length(mul(unity_ObjectToWorld, float4(1, 0, 0, 0)));
-                float u = (_Anim - v.uv.x) * 50;
+                float dist  = length(mul(unity_ObjectToWorld, float4(p, 1)).xyz - _WorldSpaceCameraPos);
+                float size  = length(mul(unity_ObjectToWorld, float4(1, 0, 0, 0)));
+                float u     = (_Anim - v.uv.x) * 50;
                 float trail = 1.0 - pow(1.0 - saturate(u), 4);
-                float s = 1; //(sin(u * 6) * .5 + .5) * .6 + .4;
                 
-                o.vertex = UnityObjectToClipPos(p + rotateVector(rot, v.normal * dist * .0011 * trail * s) / size);
+                o.vertex = UnityObjectToClipPos(p + rotateVector(rot, v.normal * dist * .0011 * trail) / size);
                 o.uv     = float2(v.uv.x, dist);
                 return o;
             }

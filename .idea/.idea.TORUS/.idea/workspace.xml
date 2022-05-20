@@ -9,20 +9,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.706041">
+    <splitter split-orientation="horizontal" split-proportion="0.66612726">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Shaders/Tile.shader">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1175">
+                <state relative-caret-position="756">
                   <caret line="82" column="77" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
                   <folding>
-                    <marker date="1652965631813" expanded="true" signature="20:3062" ph="{...}" />
-                    <marker date="1652965631813" expanded="true" signature="41:228" ph="{...}" />
-                    <marker date="1652965631813" expanded="true" signature="247:3060" ph="{...}" />
-                    <marker date="1652965631813" expanded="true" signature="326:3054" ph="{...}" />
-                    <marker date="1652965631813" expanded="true" signature="349:3039" ph="{...}" />
+                    <marker date="1652974988952" expanded="true" signature="20:3062" ph="{...}" />
+                    <marker date="1652974988952" expanded="true" signature="41:228" ph="{...}" />
+                    <marker date="1652974988952" expanded="true" signature="247:3060" ph="{...}" />
+                    <marker date="1652974988952" expanded="true" signature="326:3054" ph="{...}" />
+                    <marker date="1652974988952" expanded="true" signature="349:3039" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/Shaders/Ring.shader">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="830">
+                  <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+                  <folding>
+                    <marker date="1652983031703" expanded="true" signature="20:2520" ph="{...}" />
+                    <marker date="1652983031703" expanded="true" signature="41:135" ph="{...}" />
+                    <marker date="1652983031703" expanded="true" signature="154:2518" ph="{...}" />
+                    <marker date="1652983031703" expanded="true" signature="250:2512" ph="{...}" />
+                    <marker date="1652983031703" expanded="true" signature="273:2497" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -40,7 +56,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Shaders/TorusPoint.shader">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-294">
+                <state relative-caret-position="90">
                   <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="41" />
                   <folding>
                     <marker date="1652815638568" expanded="true" signature="21:3558" ph="{...}" />
@@ -53,16 +69,18 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Torus/FloorTiles.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+                <state relative-caret-position="980">
+                  <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
                   <folding>
-                    <marker date="1652965649250" expanded="true" signature="60:1301" ph="{...}" />
-                    <marker date="1652965649250" expanded="true" signature="335:1170" ph="{...}" />
-                    <marker date="1652965649250" expanded="true" signature="644:1010" ph="{...}" />
-                    <marker date="1652965649250" expanded="true" signature="1202:1299" ph="{...}" />
+                    <marker date="1652979652900" expanded="true" signature="60:2386" ph="{...}" />
+                    <marker date="1652979652900" expanded="true" signature="517:1775" ph="{...}" />
+                    <marker date="1652979652900" expanded="true" signature="1100:1654" ph="{...}" />
+                    <marker date="1652979652900" expanded="true" signature="1807:2087" ph="{...}" />
+                    <marker date="1652979652900" expanded="true" signature="2119:2284" ph="{...}" />
+                    <marker date="1652979652900" expanded="true" signature="2315:2384" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -87,14 +105,14 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Shaders/Torus_Math.shader">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="815">
-                  <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+                <state relative-caret-position="1830">
+                  <caret line="122" column="31" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
                   <folding>
-                    <marker date="1652963785333" expanded="true" signature="20:4682" ph="{...}" />
-                    <marker date="1652963785333" expanded="true" signature="41:260" ph="{...}" />
-                    <marker date="1652963785333" expanded="true" signature="279:4680" ph="{...}" />
-                    <marker date="1652963785333" expanded="true" signature="375:4674" ph="{...}" />
-                    <marker date="1652963785333" expanded="true" signature="398:4659" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="20:4619" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="41:260" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="279:4617" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="375:4611" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="398:4596" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -110,22 +128,6 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/_Shared/Shaders/Q/MatCapBubble.shader">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="42" />
-                  <folding>
-                    <marker date="1642697498000" expanded="true" signature="27:1649" ph="{...}" />
-                    <marker date="1642697498000" expanded="true" signature="48:98" ph="{...}" />
-                    <marker date="1642697498000" expanded="true" signature="117:1647" ph="{...}" />
-                    <marker date="1642697498000" expanded="true" signature="300:1641" ph="{...}" />
-                    <marker date="1642697498000" expanded="true" signature="323:1626" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/_Shared/SetTargetFramerate.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
@@ -137,15 +139,31 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Torus/MathTorusAnim.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+                <state relative-caret-position="450">
+                  <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
                   <folding>
-                    <marker date="1652964249824" expanded="true" signature="63:892" ph="{...}" />
-                    <marker date="1652964249824" expanded="true" signature="424:613" ph="{...}" />
-                    <marker date="1652964249824" expanded="true" signature="645:890" ph="{...}" />
+                    <marker date="1652971331070" expanded="true" signature="63:1097" ph="{...}" />
+                    <marker date="1652971331070" expanded="false" signature="467:656" ph="{...}" />
+                    <marker date="1652971331070" expanded="true" signature="688:1095" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/Shaders/Torus_Math.shader">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="16" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="16" />
+                  <folding>
+                    <marker date="1652978167627" expanded="true" signature="20:4619" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="41:260" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="279:4617" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="375:4611" ph="{...}" />
+                    <marker date="1652978167627" expanded="true" signature="398:4596" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -158,6 +176,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Shared/Shaders/Q/MatCapBubble.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Shared/SetTargetFramerate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Ring.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Shared/Shaders/FZRO/BlobShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Shared/Shaders/Q/Q.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/TorusPoint.shader" root0="FORCE_HIGHLIGHTING" />
@@ -173,10 +192,11 @@
         <option value="$PROJECT_DIR$/Assets/Torus/SM/TorusMix.shader" />
         <option value="$PROJECT_DIR$/Assets/Torus/SM/T.cginc" />
         <option value="$PROJECT_DIR$/Assets/Shaders/TorusPoint.shader" />
-        <option value="$PROJECT_DIR$/Assets/Shaders/Torus_Math.shader" />
         <option value="$PROJECT_DIR$/Assets/Torus/MathTorusAnim.cs" />
         <option value="$PROJECT_DIR$/Assets/Shaders/Tile.shader" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Torus_Math.shader" />
         <option value="$PROJECT_DIR$/Assets/Torus/FloorTiles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Ring.shader" />
       </list>
     </option>
   </component>
@@ -284,6 +304,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/TorusPoint.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <marker date="1652815638568" expanded="true" signature="21:3558" ph="{...}" />
+            <marker date="1652815638568" expanded="true" signature="42:218" ph="{...}" />
+            <marker date="1652815638568" expanded="true" signature="237:3556" ph="{...}" />
+            <marker date="1652815638568" expanded="true" signature="362:3550" ph="{...}" />
+            <marker date="1652815638568" expanded="true" signature="385:3535" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Shared/Shaders/FZRO/BlobShader.shader">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -298,9 +332,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/T.cginc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Shared/Shaders/Q/MatCapBubble.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="60">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="42" />
           <folding>
             <marker date="1642697498000" expanded="true" signature="27:1649" ph="{...}" />
@@ -322,72 +359,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shaders/T.cginc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shaders/Torus_Math.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
-          <folding>
-            <marker date="1652963785333" expanded="true" signature="20:4682" ph="{...}" />
-            <marker date="1652963785333" expanded="true" signature="41:260" ph="{...}" />
-            <marker date="1652963785333" expanded="true" signature="279:4680" ph="{...}" />
-            <marker date="1652963785333" expanded="true" signature="375:4674" ph="{...}" />
-            <marker date="1652963785333" expanded="true" signature="398:4659" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Torus/MathTorusAnim.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="450">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
           <folding>
-            <marker date="1652964249824" expanded="true" signature="63:892" ph="{...}" />
-            <marker date="1652964249824" expanded="true" signature="424:613" ph="{...}" />
-            <marker date="1652964249824" expanded="true" signature="645:890" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shaders/TorusPoint.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <marker date="1652815638568" expanded="true" signature="21:3558" ph="{...}" />
-            <marker date="1652815638568" expanded="true" signature="42:218" ph="{...}" />
-            <marker date="1652815638568" expanded="true" signature="237:3556" ph="{...}" />
-            <marker date="1652815638568" expanded="true" signature="362:3550" ph="{...}" />
-            <marker date="1652815638568" expanded="true" signature="385:3535" ph="{...}" />
+            <marker date="1652971331070" expanded="true" signature="63:1097" ph="{...}" />
+            <marker date="1652971331070" expanded="false" signature="467:656" ph="{...}" />
+            <marker date="1652971331070" expanded="true" signature="688:1095" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/Tile.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
+        <state relative-caret-position="756">
           <caret line="82" column="77" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
           <folding>
-            <marker date="1652965631813" expanded="true" signature="20:3062" ph="{...}" />
-            <marker date="1652965631813" expanded="true" signature="41:228" ph="{...}" />
-            <marker date="1652965631813" expanded="true" signature="247:3060" ph="{...}" />
-            <marker date="1652965631813" expanded="true" signature="326:3054" ph="{...}" />
-            <marker date="1652965631813" expanded="true" signature="349:3039" ph="{...}" />
+            <marker date="1652974988952" expanded="true" signature="20:3062" ph="{...}" />
+            <marker date="1652974988952" expanded="true" signature="41:228" ph="{...}" />
+            <marker date="1652974988952" expanded="true" signature="247:3060" ph="{...}" />
+            <marker date="1652974988952" expanded="true" signature="326:3054" ph="{...}" />
+            <marker date="1652974988952" expanded="true" signature="349:3039" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Torus/FloorTiles.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="980">
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
           <folding>
-            <marker date="1652965649250" expanded="true" signature="60:1301" ph="{...}" />
-            <marker date="1652965649250" expanded="true" signature="335:1170" ph="{...}" />
-            <marker date="1652965649250" expanded="true" signature="644:1010" ph="{...}" />
-            <marker date="1652965649250" expanded="true" signature="1202:1299" ph="{...}" />
+            <marker date="1652979652900" expanded="true" signature="60:2386" ph="{...}" />
+            <marker date="1652979652900" expanded="true" signature="517:1775" ph="{...}" />
+            <marker date="1652979652900" expanded="true" signature="1100:1654" ph="{...}" />
+            <marker date="1652979652900" expanded="true" signature="1807:2087" ph="{...}" />
+            <marker date="1652979652900" expanded="true" signature="2119:2284" ph="{...}" />
+            <marker date="1652979652900" expanded="true" signature="2315:2384" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/Torus_Math.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="122" column="31" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
+          <folding>
+            <marker date="1652978167627" expanded="true" signature="20:4619" ph="{...}" />
+            <marker date="1652978167627" expanded="true" signature="41:260" ph="{...}" />
+            <marker date="1652978167627" expanded="true" signature="279:4617" ph="{...}" />
+            <marker date="1652978167627" expanded="true" signature="375:4611" ph="{...}" />
+            <marker date="1652978167627" expanded="true" signature="398:4596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/Ring.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+          <folding>
+            <marker date="1652983031703" expanded="true" signature="20:2520" ph="{...}" />
+            <marker date="1652983031703" expanded="true" signature="41:135" ph="{...}" />
+            <marker date="1652983031703" expanded="true" signature="154:2518" ph="{...}" />
+            <marker date="1652983031703" expanded="true" signature="250:2512" ph="{...}" />
+            <marker date="1652983031703" expanded="true" signature="273:2497" ph="{...}" />
           </folding>
         </state>
       </provider>
