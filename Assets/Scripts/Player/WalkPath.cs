@@ -19,6 +19,7 @@ public class WalkPath : ImmediateModeShapeDrawer
     private const float height = .05f;
     
     private Transform trans;
+    private float y;
     
     
     private void Start()
@@ -40,6 +41,7 @@ public class WalkPath : ImmediateModeShapeDrawer
         count = 1;
         p.AddPoint(pos);
         walked = 0;
+        y = 0;
     }
     
 
@@ -83,8 +85,8 @@ public class WalkPath : ImmediateModeShapeDrawer
         Quaternion rot = Quaternion.identity;
         
         float speed = 0;
-        float y = 0;
-        while (y < 20)
+        y = 0;
+        while (y < 40)
         {
             speed += Time.deltaTime * .05f;
             y += speed * Time.deltaTime;
@@ -96,7 +98,7 @@ public class WalkPath : ImmediateModeShapeDrawer
             trans.position = ps + d;
             trans.rotation = rot;
             
-            rot = Quaternion.AngleAxis(Time.deltaTime * y * 2, spinAxis) * rot;
+            rot      = Quaternion.AngleAxis(Time.deltaTime * y * 1.5f, spinAxis) * rot;
             spinAxis = Quaternion.AngleAxis(Time.deltaTime * 5, Vector3.up) * spinAxis;
             
             yield return null;
@@ -114,7 +116,7 @@ public class WalkPath : ImmediateModeShapeDrawer
             Draw.Thickness      = LineThickness.Width;
             Draw.Matrix = transform.localToWorldMatrix;
             
-            Draw.Polyline(p, Color.white );
+            Draw.Polyline(p, Color.white.A(Mathf.Clamp01((20f - y) * .05f)));
         }
     }
 }
