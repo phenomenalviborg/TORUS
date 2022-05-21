@@ -3,7 +3,6 @@ Shader "Torus/Ring"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _Anim	  ("Anim",      float) = 0
     }
     SubShader
     {
@@ -36,9 +35,12 @@ Shader "Torus/Ring"
             
             UNITY_INSTANCING_BUFFER_START(Props)
                 UNITY_DEFINE_INSTANCED_PROP(float, _Anim)
+                UNITY_DEFINE_INSTANCED_PROP(float, _Vis)
             UNITY_INSTANCING_BUFFER_END(Props)
 
             sampler2D _MainTex;
+            
+            float _LineS;
 
             v2f vert (appdata v)
             {
@@ -49,6 +51,7 @@ Shader "Torus/Ring"
                 
                 float3 p = (v.vertex + v.normal * -1) * .1;
                 
+                float vis = UNITY_ACCESS_INSTANCED_PROP(Props, _Vis);
                 float dist = length(mul(unity_ObjectToWorld, float4(p, 1)).xyz - _WorldSpaceCameraPos);
                 float size = length(mul(unity_ObjectToWorld, float4(1, 0, 0, 0)));
                 float len  = .15 * (2 * size * 3.1415926535897932384626433);
@@ -56,8 +59,9 @@ Shader "Torus/Ring"
                 float anim  = UNITY_ACCESS_INSTANCED_PROP(Props, _Anim);
                 float trail = 1.0 - pow(1.0 - saturate((anim - v.uv.x) * 50 * len), 4);
                 
-                o.vertex = UnityObjectToClipPos(p + v.normal * (dist * .0011 * trail) / size);
-                o.uv = float3(v.uv.x, dist, len);
+                o.vertex = UnityObjectToClipPos(p + v.normal * (dist * .0011 * _LineS * trail * vis) / size);
+                o.uv     = float3(v.uv.x, dist, len);
+                
                 return o;
             }
 
@@ -67,9 +71,9 @@ Shader "Torus/Ring"
                 float anim = UNITY_ACCESS_INSTANCED_PROP(Props, _Anim);
                 clip(step(anim, i.uv.x) * -1 + .5);
                 
-                float tint  = 1.0 - pow(1.0 - pow(saturate(1.0 - i.uv.y * .16), 7), 4);
+                float tint  = 1.0 - pow(1.0 - pow(saturate(1.0 - i.uv.y * .03), 7), 4);
                 float trail = saturate((anim - i.uv.x) * 20 * i.uv.z);
-                return tex2D(_MainTex, float2(trail, 0));// * tint * 1.5;
+                return tint * 1.5; //stex2D(_MainTex, float2(trail, 0));// * tint * 1.5;
             }
             ENDCG
         }

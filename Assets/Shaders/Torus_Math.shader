@@ -41,6 +41,8 @@ Shader "Torus/Math"
             float _Radius;
             float _Spin;
             
+            float _LineS;
+            
             ////////////////// BEGIN QUATERNION FUNCTIONS //////////////////
 
             float PI = 3.1415926535897932384626433832795;
@@ -113,7 +115,7 @@ Shader "Torus/Math"
                 float u     = (_Anim - v.uv.x) * 50;
                 float trail = 1.0 - pow(1.0 - saturate(u), 4);
                 
-                o.vertex = UnityObjectToClipPos(p + rotateVector(rot, v.normal * dist * .0011 * trail) / size);
+                o.vertex = UnityObjectToClipPos(p + rotateVector(rot, v.normal * dist * .0011 * _LineS * trail) / size);
                 o.uv     = float2(v.uv.x, dist);
                 return o;
             }
@@ -122,9 +124,9 @@ Shader "Torus/Math"
             {
                 clip(step(_Anim, i.uv.x) * -1 + .5);
                 
-                float tint = 1.0 - pow(1.0 - pow(saturate(1.0 - i.uv.y * .06), 7), 4);
+                float tint = 1.0 - pow(1.0 - pow(saturate(1.0 - i.uv.y * .03), 7), 4);
                 float trail = saturate((_Anim - i.uv.x) * 20);
-                return tex2D(_MainTex, float2(trail, 0)) * tint * 1.5;
+                return tint * 1.5;//tex2D(_MainTex, float2(trail, 0)) * tint * 1.5;
             }
             ENDCG
         }
