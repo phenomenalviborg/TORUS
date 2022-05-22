@@ -13,13 +13,15 @@ public class WalkPath : ImmediateModeShapeDrawer
     private Vector3 pos;
     private Vector3 all;
     private int count;
-    
-    PolylinePath p;
+
+    private PolylinePath p;
     
     private const float height = .05f;
     
     private Transform trans;
     private float y;
+    
+    private const float multi = 1.5f;
     
     
     private void Start()
@@ -113,7 +115,7 @@ public class WalkPath : ImmediateModeShapeDrawer
         using( Draw.Command( cam ) ){
             Draw.LineGeometry   = LineGeometry.Volumetric3D;
             Draw.ThicknessSpace = ThicknessSpace.Pixels;
-            Draw.Thickness      = LineThickness.Width;
+            Draw.Thickness      = LineThickness.Width * multi;
             Draw.Matrix = transform.localToWorldMatrix;
             
             Draw.Polyline(p, Color.white.A(Mathf.Clamp01((20f - y) * .05f)));

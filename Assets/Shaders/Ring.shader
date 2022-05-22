@@ -57,7 +57,7 @@ Shader "Torus/Ring"
                 float len  = .15 * (2 * size * 3.1415926535897932384626433);
                 
                 float anim  = UNITY_ACCESS_INSTANCED_PROP(Props, _Anim);
-                float trail = 1.0 - pow(1.0 - saturate((anim - v.uv.x) * 50 * len), 4);
+                float trail = 1; //1.0 - pow(1.0 - saturate((anim - v.uv.x) * 50 * len), 4);
                 
                 o.vertex = UnityObjectToClipPos(p + v.normal * (dist * .0011 * _LineS * trail * vis) / size);
                 o.uv     = float3(v.uv.x, dist, len);
