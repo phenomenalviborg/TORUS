@@ -21,7 +21,7 @@ public class WalkPath : ImmediateModeShapeDrawer
     private Transform trans;
     private float y;
     
-    private const float multi = 1.5f;
+    private const float multi = 2f;
     
     
     private void Start()
@@ -113,6 +113,10 @@ public class WalkPath : ImmediateModeShapeDrawer
     
     public override void DrawShapes( Camera cam ){
         using( Draw.Command( cam ) ){
+            
+            if(count == 1)
+                return;
+            
             Draw.LineGeometry   = LineGeometry.Volumetric3D;
             Draw.ThicknessSpace = ThicknessSpace.Pixels;
             Draw.Thickness      = LineThickness.Width * multi;

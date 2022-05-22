@@ -8,7 +8,7 @@ public class AxisRot : MonoBehaviour
     public Space space;
     
     
-    private void Update()
+    private void LateUpdate()
     {
         transform.Rotate(axis, speed * Time.deltaTime, space);
     }
