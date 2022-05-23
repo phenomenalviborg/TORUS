@@ -41,6 +41,7 @@ Shader "Torus/Tile"
             float4 _White, _Black;
             sampler _MatCap;
             float _DistMulti;
+            float4 _Tint;
 
             v2f vert (appdata v)
             {
@@ -90,7 +91,7 @@ Shader "Torus/Tile"
                 
                 float dt = (1.0 - pow(1.0 - saturate(dot(-normalize(i.wP - _WorldSpaceCameraPos), n)), 2)) * tint2 * .85 + .15;
               
-                return ((lerp(_Black, _White, u) * t * dt  + matcap * t * .2 * k)* (i.tint.y * .1 + .9)) * .2;
+                return ((lerp(_Black, _White, u) * t * dt  + matcap * t * .2 * k)* (i.tint.y * .1 + .9)) *_Tint;
             }
             ENDCG
         }

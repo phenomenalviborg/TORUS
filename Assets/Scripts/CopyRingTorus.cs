@@ -75,7 +75,7 @@ public class CopyRingTorus : RingTorus
             if (value == 0)
             {
                 copyThis = rings[index];
-                Debug.Log(index);
+                //Debug.Log(index);
             }
                 
                     

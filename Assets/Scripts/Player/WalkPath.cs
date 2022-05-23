@@ -10,6 +10,10 @@ public class WalkPath : ImmediateModeShapeDrawer
     
     public bool flyingUp;
     
+    [Space]
+    public float time;
+    
+    
     private Vector3 pos;
     private Vector3 all;
     private int count;
@@ -22,6 +26,7 @@ public class WalkPath : ImmediateModeShapeDrawer
     private float y;
     
     private const float multi = 2f;
+    private float lifeTime;
     
     
     private void Start()
@@ -44,6 +49,7 @@ public class WalkPath : ImmediateModeShapeDrawer
         p.AddPoint(pos);
         walked = 0;
         y = 0;
+        lifeTime = 0;
     }
     
 
@@ -57,6 +63,7 @@ public class WalkPath : ImmediateModeShapeDrawer
     {
         if (!flyingUp)
         {
+            lifeTime += Time.deltaTime;
             Vector3 newPos = target.position.SetY(height);
             float sm = (newPos - pos).sqrMagnitude;
             const float dist = 1f / 100 * 1;
@@ -69,7 +76,7 @@ public class WalkPath : ImmediateModeShapeDrawer
                 all += pos;
                 count++;
             
-                if(walked >= stopAt)
+                if(lifeTime > time)//walked >= stopAt)
                     StartCoroutine(FlyUp());
             }
         }

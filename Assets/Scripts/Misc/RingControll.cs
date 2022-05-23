@@ -11,6 +11,8 @@ public class RingControll : MonoBehaviour
     
     private Transform trans;
     
+    private bool visible;
+    
     private void Start()
     {
         mR = GetComponent<MeshRenderer>();
@@ -33,6 +35,17 @@ public class RingControll : MonoBehaviour
 
     public void UpdateRing(Vector3 pos, Quaternion rot, float scale, float anim, float vis, bool local = false)
     {
+        bool shouldBeVisible = anim * vis > .0001f;
+
+        if (visible != shouldBeVisible)
+        {
+            visible = shouldBeVisible;
+            mR.enabled = visible;
+        }
+        
+        if(!visible)
+            return;
+        
         if (local)
         {
             trans.localPosition = pos;
@@ -48,7 +61,7 @@ public class RingControll : MonoBehaviour
         this.anim = anim;
         this.vis = vis;
     }
-
+    
 
     private static GameObject dummy;
     public static GameObject Dummy
