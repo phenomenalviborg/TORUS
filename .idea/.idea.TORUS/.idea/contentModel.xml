@@ -701,6 +701,7 @@
           <e p="FlowerTorus.cs" t="Include" />
           <e p="FountainTorus.cs" t="Include" />
           <e p="HoopTorus.cs" t="Include" />
+          <e p="HornTorus.cs" t="Include" />
           <e p="Misc" t="Include">
             <e p="AnimUpdater.cs" t="Include" />
             <e p="FloorTiles.cs" t="Include" />
@@ -714,7 +715,9 @@
             <e p="Halo.cs" t="Include" />
             <e p="WalkPath.cs" t="Include" />
           </e>
+          <e p="RingToHoop.cs" t="Include" />
           <e p="RingTorus.cs" t="Include" />
+          <e p="Screenshot.cs" t="Include" />
           <e p="TorusAnims" t="Include">
             <e p="AppearingRingTorus.cs" t="Include" />
           </e>
@@ -725,6 +728,7 @@
           </e>
         </e>
         <e p="Shaders" t="Include">
+          <e p="Egg.shader" t="Include" />
           <e p="Ring.shader" t="Include" />
           <e p="T.cginc" t="Include" />
           <e p="Tile.shader" t="Include" />
