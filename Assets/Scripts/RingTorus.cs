@@ -4,8 +4,6 @@ using UnityEngine;
 public class RingTorus : AnimTorus
 {
     [Space]
-    [Range(0, 1)]
-    public float completion;
     public float spinSpeed;
     public float spin;
     public float spinOffset;
@@ -45,5 +43,16 @@ public class RingTorus : AnimTorus
     {
         for (int i = 0; i < ringCount; i++)
             states[i] = new RingState(completion, 1);
+    }
+
+
+    public void SetSpinOffset(float spinOffset)
+    {
+        this.spinOffset = spinOffset;
+    }
+    
+    public void SetSpin(float spin)
+    {
+        this.spin = spin;
     }
 }

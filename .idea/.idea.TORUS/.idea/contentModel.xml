@@ -735,6 +735,17 @@
             <e p="TorusControll.cs" t="Include" />
             <e p="TorusMover.cs" t="Include" />
           </e>
+          <e p="ValueAnimator" t="Include">
+            <e p="AndyAnimator.cs" t="Include" />
+            <e p="AnimOffset.cs" t="Include" />
+            <e p="FloatAnimator.cs" t="Include" />
+            <e p="FloatShifter.cs" t="Include" />
+            <e p="MeshRendererAnimator.cs" t="Include" />
+            <e p="PositionAnimator.cs" t="Include" />
+            <e p="ScaleAnimator.cs" t="Include" />
+            <e p="SpinOffsetAnimator.cs" t="Include" />
+            <e p="ValueAnimator.cs" t="Include" />
+          </e>
         </e>
         <e p="Shaders" t="Include">
           <e p="Egg.shader" t="Include" />

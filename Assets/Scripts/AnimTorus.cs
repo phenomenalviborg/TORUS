@@ -7,6 +7,9 @@ public class AnimTorus : MonoBehaviour
     public float radius;
     public float thickness;
     
+    [Range(0, 1)]
+    public float completion = 1;
+    
     protected RingControll[] rings;
     protected RingState[] states;
     
@@ -45,5 +48,21 @@ public class AnimTorus : MonoBehaviour
     
     protected virtual void UpdateRings()
     {
+    }
+    
+    
+    public void SetRadius(float radius)
+    {
+        this.radius = radius;
+    }
+    
+    public void SetThickness(float thickness)
+    {
+        this.thickness = thickness;
+    }
+    
+    public void SetCompletion(float completion)
+    {
+        this.completion = completion;
     }
 }

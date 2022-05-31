@@ -3,8 +3,6 @@ using UnityEngine;
 public class HoopTorus : AnimTorus
 {
     [Range(0, 1)]
-    public float completion;
-    [Range(0, 1)]
     public float spread;
     
     public float twirl;
@@ -72,5 +70,11 @@ public class HoopTorus : AnimTorus
             this.distance = distance;
             this.twirl    = twirl;
         }
+    }
+    
+    
+    public void SetTwirl(float twirl)
+    {
+        this.twirl = twirl;
     }
 }

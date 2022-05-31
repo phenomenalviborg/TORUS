@@ -1,47 +1,47 @@
-using UnityEngine;
+using UnityEngine.Events;
 
-public class PositionAnimator : ValueAnimator
+
+public class FloatAnimator : ValueAnimator
 {
-    public VectorAnim[] anims;
+    public FloatEvent fEvent;
+    public FloatAnim[] anims;
     
-    [Space]
-    public Transform trans;
     
-    private VectorAnim a, b;
+    private FloatAnim a, b;
     private int count;
 
-    
     private void Start()
     {
-        if(trans == null)
-            trans = transform;
-        
         count = anims.Length;
         a = anims[0];
         b = anims[count - 1];
     }
-
-
+    
+    
     protected override void SetTime(float time)
     {
         if (time < a.timeSpan.x)
         {
-            trans.localPosition = a.a;
+            fEvent.Invoke(a.a);
             return;
         }
         
         if (time > b.timeSpan.x + b.timeSpan.y)
         {
-            trans.localPosition = b.b;
+            fEvent.Invoke(b.b);
             return;
         }
         
-        Vector3 p = a.a;
+        float p = a.a;
         for (int i = 0; i < count; i++)
             if (anims[i].GetValue(time, ref p))
             {
-                trans.localPosition = p;
+                fEvent.Invoke(p);
                 break;
             }
     }
 }
+
+
+[System.Serializable]
+public class FloatEvent : UnityEvent<float> { }

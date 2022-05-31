@@ -15,8 +15,8 @@ public class MeshRendererAnimator : ValueAnimator
     }
     
 
-    public override void Evaluate(float time)
-    {
+    protected override void SetTime(float time)
+    {   
         bool shouldBeActive = time >= timeSpan.x && time <= timeSpan.x + timeSpan.y;
         if(mR.enabled != shouldBeActive)
             mR.enabled = shouldBeActive;

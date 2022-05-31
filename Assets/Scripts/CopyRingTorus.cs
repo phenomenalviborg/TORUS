@@ -82,4 +82,10 @@ public class CopyRingTorus : RingTorus
             index++;
         }
     }
+
+
+    public void SetVis(float vis)
+    {
+        this.vis = vis;
+    }
 }

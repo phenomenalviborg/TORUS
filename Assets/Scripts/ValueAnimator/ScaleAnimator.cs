@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PositionAnimator : ValueAnimator
+public class ScaleAnimator : ValueAnimator
 {
     public VectorAnim[] anims;
     
@@ -26,13 +26,13 @@ public class PositionAnimator : ValueAnimator
     {
         if (time < a.timeSpan.x)
         {
-            trans.localPosition = a.a;
+            trans.localScale = a.a;
             return;
         }
         
         if (time > b.timeSpan.x + b.timeSpan.y)
         {
-            trans.localPosition = b.b;
+            trans.localScale = b.b;
             return;
         }
         
@@ -40,7 +40,7 @@ public class PositionAnimator : ValueAnimator
         for (int i = 0; i < count; i++)
             if (anims[i].GetValue(time, ref p))
             {
-                trans.localPosition = p;
+                trans.localScale = p;
                 break;
             }
     }

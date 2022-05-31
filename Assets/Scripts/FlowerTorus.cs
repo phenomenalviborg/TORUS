@@ -52,4 +52,10 @@ public class FlowerTorus : HoopTorus
         for (int i = 0; i < ringCount; i++)
             states[i] = new RingState(1, 1);
     }
+
+
+    public void SetFlyTime(float flyTime)
+    {
+        this.flyTime = flyTime;
+    }
 }

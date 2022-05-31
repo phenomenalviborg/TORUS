@@ -15,7 +15,19 @@ public class ValueAnimator : MonoBehaviour
     }
 
 
-    public virtual void Evaluate(float time){}
+    public void Evaluate(float time){ SetTime(offset != null? time - offset.start : time); }
+    
+    
+    protected virtual void SetTime(float time){}
+    
+    
+    private AnimOffset offset;
+
+
+    public void SetAnimOffset(AnimOffset offset)
+    {
+        this.offset = offset;
+    }
 }
 
 
@@ -25,13 +37,20 @@ public class FloatAnim
     public Vector2 timeSpan;
     public AnimationCurve curve;
     [Space]
-    public float a, b;
+    public float a;
+    public float b;
     
 
     public bool GetValue(float time, ref float setValue)
     {
-        if(time < timeSpan.x || time > timeSpan.x + timeSpan.y)
+        if(time < timeSpan.x)
             return false;
+
+        if (time > timeSpan.x + timeSpan.y)
+        {
+            setValue = b;
+            return false;
+        }
         
         setValue = Mathf.Lerp(a, b, curve.Evaluate((time - timeSpan.x) / timeSpan.y));
         return true;
@@ -45,17 +64,23 @@ public class VectorAnim
     public Vector2 timeSpan;
     public AnimationCurve curve;
     [Space]
-    public Vector3 a, b;
+    public Vector3 a;
+    public Vector3 b;
 
     
     public bool GetValue(float time, ref Vector3 setValue)
     {
-        if(time < timeSpan.x || time > timeSpan.x + timeSpan.y)
+        if(time < timeSpan.x)
             return false;
+
+        if (time > timeSpan.x + timeSpan.y)
+        {
+            setValue = b;
+            return false;
+        }
+            
         
-        float l = (time - timeSpan.x) / timeSpan.y;
-        Debug.Log(l);
-        setValue = Vector3.Lerp(a, b, curve.Evaluate(l));
+        setValue = Vector3.Lerp(a, b, curve.Evaluate((time - timeSpan.x) / timeSpan.y));
         return true;
     }
 }
