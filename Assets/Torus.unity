@@ -1486,6 +1486,7 @@ GameObject:
   - component: {fileID: 241379236}
   - component: {fileID: 241379237}
   - component: {fileID: 241379238}
+  - component: {fileID: 241379239}
   m_Layer: 0
   m_Name: Hoops
   m_TagString: Untagged
@@ -1762,6 +1763,61 @@ MonoBehaviour:
     a: {x: 0, y: 3, z: 0}
     b: {x: 0, y: 17, z: 0}
   trans: {fileID: 241379233}
+--- !u!114 &241379239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241379232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e64d2d0af4776429cb21bce2d9b10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 241379235}
+        m_TargetAssemblyTypeName: AnimTorus, Assembly-CSharp
+        m_MethodName: SetCompletion
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  anims:
+  - timeSpan: {x: 165.3333, y: 0}
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    a: 1
+    b: 0
 --- !u!1 &244861758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -2308,7 +2364,6 @@ GameObject:
   - component: {fileID: 338125551}
   - component: {fileID: 338125547}
   - component: {fileID: 338125550}
-  - component: {fileID: 338125548}
   m_Layer: 0
   m_Name: Rings
   m_TagString: Untagged
@@ -2404,47 +2459,6 @@ MonoBehaviour:
       m_RotationOrder: 0
     a: 1
     b: 2
---- !u!114 &338125548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338125544}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdd63a29a42cb20459470cb931f48093, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anims:
-  - timeSpan: {x: 174.2, y: 21.71667}
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 0
-    a: {x: 0, y: 1, z: 0}
-    b: {x: 0, y: 2, z: 0}
-  trans: {fileID: 0}
 --- !u!114 &338125550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6297,6 +6311,7 @@ GameObject:
   - component: {fileID: 1061691571}
   - component: {fileID: 1061691572}
   - component: {fileID: 1061691573}
+  - component: {fileID: 1061691574}
   m_Layer: 0
   m_Name: AndyAnimator
   m_TagString: Untagged
@@ -6400,6 +6415,21 @@ MonoBehaviour:
   gameObjects:
   - {fileID: 1552461147}
   - {fileID: 2088205553}
+--- !u!114 &1061691574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061691567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0e43dbbfa023c4e8a56724e2a8cb0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 0, y: 1, z: 0}
+  speed: 3
+  space: 0
 --- !u!4 &1061841712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}

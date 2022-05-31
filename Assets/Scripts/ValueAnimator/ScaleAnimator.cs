@@ -24,13 +24,13 @@ public class ScaleAnimator : ValueAnimator
 
     protected override void SetTime(float time)
     {
-        if (time < a.timeSpan.x)
+        if (time <= a.timeSpan.x)
         {
             trans.localScale = a.a;
             return;
         }
         
-        if (time > b.timeSpan.x + b.timeSpan.y)
+        if (time >= b.timeSpan.x + b.timeSpan.y)
         {
             trans.localScale = b.b;
             return;

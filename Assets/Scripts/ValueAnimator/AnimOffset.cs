@@ -13,7 +13,7 @@ public class AnimOffset : MonoBehaviour
         int count = gameObjects.Length;
         for (int i = 0; i < count; i++)
         {
-            ValueAnimator[] animators = gameObjects[i].GetComponentsInChildren<ValueAnimator>();
+            ValueAnimator[] animators = gameObjects[i].GetComponents<ValueAnimator>();
             int animCount = animators.Length;
             for (int e = 0; e < animCount; e++)
                 animators[e].SetAnimOffset(this);

@@ -43,10 +43,10 @@ public class FloatAnim
 
     public bool GetValue(float time, ref float setValue)
     {
-        if(time < timeSpan.x)
+        if(time <= timeSpan.x)
             return false;
 
-        if (time > timeSpan.x + timeSpan.y)
+        if (time >= timeSpan.x + timeSpan.y)
         {
             setValue = b;
             return false;
@@ -70,10 +70,10 @@ public class VectorAnim
     
     public bool GetValue(float time, ref Vector3 setValue)
     {
-        if(time < timeSpan.x)
+        if(time <= timeSpan.x)
             return false;
 
-        if (time > timeSpan.x + timeSpan.y)
+        if (time >= timeSpan.x + timeSpan.y)
         {
             setValue = b;
             return false;

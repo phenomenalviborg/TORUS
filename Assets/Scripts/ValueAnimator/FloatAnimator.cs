@@ -20,13 +20,13 @@ public class FloatAnimator : ValueAnimator
     
     protected override void SetTime(float time)
     {
-        if (time < a.timeSpan.x)
+        if (time <= a.timeSpan.x)
         {
             fEvent.Invoke(a.a);
             return;
         }
         
-        if (time > b.timeSpan.x + b.timeSpan.y)
+        if (time >= b.timeSpan.x + b.timeSpan.y)
         {
             fEvent.Invoke(b.b);
             return;
@@ -35,10 +35,9 @@ public class FloatAnimator : ValueAnimator
         float p = a.a;
         for (int i = 0; i < count; i++)
             if (anims[i].GetValue(time, ref p))
-            {
-                fEvent.Invoke(p);
                 break;
-            }
+            
+        fEvent.Invoke(p);
     }
 }
 

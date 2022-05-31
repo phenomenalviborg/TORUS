@@ -726,7 +726,6 @@
           </e>
           <e p="RingToHoop.cs" t="Include" />
           <e p="RingTorus.cs" t="Include" />
-          <e p="Screenshot.cs" t="Include" />
           <e p="TorusAnims" t="Include">
             <e p="AppearingRingTorus.cs" t="Include" />
           </e>
