@@ -695,6 +695,15 @@
           </e>
           <e p="ValueSync.cs" t="Include" />
         </e>
+        <e p="Samples" t="Include">
+          <e p="Unity Recorder" t="Include">
+            <e p="2.5.7" t="Include">
+              <e p="Screenshot Capture Sample" t="Include">
+                <e p="CaptureScreenShotExample.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="AnimTorus.cs" t="Include" />
           <e p="CopyRingTorus.cs" t="Include" />

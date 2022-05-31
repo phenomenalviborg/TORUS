@@ -807,7 +807,7 @@ MonoBehaviour:
   updateDirector: 1
   updateITimeControl: 1
   searchHierarchy: 0
-  active: 0
+  active: 1
   postPlayback: 2
 --- !u!114 &6089052730914258092
 MonoBehaviour:
@@ -830,7 +830,7 @@ MonoBehaviour:
   updateDirector: 1
   updateITimeControl: 1
   searchHierarchy: 0
-  active: 0
+  active: 1
   postPlayback: 2
 --- !u!114 &6881593094120756445
 MonoBehaviour:
