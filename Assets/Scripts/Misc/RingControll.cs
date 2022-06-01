@@ -118,7 +118,7 @@ public class RingControll : MonoBehaviour
         
         int count = sounds.Length;
         float step = 360f / count;
-        float volume = vis;
+        float volume = mR.enabled? vis : 0;
         const float multi = 1f / 360f;
         for (int i = 0; i < count; i++)
         {
