@@ -705,29 +705,31 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AnimTorus.cs" t="Include" />
-          <e p="CopyRingTorus.cs" t="Include" />
-          <e p="FlowerTorus.cs" t="Include" />
-          <e p="FountainTorus.cs" t="Include" />
-          <e p="HoopTorus.cs" t="Include" />
-          <e p="HornTorus.cs" t="Include" />
           <e p="Misc" t="Include">
+            <e p="ActiveRings.cs" t="Include" />
             <e p="AnimUpdater.cs" t="Include" />
+            <e p="CameraPosition.cs" t="Include" />
             <e p="FloorTiles.cs" t="Include" />
             <e p="LineThickness.cs" t="Include" />
             <e p="MathTorusAnim.cs" t="Include" />
             <e p="RingControll.cs" t="Include" />
           </e>
           <e p="Orb.cs" t="Include" />
-          <e p="PieceTorus.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="Halo.cs" t="Include" />
             <e p="WalkPath.cs" t="Include" />
           </e>
-          <e p="RingToHoop.cs" t="Include" />
-          <e p="RingTorus.cs" t="Include" />
           <e p="TorusAnims" t="Include">
+            <e p="AnimTorus.cs" t="Include" />
             <e p="AppearingRingTorus.cs" t="Include" />
+            <e p="CopyRingTorus.cs" t="Include" />
+            <e p="FlowerTorus.cs" t="Include" />
+            <e p="FountainTorus.cs" t="Include" />
+            <e p="HoopTorus.cs" t="Include" />
+            <e p="HornTorus.cs" t="Include" />
+            <e p="PieceTorus.cs" t="Include" />
+            <e p="RingToHoop.cs" t="Include" />
+            <e p="RingTorus.cs" t="Include" />
           </e>
           <e p="Unused" t="Include">
             <e p="TorusCam.cs" t="Include" />

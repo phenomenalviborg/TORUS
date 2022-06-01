@@ -56,10 +56,12 @@ public class AnimTorus : MonoBehaviour
         this.radius = radius;
     }
     
+    
     public void SetThickness(float thickness)
     {
         this.thickness = thickness;
     }
+    
     
     public void SetCompletion(float completion)
     {

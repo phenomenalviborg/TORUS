@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 //[ExecuteInEditMode]
 public class RingControll : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class RingControll : MonoBehaviour
     
     private Transform trans;
     
-    private bool visible;
     
     private void Start()
     {
@@ -19,6 +19,7 @@ public class RingControll : MonoBehaviour
         block = new MaterialPropertyBlock();
         mR.GetPropertyBlock(block);
         trans = transform;
+        mR.enabled = false;
     }
 
     
@@ -37,13 +38,21 @@ public class RingControll : MonoBehaviour
     {
         bool shouldBeVisible = anim * vis > .0001f;
 
-        if (visible != shouldBeVisible)
-        {
-            visible = shouldBeVisible;
-            mR.enabled = visible;
-        }
+        if (shouldBeVisible && CameraPosition.Distance(local ? trans.parent.TransformPoint(pos) : pos) - scale * 2 > 28)
+            shouldBeVisible = false;
         
-        if(!visible)
+        if (mR.enabled != shouldBeVisible)
+        {
+            mR.enabled = shouldBeVisible;
+            
+            if(shouldBeVisible)
+                ActiveRings.Add(this);
+            else
+                ActiveRings.Remove(this);
+        }
+            
+        
+        if(!shouldBeVisible)
             return;
         
         if (local)
@@ -59,7 +68,7 @@ public class RingControll : MonoBehaviour
             
         trans.localScale = Vector3.one * scale;
         this.anim = anim;
-        this.vis = vis;
+        this.vis  = vis;
     }
     
 
