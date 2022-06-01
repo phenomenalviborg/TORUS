@@ -19,7 +19,8 @@ public class RingControll : MonoBehaviour
     private AnimTorus torus;
     private float spin;
     
-    private RingSoundTransform[] sounds;
+    [HideInInspector]
+    public RingSoundTransform[] sounds;
     
     
     private void Start()

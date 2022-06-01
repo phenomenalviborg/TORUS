@@ -25,9 +25,11 @@ public class RingSoundTransform : MonoBehaviour
     public void UpdateSound(Vector3 pos, float volume)
     {
         this.volume = volume;
-        trans.localPosition = pos;
         
         if(child != null)
             child.localScale = Vector3.one * .04f * volume * (SoundInfo.ShowSounds? 1 : 0);
+        
+        if(volume > .00001f)
+            trans.localPosition = pos;
     }
 }

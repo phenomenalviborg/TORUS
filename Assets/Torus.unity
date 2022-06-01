@@ -145,6 +145,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &722965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -313,6 +314,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &75051340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -917,6 +919,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &141474060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1201,6 +1204,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &170380230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -1414,6 +1418,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &220630121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1858,6 +1863,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &246676569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2046,6 +2052,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &272936297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,8 +2227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allToruses: []
   activeRings: []
-  activeRingSounds: []
-  soundsPerRing: 5
+  soundsPerRing: 6
+  showSounds: 0
 --- !u!4 &276524224
 Transform:
   m_ObjectHideFlags: 0
@@ -2263,6 +2270,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &283735733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -2441,6 +2449,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &338125544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3106,6 +3115,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &457922628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -3211,6 +3221,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &476051100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3316,6 +3327,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &504016953 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -3595,6 +3607,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &547077862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3752,6 +3765,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &596418953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 358223225583099609, guid: 8f79c1ed1077258449c684801704a813, type: 3}
@@ -3959,6 +3973,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &629286108 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -3981,6 +3996,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &633687144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -4008,6 +4024,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &649598749
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,6 +4114,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &681871049 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -4119,6 +4137,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &689306086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -4374,6 +4393,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &719812805 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -4396,6 +4416,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &743844029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4568,6 +4589,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &760733610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4756,6 +4778,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &793243711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -4783,6 +4806,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &801544135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -4963,6 +4987,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &850055924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5131,6 +5156,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &876178241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5230,6 +5256,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &885885795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5325,6 +5352,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &896816774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -5352,6 +5380,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &905938070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5639,6 +5668,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &961481193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -5661,6 +5691,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &961543268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -5992,6 +6023,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1006053061 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -6014,6 +6046,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1014825577 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -6046,6 +6079,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1024845403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6214,6 +6248,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1042816529 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -6236,6 +6271,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1050430412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -6258,6 +6294,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1055238723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6758,6 +6795,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1107513901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -6780,6 +6818,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1110328184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6952,6 +6991,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1115503388 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -6974,6 +7014,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1117527142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -7230,6 +7271,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1179695599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -7551,6 +7593,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1240501824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9e1ddf47b9f09f74e921b7bf7b3a70a6, type: 3}
@@ -7661,6 +7704,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1275918965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7806,6 +7850,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1344099869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8329,6 +8374,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1414324905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -8351,6 +8397,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1421345771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8516,6 +8563,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1463177226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -8543,6 +8591,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1477184786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8799,6 +8848,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1544136235
 GameObject:
   m_ObjectHideFlags: 0
@@ -8872,6 +8922,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1545962806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9155,6 +9206,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1554683114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -9182,6 +9234,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1567100085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9281,6 +9334,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1573446862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bbe3fa9476bca2f4cb0c1b35f66c7339, type: 3}
@@ -9313,6 +9367,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1590183359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9558,6 +9613,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1595282499 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -9580,6 +9636,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1599415850 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -9602,6 +9659,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1605190263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -9649,6 +9707,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1657501015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9899,6 +9958,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1679906364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -9936,6 +9996,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1685357157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10168,6 +10229,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1722222305 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -10190,6 +10252,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1727050406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10509,6 +10572,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1773014355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10761,6 +10825,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1819523337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11299,6 +11364,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1849545857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11565,6 +11631,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1890119022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -11587,6 +11654,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1899842269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9e1ddf47b9f09f74e921b7bf7b3a70a6, type: 3}
@@ -11757,6 +11825,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1952900302
 GameObject:
   m_ObjectHideFlags: 0
@@ -11828,6 +11897,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1957597700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11923,6 +11993,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1958226923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bbe3fa9476bca2f4cb0c1b35f66c7339, type: 3}
@@ -11955,6 +12026,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &1966335715
 GameObject:
   m_ObjectHideFlags: 0
@@ -12010,6 +12082,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1979991254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -12037,6 +12110,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &1990438359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12132,6 +12206,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &1992407800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -12282,6 +12357,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &2007492568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12537,6 +12613,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &2025065504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13021,6 +13098,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1 &2076488536 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -13043,6 +13121,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!4 &2077508542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a2fda35039a81824ba132f6499612076, type: 3}
@@ -13394,6 +13473,7 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   radius: 0
   hoopines: 0
+  sounds: []
 --- !u!1001 &2116071186
 PrefabInstance:
   m_ObjectHideFlags: 0
