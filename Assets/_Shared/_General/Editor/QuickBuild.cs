@@ -258,7 +258,7 @@ public static class QuickBuild
     public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProject) 
     {
     //  Folder CleanUp  //
-        if (EditorUserBuildSettings.activeBuildTarget == BuildTarget.Android)
+        /*if (EditorUserBuildSettings.activeBuildTarget == BuildTarget.Android)
         {
             string[] files = Directory.GetFiles(QuickBuilds);
             List<string> deleteThese = new List<string>();
@@ -268,7 +268,7 @@ public static class QuickBuild
 
             for (int i = 0; i < deleteThese.Count; i++)
                 File.Delete(deleteThese[i]);
-        }
+        }*/
         
         
         
