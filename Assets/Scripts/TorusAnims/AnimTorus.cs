@@ -10,6 +10,10 @@ public class AnimTorus : MonoBehaviour
     [Range(0, 1)]
     public float completion = 1;
     
+    [Space]
+    public SoundSettings soundSettings;
+    [Space]
+    
     protected RingControll[] rings;
     protected RingState[] states;
     
@@ -25,17 +29,26 @@ public class AnimTorus : MonoBehaviour
         }
     }
 
+    [System.Serializable]
+    public class SoundSettings
+    {
+        public int torusID;
+        public float spinSpeed = 90;
+    }
+
 
     protected virtual void CreateRings()
     {
         rings = new RingControll[ringCount];
         
         for (int i = 0; i < ringCount; i++)
-            rings[i] = Instantiate(RingControll.Dummy, transform).GetComponent<RingControll>();
+            rings[i] = Instantiate(RingControll.RingRingDummy, transform).GetComponent<RingControll>().Setup(this);
 
         states = new RingState[ringCount];
         for (int i = 0; i < ringCount; i++)
             states[i] = new RingState(1, 1);
+        
+        SoundInfo.SetTorus(this);
     }
 
 

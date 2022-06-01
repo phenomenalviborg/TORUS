@@ -1,7 +1,6 @@
 using UnityEngine;
 
 
-//[ExecuteInEditMode]
 public class RingControll : MonoBehaviour
 {
     public float anim;
@@ -12,14 +11,24 @@ public class RingControll : MonoBehaviour
     
     private Transform trans;
     
+    [Header("Audio ReadOut")]
+    public Vector3 center;
+    public float radius;
+    public float hoopines;
+    
+    private AnimTorus torus;
+    private float spin;
+    
+    private RingSoundTransform[] sounds;
+    
     
     private void Start()
     {
         mR = GetComponent<MeshRenderer>();
         block = new MaterialPropertyBlock();
         mR.GetPropertyBlock(block);
-        trans = transform;
         mR.enabled = false;
+        trans = transform;
     }
 
     
@@ -31,14 +40,42 @@ public class RingControll : MonoBehaviour
             block.SetFloat("_Vis", vis);
             mR.SetPropertyBlock(block);
         }
+        
+        UpdateSounds();
+    }
+
+
+    public RingControll Setup(AnimTorus torus)
+    {
+        this.torus = torus;
+        
+        trans = transform;
+        
+        sounds = new RingSoundTransform[SoundInfo.SoundsPerRing];
+        for (int i = 0; i < SoundInfo.SoundsPerRing; i++)
+            sounds[i] = Instantiate(SoundDummy, trans).GetComponent<RingSoundTransform>().Setup(this);
+        
+        spin = Random.Range(0, 360f);
+        
+        return this;
     }
 
 
     public void UpdateRing(Vector3 pos, Quaternion rot, float scale, float anim, float vis, bool local = false)
     {
+        Transform parent = trans.parent;
+        bool hasParent = parent != null;
+        center = hasParent ? parent.TransformPoint(pos) : pos;
+        
+        Vector3 up = rot * Vector3.up;
+        hoopines = 1f - Mathf.Abs((hasParent ? parent.TransformDirection(up) : up).y);
+        
+        radius = hasParent? parent.TransformVector(Vector3.right * scale).magnitude : scale;
+        
+        
         bool shouldBeVisible = anim * vis > .0001f;
 
-        if (shouldBeVisible && CameraPosition.Distance(local ? trans.parent.TransformPoint(pos) : pos) - scale * 2 > 28)
+        if (shouldBeVisible && CameraPosition.Distance(center) - radius > 28)
             shouldBeVisible = false;
         
         if (mR.enabled != shouldBeVisible)
@@ -46,11 +83,13 @@ public class RingControll : MonoBehaviour
             mR.enabled = shouldBeVisible;
             
             if(shouldBeVisible)
-                ActiveRings.Add(this);
+                SoundInfo.RingVisibleEvent(this);
             else
-                ActiveRings.Remove(this);
+                SoundInfo.RingInactiveEvent(this);
         }
             
+        this.anim = anim;
+        this.vis  = vis;
         
         if(!shouldBeVisible)
             return;
@@ -67,20 +106,50 @@ public class RingControll : MonoBehaviour
         }
             
         trans.localScale = Vector3.one * scale;
-        this.anim = anim;
-        this.vis  = vis;
+    }
+
+
+    private void UpdateSounds()
+    {
+        if(torus == null)
+            return;
+        
+        spin += Time.deltaTime * torus.soundSettings.spinSpeed;
+        
+        int count = sounds.Length;
+        float step = 360f / count;
+        float volume = vis;
+        const float multi = 1f / 360f;
+        for (int i = 0; i < count; i++)
+        {
+           float angle = spin + i * step;
+           float vol = (1f - (angle + 180).Wrap(0, 360) * multi <= anim? 1 : 0) * volume;
+           sounds[i].UpdateSound(Quaternion.AngleAxis(angle, Vector3.up) * Vector3.right, vol);
+        }
     }
     
 
-    private static GameObject dummy;
-    public static GameObject Dummy
+    private static GameObject ringDummy;
+    public static GameObject RingRingDummy
     {
         get
         {
-            if(dummy == null)
-                dummy = Resources.Load<GameObject>("Ring");
+            if(ringDummy == null)
+                ringDummy = Resources.Load<GameObject>("Ring");
             
-            return dummy;
+            return ringDummy;
+        }
+    }
+    
+    private static GameObject soundDummy;
+    private static GameObject SoundDummy
+    {
+        get
+        {
+            if(soundDummy == null)
+                soundDummy = Resources.Load<GameObject>("RingSoundTransform");
+            
+            return soundDummy;
         }
     }
 }

@@ -54,13 +54,11 @@ Shader "Torus/Ring"
                 float vis = UNITY_ACCESS_INSTANCED_PROP(Props, _Vis);
                 float dist = length(mul(unity_ObjectToWorld, float4(p, 1)).xyz - _WorldSpaceCameraPos);
                 float size = length(mul(unity_ObjectToWorld, float4(1, 0, 0, 0)));
-                float len  = .15 * (2 * size * 3.1415926535897932384626433);
                 
                 float anim  = UNITY_ACCESS_INSTANCED_PROP(Props, _Anim);
-                float trail = 1; //1.0 - pow(1.0 - saturate((anim - v.uv.x) * 50 * len), 4);
-                
-                o.vertex = UnityObjectToClipPos(p + v.normal * (dist * .0011 * _LineS * trail * vis) / size);
-                o.uv     = float3(v.uv.x, dist, len);
+             
+                o.vertex = UnityObjectToClipPos(p + v.normal * (dist * .0011 * _LineS * vis) / size);
+                o.uv     = float3(v.uv.x, dist, 0);
                 
                 return o;
             }

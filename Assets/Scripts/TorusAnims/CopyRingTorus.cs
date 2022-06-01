@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CopyRingTorus : RingTorus
 {
+    [Space]
     public AppearingRingTorus mate;
     public float vis;
     public int seed;
@@ -37,7 +38,7 @@ public class CopyRingTorus : RingTorus
         for (int i = 0; i < ringCount; i++)
         {
             int value = id[i];
-            states[i] = new RingState(1, vis * (value == 0? 1 : Mathf.Clamp01(completion * ringCount - (ringCount - 1 - value))));
+            states[i] = new RingState(completion, vis * (value == 0? 1 : Mathf.Clamp01(completion * ringCount - (ringCount - 1 - value))));
         }
             
     }

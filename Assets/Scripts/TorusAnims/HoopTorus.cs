@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class HoopTorus : AnimTorus
 {
+    [Space]
     [Range(0, 1)]
     public float spread;
     

@@ -50,7 +50,7 @@ public class FlowerTorus : HoopTorus
     protected override void UpdateRingStates()
     {
         for (int i = 0; i < ringCount; i++)
-            states[i] = new RingState(1, 1);
+            states[i] = new RingState(completion, 1);
     }
 
 

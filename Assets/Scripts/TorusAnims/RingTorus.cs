@@ -8,6 +8,7 @@ public class RingTorus : AnimTorus
     public float spin;
     public float spinOffset;
     
+    
     private void Start()
     {
         CreateRings();

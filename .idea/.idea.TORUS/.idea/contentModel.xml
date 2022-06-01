@@ -695,6 +695,75 @@
           </e>
           <e p="ValueSync.cs" t="Include" />
         </e>
+        <e p="Milan" t="Include">
+          <e p="Audio" t="Include">
+            <e p="Oculus" t="Include">
+              <e p="Spatializer" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="Oculus.Spatializer.Editor.asmdef" t="Include" />
+                  <e p="ONSPAudioPluginUpdater.cs" t="Include" />
+                  <e p="ONSPAudioPluginUpdaterStub.cs" t="Include" />
+                  <e p="ONSPAudioSourceEditor.cs" t="Include" />
+                  <e p="ONSPPropagationGeometryEditor.cs" t="Include" />
+                  <e p="ONSPPropagationMaterialEditor.cs" t="Include" />
+                  <e p="ONSPPropagationSerializationManager.cs" t="Include" />
+                  <e p="ONSPReflectionCustomGUI.cs" t="Include" />
+                </e>
+                <e p="Oculus.Spatializer.asmdef" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="helpers" t="Include">
+                    <e p="ONSPReflectionZone.cs" t="Include" />
+                  </e>
+                  <e p="OculusSpatializerUnity.cs" t="Include" />
+                  <e p="ONSPAmbisonicsNative.cs" t="Include" />
+                  <e p="ONSPAudioSource.cs" t="Include" />
+                  <e p="ONSPProfiler.cs" t="Include" />
+                  <e p="ONSPPropagationGeometry.cs" t="Include" />
+                  <e p="ONSPPropagationInterface.cs" t="Include" />
+                  <e p="ONSPPropagationMaterial.cs" t="Include" />
+                  <e p="ONSPPropagationSettings.cs" t="Include" />
+                  <e p="ONSPSettings.cs" t="Include" />
+                  <e p="ONSPVersion.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="SoundSystem" t="Include">
+              <e p="AudioBlendParameter.cs" t="Include" />
+              <e p="AudioBlendTrack" t="Include">
+                <e p="AudioBlendBehaviour.cs" t="Include" />
+                <e p="AudioBlendClip.cs" t="Include" />
+                <e p="AudioBlendMixerBehaviour.cs" t="Include" />
+                <e p="AudioBlendTrack.cs" t="Include" />
+              </e>
+              <e p="Singleton.cs" t="Include" />
+              <e p="SoundInstance.cs" t="Include" />
+              <e p="SoundSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Utils" t="Include">
+            <e p="DebugButton" t="Include">
+              <e p="DebugButtonAttribute.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DebugButtonDrawer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="FPS Counter" t="Include">
+              <e p="CustomRenderQueue.cs" t="Include" />
+              <e p="FPSCounter.cs" t="Include" />
+              <e p="Kabaret_UI.shader" t="Include" />
+            </e>
+          </e>
+          <e p="VR" t="Include">
+            <e p="SuperBasicMoveAroundJoystick.cs" t="Include" />
+            <e p="VRInput" t="Include">
+              <e p="Head.cs" t="Include" />
+              <e p="SmoothFollowController.cs" t="Include" />
+              <e p="SmoothFollowHead.cs" t="Include" />
+              <e p="VRController.cs" t="Include" />
+              <e p="VRInput.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Samples" t="Include">
           <e p="Unity Recorder" t="Include">
             <e p="2.5.7" t="Include">
@@ -706,13 +775,13 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Misc" t="Include">
-            <e p="ActiveRings.cs" t="Include" />
             <e p="AnimUpdater.cs" t="Include" />
             <e p="CameraPosition.cs" t="Include" />
             <e p="FloorTiles.cs" t="Include" />
             <e p="LineThickness.cs" t="Include" />
             <e p="MathTorusAnim.cs" t="Include" />
             <e p="RingControll.cs" t="Include" />
+            <e p="SoundInfo.cs" t="Include" />
           </e>
           <e p="Orb.cs" t="Include" />
           <e p="Player" t="Include">
@@ -728,6 +797,7 @@
             <e p="HoopTorus.cs" t="Include" />
             <e p="HornTorus.cs" t="Include" />
             <e p="PieceTorus.cs" t="Include" />
+            <e p="RingSoundTransform.cs" t="Include" />
             <e p="RingToHoop.cs" t="Include" />
             <e p="RingTorus.cs" t="Include" />
           </e>
@@ -749,6 +819,7 @@
           </e>
         </e>
         <e p="Shaders" t="Include">
+          <e p="Dot.shader" t="Include" />
           <e p="Egg.shader" t="Include" />
           <e p="Ring.shader" t="Include" />
           <e p="T.cginc" t="Include" />
@@ -768,6 +839,8 @@
       <e p="Nrjwolf.Tools.AttachAttributes.csproj" t="IncludeRecursive" />
       <e p="Nrjwolf.Tools.Editor.AttachAttributes.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
+      <e p="Oculus.Spatializer.csproj" t="IncludeRecursive" />
+      <e p="Oculus.Spatializer.Editor.csproj" t="IncludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="ShapesEditor.csproj" t="IncludeRecursive" />
       <e p="ShapesRuntime.csproj" t="IncludeRecursive" />
