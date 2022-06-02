@@ -2228,6 +2228,8 @@ MonoBehaviour:
   allToruses: []
   activeRings: []
   soundsPerRing: 6
+  globalMulti: 1
+  constantSpeed: 0
   showSounds: 0
 --- !u!4 &276524224
 Transform:

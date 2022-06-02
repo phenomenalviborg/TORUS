@@ -115,7 +115,12 @@ public class RingControll : MonoBehaviour
         if(torus == null)
             return;
         
-        spin += Time.deltaTime * torus.soundSettings.spinSpeed;
+        if(SoundInfo.ConstantSpeed)
+            spin += Time.deltaTime * torus.soundSettings.spinSpeed / (radius * 2 * Mathf.PI) * SoundInfo.GlobalMulti;
+        else
+            spin += Time.deltaTime * torus.soundSettings.spinSpeed * SoundInfo.GlobalMulti;
+        
+        spin = spin.Wrap(-360f, 360f);
         
         int count = sounds.Length;
         float step = 360f / count;

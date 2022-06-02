@@ -12,6 +12,8 @@ public class SoundInfo : Singleton<SoundInfo>
     
     [Space]
     public int soundsPerRing;
+    public float globalMulti = 1;
+    public bool constantSpeed;
 
     public static int SoundsPerRing { get { return Inst.soundsPerRing; } }
     
@@ -19,6 +21,8 @@ public class SoundInfo : Singleton<SoundInfo>
     public bool showSounds;
     
     public static bool ShowSounds { get { return Inst.showSounds; } }
+    public static bool ConstantSpeed { get { return Inst.constantSpeed; } }
+    public static float GlobalMulti { get { return Inst.globalMulti; } }
 
     private void Update()
     {
