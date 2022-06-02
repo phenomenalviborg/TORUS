@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: TORUS
+  productName: Torus
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -139,8 +139,9 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 77d9ce93c3e814a4ca4b7426a1510653, type: 2}
-  - {fileID: 6484600036885441987, guid: 3a3f5ae4b7a0dbb41963be208faff6d4, type: 2}
+  - {fileID: -7802568367997678619, guid: 3a3f5ae4b7a0dbb41963be208faff6d4, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
