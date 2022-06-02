@@ -29,30 +29,28 @@ public class RingSoundTransform : MonoBehaviour
 
     public float UpdateSound(float volume)
     {
-        this.volume = Mathf.Lerp(this.volume, volume, Time.deltaTime * 50);
+        this.volume = volume;
 
         if (child != null)
-            child.localScale = Vector3.one * .04f * this.volume * (SoundInfo.ShowSounds ? 1 : 0);
+            child.localScale = Vector3.one * .04f * volume * (SoundInfo.ShowSounds ? 1 : 0);
         
         //set stuff on soundsources
-        SoundSystem.Instance.SetVolume(soundID, this.volume);
+        SoundSystem.Instance.SetVolume(soundID, volume * soundData.volume);
 
-        if (soundData.pitchMode == SoundData.PitchMode.Hoopyness)
-            SoundSystem.Instance.SetPitch(soundID,ring.hoopines+1);
         
-        
-        return this.volume;
-        /*
         switch (soundData.pitchMode)
         {
             case SoundData.PitchMode.Radius :
-                var remappedRadius = ring.radius.
-                SoundSystem.Instance.SetPitch(ring.);
-
+                var remappedRadius = ring.radius.Remap(8, 0, -1, 2);
+                SoundSystem.Instance.SetPitch(soundID,remappedRadius);
+                break;
+            case SoundData.PitchMode.Hoopyness :
+                SoundSystem.Instance.SetPitch(soundID,ring.hoopines+1);
+                break;
         }
-        if(soundData.pitchMode == )
-            SoundSystem.Instance.SetPitch(ring.);#1#*/
-        
+
+        return this.volume;
+
     }
 
     void Awake()

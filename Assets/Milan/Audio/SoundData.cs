@@ -7,6 +7,8 @@ public class SoundData : Singleton<SoundData>
 {
     [Range(0,1)]
     public float doppler =1;
+    [Range(0,1)]
+    public float volume =1;
     public bool randoOffsetInClips = false;
     public enum PitchMode {Nothing,Radius, Hoopyness, Height, All}
     public PitchMode pitchMode;
