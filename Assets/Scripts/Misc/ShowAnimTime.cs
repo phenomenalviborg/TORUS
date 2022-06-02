@@ -17,7 +17,7 @@ public class ShowAnimTime : MonoBehaviour
     private void Update()
     {
         TimeSpan ts = TimeSpan.FromSeconds(anim.animTime);
-
-        text.text = anim.animTime.ToString("F5").PadRight(20) + $"{ts.TotalMinutes:00}:{ts.Seconds:00}";
+        float perc = anim.animTime / anim.loopTime.y * 100;
+        text.text = anim.animTime.ToString("F3").PadLeft(8) + " / " + anim.loopTime.y + "   ---   " + (perc.ToString("F1") + "%").PadLeft(6) + "   ---   " + $"{ts.TotalMinutes:00}:{ts.Seconds:00}";
     }
 }

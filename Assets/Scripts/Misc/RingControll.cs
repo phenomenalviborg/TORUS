@@ -123,7 +123,7 @@ public class RingControll : MonoBehaviour
             return;
         
         if(SoundInfo.ConstantSpeed)
-            spin += Time.deltaTime * torus.soundSettings.spinSpeed / (radius * 2 * Mathf.PI) * SoundInfo.GlobalMulti;
+            spin += Time.deltaTime * torus.soundSettings.spinSpeed / (Mathf.Max(.01f, radius) * 2 * Mathf.PI) * SoundInfo.GlobalMulti;
         else
             spin += Time.deltaTime * torus.soundSettings.spinSpeed * SoundInfo.GlobalMulti;
         

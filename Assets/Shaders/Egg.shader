@@ -50,7 +50,7 @@ Shader "Unlit/Egg"
                 float d = dot(normalize(i.normal), normalize(i.viewDir));
                 float t = (1.0 - pow(1.0 - i.t, 8)) * i.t;
                 float dist = pow(saturate(1 - i.dist * .01), 6);
-                float u = (sin(_Time.y * 2 - i.t * 16) + 1) * .035 + .95;
+                float u = (sin(_Time.y * 2 - i.t * 16) + 1) * .065 + .925;
                 return saturate(pow(d, 6)) * .7 * t * dist * u;
             }
             ENDCG
