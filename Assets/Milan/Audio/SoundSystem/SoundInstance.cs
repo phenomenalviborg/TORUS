@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace atomtwist.AudioNodes
 {
@@ -52,6 +53,8 @@ namespace atomtwist.AudioNodes
             //spatialize post effects bruh important
             audioSource.spatializePostEffects = true;
             audioSource.clip = clipToPlay;
+            if(this.soundSettings.startWithRandomOffset)
+                audioSource.time = Random.Range(0, clipToPlay.length);
             if (this.soundSettings.delay != 0)
                 audioSource.PlayScheduled(AudioSettings.dspTime + this.soundSettings.delay);
             else if (this.soundSettings.delay == 0)
