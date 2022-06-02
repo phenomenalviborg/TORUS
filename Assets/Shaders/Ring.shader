@@ -58,7 +58,7 @@ Shader "Torus/Ring"
                 float anim  = UNITY_ACCESS_INSTANCED_PROP(Props, _Anim);
              
                 o.vertex = UnityObjectToClipPos(p + v.normal * (dist * .0011 * _LineS * vis) / size);
-                o.uv     = float3(v.uv.x, dist, 0);
+                o.uv     = float3(v.uv.x, dist, vis);
                 
                 return o;
             }
@@ -71,7 +71,7 @@ Shader "Torus/Ring"
                 
                 float tint  = 1.0 - pow(1.0 - pow(saturate(1.0 - i.uv.y * .03), 7), 4);
                 float trail = saturate((anim - i.uv.x) * 20 * i.uv.z);
-                return tint * 1.5; //stex2D(_MainTex, float2(trail, 0));// * tint * 1.5;
+                return tint * 1.5 * i.uv.z * saturate(_LineS); //stex2D(_MainTex, float2(trail, 0));// * tint * 1.5;
             }
             ENDCG
         }
