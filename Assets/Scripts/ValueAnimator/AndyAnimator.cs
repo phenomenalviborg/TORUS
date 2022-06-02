@@ -34,7 +34,7 @@ public class AndyAnimator : MonoBehaviour
             DateTime n = DateTime.Now;
             
             int hour = (24 + n.Hour - 4) % 24;
-            time = hour * 60 * 60 + n.Minute * 60 + n.Second + n.Millisecond * .001f;
+            time = (hour * 60 * 60 + n.Minute * 60 + n.Second) % Mathf.FloorToInt(loopTime.y) + n.Millisecond * .001f;
         }
         else
         {
