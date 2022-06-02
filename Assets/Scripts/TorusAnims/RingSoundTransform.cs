@@ -27,17 +27,16 @@ public class RingSoundTransform : MonoBehaviour
     }
 
 
-    public void UpdateSound(float volume)
+    public float UpdateSound(float volume)
     {
-        this.volume = volume;
+        this.volume = Mathf.Lerp(this.volume, volume, Time.deltaTime * 50);
 
         if (child != null)
-            child.localScale = Vector3.one * .04f * volume * (SoundInfo.ShowSounds ? 1 : 0);
+            child.localScale = Vector3.one * .04f * this.volume * (SoundInfo.ShowSounds ? 1 : 0);
         
         //set stuff on soundsources
-        SoundSystem.Instance.SetVolume(soundID, volume);
+        SoundSystem.Instance.SetVolume(soundID, this.volume);
 
-<<<<<<< Updated upstream
         if (soundData.pitchMode == SoundData.PitchMode.Hoopyness)
             SoundSystem.Instance.SetPitch(soundID,ring.hoopines+1);
         
@@ -54,10 +53,6 @@ public class RingSoundTransform : MonoBehaviour
         if(soundData.pitchMode == )
             SoundSystem.Instance.SetPitch(ring.);#1#*/
         
-=======
-      
-     
->>>>>>> Stashed changes
     }
 
     void Awake()
