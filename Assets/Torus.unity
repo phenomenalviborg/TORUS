@@ -1508,7 +1508,7 @@ GameObject:
   - component: {fileID: 241379238}
   - component: {fileID: 241379239}
   m_Layer: 0
-  m_Name: Hoops
+  m_Name: Hoops T1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2464,7 +2464,7 @@ GameObject:
   - component: {fileID: 338125547}
   - component: {fileID: 338125550}
   m_Layer: 0
-  m_Name: Rings
+  m_Name: Rings T0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3205,7 +3205,7 @@ GameObject:
   - component: {fileID: 463558835}
   - component: {fileID: 463558836}
   m_Layer: 0
-  m_Name: Rings
+  m_Name: Rings T3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3242,7 +3242,7 @@ MonoBehaviour:
   thickness: 0.5
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 3
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
@@ -5705,7 +5705,7 @@ GameObject:
   - component: {fileID: 951949148}
   - component: {fileID: 951949149}
   m_Layer: 0
-  m_Name: Hoops
+  m_Name: Hoops T3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5742,7 +5742,7 @@ MonoBehaviour:
   thickness: 0.5
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 3
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -8626,20 +8626,20 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: -0
+        outSlope: -0
         tangentMode: 0
-        weightedMode: 0
+        weightedMode: 3
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.09885932
       - serializedVersion: 3
         time: 1
         value: 1
-        inSlope: 0
-        outSlope: 0
+        inSlope: -0.043043945
+        outSlope: -0.043043945
         tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
+        weightedMode: 3
+        inWeight: 0.09885931
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -13562,7 +13562,7 @@ GameObject:
   - component: {fileID: 2088205556}
   - component: {fileID: 2088205557}
   m_Layer: 0
-  m_Name: CopyTorus
+  m_Name: CopyTorus T2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
