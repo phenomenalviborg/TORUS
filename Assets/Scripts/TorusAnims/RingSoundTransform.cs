@@ -29,7 +29,7 @@ public class RingSoundTransform : MonoBehaviour
 
     public float UpdateSound(float volume)
     {
-        this.volume = Mathf.Lerp(this.volume, volume, Time.deltaTime * 10);
+        this.volume = Mathf.Lerp(this.volume, volume, Time.deltaTime * 50);
 
         if (child != null)
             child.localScale = Vector3.one * .04f * this.volume * (SoundInfo.ShowSounds ? 1 : 0);
