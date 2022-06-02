@@ -727,6 +727,7 @@
                 </e>
               </e>
             </e>
+            <e p="SoundData.cs" t="Include" />
             <e p="SoundSystem" t="Include">
               <e p="AudioBlendParameter.cs" t="Include" />
               <e p="AudioBlendTrack" t="Include">

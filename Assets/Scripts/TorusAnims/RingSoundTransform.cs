@@ -52,6 +52,7 @@ public class RingSoundTransform : MonoBehaviour
         }
         if(soundData.pitchMode == )
             SoundSystem.Instance.SetPitch(ring.);#1#*/
+        
     }
 
     void Awake()
