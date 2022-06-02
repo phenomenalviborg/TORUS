@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ATVR;
 using UnityEngine;
 
 public class AndyAnimator : MonoBehaviour
@@ -21,6 +22,13 @@ public class AndyAnimator : MonoBehaviour
 
     private void Update()
     {
+        if (VRInput.RightHand.GetPressDown(Button.ButtonOne))
+        {
+            useSystemTime = !useSystemTime;
+            speed = 1;
+        }
+        
+        
         if (useSystemTime)
         {
             DateTime n = DateTime.Now;
@@ -29,7 +37,14 @@ public class AndyAnimator : MonoBehaviour
             time = hour * 60 * 60 + n.Minute * 60 + n.Second + n.Millisecond * .001f;
         }
         else
+        {
+            speed = Mathf.Clamp(speed + VRInput.RightHand.GetJoystick().x * Time.deltaTime * 5, -10, 10);
+            if(VRInput.RightHand.GetPressDown(Button.Joystick))
+                speed = 1;
+            
             time += Time.deltaTime * speed;
+        }
+            
         
         animTime = time % loopTime.y + loopTime.x;
         

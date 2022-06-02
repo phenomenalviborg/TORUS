@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using ATVR;
 using UnityEngine;
 
 
@@ -17,16 +18,19 @@ public class SoundInfo : Singleton<SoundInfo>
 
     public static int SoundsPerRing { get { return Inst.soundsPerRing; } }
     
-    [Header("Press \"Fire2\" (Right Click) to toggle")]
+    [Header("Press 8 or VR Button to toggle")]
     public bool showSounds;
+    public Hand hand;
+    public Button button;
     
     public static bool ShowSounds { get { return Inst.showSounds; } }
     public static bool ConstantSpeed { get { return Inst.constantSpeed; } }
     public static float GlobalMulti { get { return Inst.globalMulti; } }
 
+    
     private void Update()
     {
-        if(Input.GetButtonDown("Fire2"))
+        if(Input.GetKeyDown(KeyCode.Alpha8) || VRInput.Get(hand).GetPressDown(button))
             showSounds = !showSounds;
     }
 
