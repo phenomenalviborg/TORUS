@@ -48,6 +48,7 @@ Shader "Unlit/Dot"
 
             fixed4 frag (v2f i) : SV_Target
             {
+                UNITY_SETUP_INSTANCE_ID(i);
                 float tint = .3 + .7 * (1.0 - pow(1.0 - pow(saturate(1.0 - i.dist * .03), 7), 4));
                 return fixed4(.85 * tint, .125 * tint, .15 * tint, 1);
             }

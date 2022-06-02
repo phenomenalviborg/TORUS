@@ -18,7 +18,7 @@ public class SoundInfo : Singleton<SoundInfo>
 
     public static int SoundsPerRing { get { return Inst.soundsPerRing; } }
     
-    [Header("Press 8 or VR Button to toggle")]
+    [Header("Press RightClick or VR Button to toggle")]
     public bool showSounds;
     public Hand hand;
     public Button button;
