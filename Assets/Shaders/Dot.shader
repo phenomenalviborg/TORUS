@@ -42,7 +42,7 @@ Shader "Unlit/Dot"
                 float dist = length(mul(unity_ObjectToWorld, float4(p, 1)).xyz - _WorldSpaceCameraPos);
                 float size = length(mul(unity_ObjectToWorld, float4(1, 0, 0, 0)));
                 
-                o.vertex = UnityObjectToClipPos(v.vertex * (dist * .0075 * _LineS) / size);
+                o.vertex = UnityObjectToClipPos(v.vertex * (dist * .0075 * .5 * _LineS) / size);
                 o.dist = dist;
                 return o;
             }
