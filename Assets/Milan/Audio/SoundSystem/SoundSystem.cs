@@ -215,7 +215,7 @@ namespace atomtwist.AudioNodes
         /// <param name="doppler"></param>
         /// <param name="loop"></param>
         /// <returns></returns>
-        public int Play(List<AudioClip> clips,Vector3 playAtPosition,SoundStyle style = SoundStyle.Single, bool spatialized = true, float spatialBlend = 1, AudioMixerGroup mixerGroup = null, float doppler = 0, bool loop = false,float volume = 1,float pitch = 1)
+        public int Play(List<AudioClip> clips,Vector3 playAtPosition,SoundStyle style = SoundStyle.Single, bool spatialized = true, float spatialBlend = 1, AudioMixerGroup mixerGroup = null, float doppler = 0, bool loop = false,float volume = 1,float pitch = 1, bool startWithRandomOffset = false)
         {
             SoundsSettings ss = new SoundsSettings();
             ss.audioClips = clips;
@@ -228,6 +228,7 @@ namespace atomtwist.AudioNodes
             ss.loop = loop;
             ss.mixerGroup = mixerGroup;
             ss.soundStyle = style;
+            ss.startWithRandomOffset = startWithRandomOffset;
 
 
             return Play(ss);
@@ -247,7 +248,7 @@ namespace atomtwist.AudioNodes
         /// <param name="doppler"></param>
         /// <param name="loop"></param>
         /// <returns></returns>
-        public int Play(List<AudioClip> clips,Transform playAtTransform,SoundStyle style = SoundStyle.Single, bool spatialized = true, float spatialBlend = 1, AudioMixerGroup mixerGroup = null,float doppler = 0, bool loop = false, float volume = 1,float pitch =1 )
+        public int Play(List<AudioClip> clips,Transform playAtTransform,SoundStyle style = SoundStyle.Single, bool spatialized = true, float spatialBlend = 1, AudioMixerGroup mixerGroup = null,float doppler = 0, bool loop = false, float volume = 1,float pitch =1, bool startWithRandomOffset = false)
         {
             SoundsSettings ss = new SoundsSettings();
             ss.audioClips = clips;
@@ -260,6 +261,7 @@ namespace atomtwist.AudioNodes
             ss.loop = loop;
             ss.mixerGroup = mixerGroup;
             ss.soundStyle = style;
+            ss.startWithRandomOffset = startWithRandomOffset;
 
 
             return Play(ss);
@@ -407,6 +409,7 @@ namespace atomtwist.AudioNodes
             clone.spatialBlend = this.spatialBlend;
             clone.playAtTransform = this.playAtTransform;
             clone.positionToPlayAt = this.positionToPlayAt;
+            clone.startWithRandomOffset = this.startWithRandomOffset;
 
             return clone;
         }
@@ -448,5 +451,7 @@ namespace atomtwist.AudioNodes
 
         [Range(0, 3)]
         public double delay = 0;
+
+        public bool startWithRandomOffset = false;
     }
 }
