@@ -60,3 +60,6 @@ crashlytics-build.properties
 
 Assets/Meshes/FloorTorus.fbx
 Assets/Meshes/FloorTorus.fbx.meta
+
+#idea folder
+.idea/

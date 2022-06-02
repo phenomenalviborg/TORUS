@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Torus_OLD.unity
     guid: eb84a5c41e9cf0740bfb260cfb70243a
   - enabled: 1
-    path: Assets/Milan/Torus_MilanVRTest.unity
-    guid: 1dcbfbf99340044edbb09cca4b2bea9b
+    path: Assets/Torus.unity
+    guid: cabad871f5373864ea74ad374f1b5663
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 77d9ce93c3e814a4ca4b7426a1510653, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 403c00d04baf2144c869c27294cfb76e, type: 2}
