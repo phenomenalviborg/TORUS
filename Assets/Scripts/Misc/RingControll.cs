@@ -21,7 +21,8 @@ public class RingControll : MonoBehaviour
     
     [HideInInspector]
     public RingSoundTransform[] sounds;
-    
+    private Transform spinTrans;
+    private int soundCount;
     
     private void Start()
     {
@@ -52,9 +53,15 @@ public class RingControll : MonoBehaviour
         
         trans = transform;
         
-        sounds = new RingSoundTransform[SoundInfo.SoundsPerRing];
-        for (int i = 0; i < SoundInfo.SoundsPerRing; i++)
-            sounds[i] = Instantiate(SoundDummy, trans).GetComponent<RingSoundTransform>().Setup(this);
+        spinTrans = new GameObject("SpinTrans").transform;
+        spinTrans.SetParent(trans, false);
+        
+        soundCount = SoundInfo.SoundsPerRing;
+        sounds = new RingSoundTransform[soundCount];
+        float step = 360f / soundCount;
+        for (int i = 0; i < soundCount; i++)
+            sounds[i] = Instantiate(SoundDummy, spinTrans).GetComponent<RingSoundTransform>().
+                Setup(this, Quaternion.AngleAxis(i * step, Vector3.up) * Vector3.right);
         
         spin = Random.Range(0, 360f);
         
@@ -122,15 +129,18 @@ public class RingControll : MonoBehaviour
         
         spin = spin.Wrap(-360f, 360f);
         
-        int count = sounds.Length;
-        float step = 360f / count;
         float volume = mR.enabled? vis : 0;
+        
+        if(mR.enabled)
+            spinTrans.localRotation = Quaternion.AngleAxis(spin, Vector3.up);
+        
+        float step = 360f / soundCount;
         const float multi = 1f / 360f;
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < soundCount; i++)
         {
            float angle = spin + i * step;
            float vol = (1f - (angle + 180).Wrap(0, 360) * multi <= anim? 1 : 0) * volume;
-           sounds[i].UpdateSound(Quaternion.AngleAxis(angle, Vector3.up) * Vector3.right, vol);
+           sounds[i].UpdateSound(vol);
         }
     }
     
