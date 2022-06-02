@@ -4,7 +4,8 @@ Shader "Unlit/Dot"
     {
         Tags { "RenderType"="Opaque" }
         LOD 100
-
+        CULL Off
+ 
         Pass
         {
             CGPROGRAM

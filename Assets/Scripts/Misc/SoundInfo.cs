@@ -30,7 +30,7 @@ public class SoundInfo : Singleton<SoundInfo>
     
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha8) || VRInput.Get(hand).GetPressDown(button))
+        if(Input.GetKeyDown(KeyCode.Mouse1) || VRInput.Get(hand).GetPressDown(button))
             showSounds = !showSounds;
     }
 

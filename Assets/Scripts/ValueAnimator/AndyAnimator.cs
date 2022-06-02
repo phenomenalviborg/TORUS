@@ -46,7 +46,7 @@ public class AndyAnimator : MonoBehaviour
         }
             
         
-        animTime = time % loopTime.y + loopTime.x;
+        animTime = time.Wrap(0, loopTime.y) + loopTime.x;
         
         int count = AllAnims.Count;
         for (int i = 0; i < count; i++)
