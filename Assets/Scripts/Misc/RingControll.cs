@@ -131,17 +131,20 @@ public class RingControll : MonoBehaviour
         
         float volume = mR.enabled? vis : 0;
         
-        if(mR.enabled)
-            spinTrans.localRotation = Quaternion.AngleAxis(spin, Vector3.up);
         
         float step = 360f / soundCount;
         const float multi = 1f / 360f;
+        
+        float maxVol = 0;
         for (int i = 0; i < soundCount; i++)
         {
            float angle = spin + i * step;
            float vol = (1f - (angle + 180).Wrap(0, 360) * multi <= anim? 1 : 0) * volume;
-           sounds[i].UpdateSound(vol);
+           maxVol = Mathf.Max(maxVol, sounds[i].UpdateSound(vol));
         }
+        
+        //if(maxVol > .000001f)
+            spinTrans.localRotation = Quaternion.AngleAxis(spin, Vector3.up);
     }
     
 
