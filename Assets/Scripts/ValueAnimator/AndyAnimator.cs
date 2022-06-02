@@ -13,6 +13,9 @@ public class AndyAnimator : MonoBehaviour
     [Space]
     public bool useSystemTime;
     
+    [Header("AnimTime ReadOut")]
+    public float animTime;
+    
     public static readonly List<ValueAnimator> AllAnims = new List<ValueAnimator>();
 
 
@@ -28,10 +31,10 @@ public class AndyAnimator : MonoBehaviour
         else
             time += Time.deltaTime * speed;
         
-        float t = time % loopTime.y + loopTime.x;
+        animTime = time % loopTime.y + loopTime.x;
         
         int count = AllAnims.Count;
         for (int i = 0; i < count; i++)
-            AllAnims[i].Evaluate(t);
+            AllAnims[i].Evaluate(animTime);
     }
 }

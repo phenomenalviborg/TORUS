@@ -15,11 +15,18 @@ public class SoundInfo : Singleton<SoundInfo>
 
     public static int SoundsPerRing { get { return Inst.soundsPerRing; } }
     
+    [Header("Press \"Fire2\" (Right Click) to toggle")]
     public bool showSounds;
     
     public static bool ShowSounds { get { return Inst.showSounds; } }
 
-    
+    private void Update()
+    {
+        if(Input.GetButtonDown("Fire2"))
+            showSounds = !showSounds;
+    }
+
+
     public static void SetTorus(AnimTorus torus)
     {
         Inst.allToruses.Add(torus);
