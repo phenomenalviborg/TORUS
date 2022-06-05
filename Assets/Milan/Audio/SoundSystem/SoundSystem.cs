@@ -215,7 +215,7 @@ namespace atomtwist.AudioNodes
         /// <param name="doppler"></param>
         /// <param name="loop"></param>
         /// <returns></returns>
-        public int Play(List<AudioClip> clips,Vector3 playAtPosition,SoundStyle style = SoundStyle.Single, bool spatialized = true, float spatialBlend = 1, AudioMixerGroup mixerGroup = null, float doppler = 0, bool loop = false,float volume = 1,float pitch = 1, bool startWithRandomOffset = false)
+        public int Play(List<AudioClip> clips,Vector3 playAtPosition,SoundStyle style = SoundStyle.Single, bool spatialized = true, float spatialBlend = 1, AudioMixerGroup mixerGroup = null, float doppler = 0, bool loop = false,float volume = 1,float pitch = 1, bool startWithRandomOffset = false, int transpose =0)
         {
             SoundsSettings ss = new SoundsSettings();
             ss.audioClips = clips;
@@ -229,6 +229,7 @@ namespace atomtwist.AudioNodes
             ss.mixerGroup = mixerGroup;
             ss.soundStyle = style;
             ss.startWithRandomOffset = startWithRandomOffset;
+            ss.transpose = transpose;
 
 
             return Play(ss);
@@ -248,7 +249,7 @@ namespace atomtwist.AudioNodes
         /// <param name="doppler"></param>
         /// <param name="loop"></param>
         /// <returns></returns>
-        public int Play(List<AudioClip> clips,Transform playAtTransform,SoundStyle style = SoundStyle.Single, bool spatialized = true, float spatialBlend = 1, AudioMixerGroup mixerGroup = null,float doppler = 0, bool loop = false, float volume = 1,float pitch =1, bool startWithRandomOffset = false)
+        public int Play(List<AudioClip> clips,Transform playAtTransform,SoundStyle style = SoundStyle.Single, bool spatialized = true, float spatialBlend = 1, AudioMixerGroup mixerGroup = null,float doppler = 0, bool loop = false, float volume = 1,float pitch =1, bool startWithRandomOffset = false, int transpose = 0)
         {
             SoundsSettings ss = new SoundsSettings();
             ss.audioClips = clips;
@@ -262,6 +263,7 @@ namespace atomtwist.AudioNodes
             ss.mixerGroup = mixerGroup;
             ss.soundStyle = style;
             ss.startWithRandomOffset = startWithRandomOffset;
+            ss.transpose = transpose;
 
 
             return Play(ss);

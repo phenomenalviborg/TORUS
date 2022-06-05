@@ -51,7 +51,7 @@ namespace atomtwist.AudioNodes
             soundId = id;
             ApplySettings(soundSettings);
             //spatialize post effects bruh important
-            audioSource.spatializePostEffects = true;
+            audioSource.spatializePostEffects = false;
             audioSource.clip = clipToPlay;
             if(this.soundSettings.startWithRandomOffset)
                 audioSource.time = Random.Range(0, clipToPlay.length);
