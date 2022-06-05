@@ -2364,21 +2364,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a739fbaf50445e2939cdb53c99a76f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doppler: 1
+  doppler: 0
   volume: 1
   spatialBlend: 1
-  maxPitchHeight: 5.58
+  maxPitchHeight: 7.98
   randoOffsetInClips: 1
   pitchMode: 3
   settingsPerTorus:
-  - transpose: 0
+  - transpose: 7
     mixerGroup: {fileID: 8628530261950150491, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: 60469208da38f48838c263580d853259, type: 3}
+    - {fileID: 8300000, guid: a99fdf64392f34a51bcc5a411b30e501, type: 3}
   - transpose: 0
     mixerGroup: {fileID: 3007334509182644378, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: fff56b00300654c37a73b6732d8402a8, type: 3}
+    - {fileID: 8300000, guid: 60469208da38f48838c263580d853259, type: 3}
   - transpose: -5
     mixerGroup: {fileID: -7779787819614406963, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
@@ -13396,9 +13396,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6e1cf1a0b9e75497181566384d7b13c5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b8600c125f82646cd82f95b284db06ce, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
