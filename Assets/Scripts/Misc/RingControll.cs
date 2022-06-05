@@ -16,7 +16,7 @@ public class RingControll : MonoBehaviour
     public float radius;
     public float hoopines;
     
-    private AnimTorus torus;
+    public AnimTorus torus;
     private float spin;
     
     [HideInInspector]

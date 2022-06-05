@@ -77,6 +77,16 @@ namespace atomtwist.AudioNodes
             audioSource.pitch = pitch;
         }
 
+        public void SetSpatialBlend(float blend)
+        {
+            audioSource.spatialBlend = blend;
+        }
+
+        public void SetDoppler(float doppler)
+        {
+            audioSource.dopplerLevel = doppler;
+        }
+
         float[] clipSampleData = new float[1024];
         private float clipLoudness;
         public float GetLoudness()

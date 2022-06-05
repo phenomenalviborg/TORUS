@@ -379,6 +379,44 @@ namespace atomtwist.AudioNodes
                 }
             }
         }
+        
+        public void SetSpatialBlend(int soundID, float clipSpatialBlend)
+        {
+            // find the clip with the ID, set the volume. 
+            if (_playingInstances.Count != 0)
+            {
+                foreach (var instance in _playingInstances)
+                {
+                    if (instance.soundId == soundID)
+                    {
+                        instance.SetSpatialBlend(clipSpatialBlend);
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+            }
+        }
+        
+        public void SetDoppler(int soundID, float clipDoppler)
+        {
+            // find the clip with the ID, set the volume. 
+            if (_playingInstances.Count != 0)
+            {
+                foreach (var instance in _playingInstances)
+                {
+                    if (instance.soundId == soundID)
+                    {
+                        instance.SetDoppler(clipDoppler);
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+            }
+        }
     }
 
     public enum SoundStyle
