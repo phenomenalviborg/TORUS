@@ -13,7 +13,83 @@ public class RingSoundTransform : MonoBehaviour
     public AudioSource audioSource;
 
 
+    [Range(0, 15)] public float fadeIn;
+    [Range(0, 15)] public float fadeOut;
+    
+    public void Play()
+    {
+        audioSource.Play();
+        StartFadeIn();
+    }
+
+
+    public void Stop()
+    {
+        StartFadeOut();
+        audioSource.SetScheduledEndTime(AudioSettings.dspTime + fadeOut);
+    }
+
+
     private Transform trans, child;
+
+
+    //fading
+    bool fadingIn;
+
+    public void StartFadeIn()
+    {
+        timeInSamples = AudioSettings.outputSampleRate * 2 * fadeIn;
+        gain = 0;
+        counter = 0;
+        fadingOut = false;
+        fadingIn = true;
+    }
+
+    bool fadingOut;
+
+    public void StartFadeOut()
+    {
+        timeInSamples = AudioSettings.outputSampleRate * 2 * fadeOut;
+        //gain = 1;
+        counter = 0;
+        fadingIn = false;
+        fadingOut = true;
+    }
+
+    float timeInSamples;
+    double gain;
+    int counter;
+
+    public void OnAudioFilterRead(float[] data, int channels)
+    {
+        for (var i = 0; i < data.Length; ++i)
+        {
+            if (fadingIn)
+            {
+                gain += 1 / timeInSamples;
+                counter++;
+                if (gain > 1)
+                {
+                    gain = 1;
+                    fadingIn = false;
+                }
+            }
+
+            if (fadingOut)
+            {
+                gain -= 1 / timeInSamples;
+                counter++;
+                if (gain < 0)
+                {
+                    gain = 0;
+                    fadingOut = false;
+                }
+            }
+
+            if(fadingIn || fadingOut)
+                data[i] = Mathf.Clamp(data[i] * (float) gain, -1, 1);
+        }
+    }
 
 
     public RingSoundTransform Setup(RingControll ring, Vector3 p)
@@ -39,22 +115,21 @@ public class RingSoundTransform : MonoBehaviour
         audioSource.volume = volume * SoundData.Inst.volume;
         audioSource.spatialBlend = SoundData.Inst.spatialBlend;
         audioSource.dopplerLevel = SoundData.Inst.doppler;
-        
+
         switch (SoundData.Inst.pitchMode)
         {
-            case SoundData.PitchMode.Radius :
+            case SoundData.PitchMode.Radius:
                 var remappedRadius = ring.radius.Remap(8, 0, 0.1f, 2);
                 audioSource.pitch = remappedRadius;
                 break;
-            case SoundData.PitchMode.Hoopyness :
+            case SoundData.PitchMode.Hoopyness:
                 audioSource.pitch = ring.hoopines + 1;
                 break;
-            case SoundData.PitchMode.Height :
+            case SoundData.PitchMode.Height:
                 var clampedY = Mathf.Clamp(ring.center.y, 0, SoundData.Inst.maxPitchHeight);
                 var remappedHeight = clampedY.Remap(0, SoundData.Inst.maxPitchHeight, 0.1f, 2);
                 audioSource.pitch = remappedHeight + ring.hoopines;
                 break;
-
         }
 
         /*//set stuff on soundsources
@@ -80,10 +155,10 @@ public class RingSoundTransform : MonoBehaviour
         }*/
 
         return this.volume;
-
     }
 
     private List<AudioClip> clips = new List<AudioClip>();
+
     void OnEnable()
     {
         var torusID = GetComponentInParent<AnimTorus>().soundSettings.torusID;
@@ -96,7 +171,7 @@ public class RingSoundTransform : MonoBehaviour
         audioSource.spatialBlend = SoundData.Inst.spatialBlend;
         audioSource.outputAudioMixerGroup = settings.mixerGroup;
         audioSource.pitch = SoundData.KeyToPitch(72, settings.transpose, 0);
-        audioSource.Play();
+        Play();
 
         /*soundID = SoundSystem.Instance.Play(settings.clips, transform, style: SoundStyle.Random, 
             loop: true, startWithRandomOffset: SoundData.Inst.randoOffsetInClips,spatialBlend:SoundData.Inst.spatialBlend,mixerGroup:settings.mixerGroup,transpose:settings.transpose);*/
@@ -104,7 +179,7 @@ public class RingSoundTransform : MonoBehaviour
 
     void OnDisable()
     {
-        audioSource.Stop();
+        Stop();
         /*if(SoundSystem.Instance != null)
             SoundSystem.Instance.Stop(soundID);*/
     }

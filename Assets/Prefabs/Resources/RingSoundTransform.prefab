@@ -49,6 +49,8 @@ MonoBehaviour:
   ring: {fileID: 0}
   soundID: 0
   audioSource: {fileID: 7006553798064874490}
+  fadeIn: 1.5
+  fadeOut: 0.5
 --- !u!82 &7006553798064874490
 AudioSource:
   m_ObjectHideFlags: 0
