@@ -167,7 +167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2410898
 Transform:
   m_ObjectHideFlags: 0
@@ -2370,28 +2370,28 @@ MonoBehaviour:
   spatialBlend: 1
   maxPitchHeight: 7.98
   randoOffsetInClips: 1
-  pitchMode: 0
+  pitchMode: 1
   settingsPerTorus:
   - transpose: 0
     mixerGroup: {fileID: 8628530261950150491, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: 0c15628fda7b54ad88e987c667bbfb87, type: 3}
+    - {fileID: 8300000, guid: dda9ddf56d9cd4158986a65a7a4ac20f, type: 3}
   - transpose: 0
     mixerGroup: {fileID: 3007334509182644378, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: 2c06972427c2d40e3851feff4e299815, type: 3}
+    - {fileID: 8300000, guid: b8600c125f82646cd82f95b284db06ce, type: 3}
   - transpose: 0
     mixerGroup: {fileID: -7779787819614406963, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: 21b33b11ee4bb431a811f39c277d3bb7, type: 3}
+    - {fileID: 8300000, guid: 6e1cf1a0b9e75497181566384d7b13c5, type: 3}
   - transpose: 0
     mixerGroup: {fileID: -3104161172249908385, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: bb35bbfeb076242dfa33a8d06d6b66ae, type: 3}
+    - {fileID: 8300000, guid: 2c26ba2c3473e4bcd9bde340073ffa48, type: 3}
   - transpose: 0
     mixerGroup: {fileID: -3745732872753567676, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: 21b33b11ee4bb431a811f39c277d3bb7, type: 3}
+    - {fileID: 8300000, guid: 2c26ba2c3473e4bcd9bde340073ffa48, type: 3}
 --- !u!4 &276558850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
