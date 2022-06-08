@@ -26,9 +26,9 @@ namespace UnityEngine.Recorder.Examples
             string mediaOutputFolder = Path.Combine(Application.dataPath, "..", "SampleRecordings");
 
             // Image
-            var imageRecorder = ScriptableObject.CreateInstance<ImageRecorderSettings>();
-            imageRecorder.name = "My Image Recorder";
-            imageRecorder.Enabled = true;
+            ImageRecorderSettings imageRecorder = ScriptableObject.CreateInstance<ImageRecorderSettings>();
+            imageRecorder.name         = "My Image Recorder";
+            imageRecorder.Enabled      = true;
             imageRecorder.OutputFormat = ImageRecorderSettings.ImageRecorderOutputFormat.PNG;
             imageRecorder.CaptureAlpha = false;
 
@@ -36,7 +36,7 @@ namespace UnityEngine.Recorder.Examples
 
             imageRecorder.imageInputSettings = new GameViewInputSettings
             {
-                OutputWidth = 1920 * 4,
+                OutputWidth  = 1920 * 4,
                 OutputHeight = 1080 * 4,
             };
 

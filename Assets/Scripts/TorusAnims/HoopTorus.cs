@@ -7,6 +7,7 @@ public class HoopTorus : AnimTorus
     public float spread;
     
     public float twirl;
+    public float spin;
     
     protected TwirlState[] twirlStates;
     
@@ -37,12 +38,13 @@ public class HoopTorus : AnimTorus
     {
         float step = 360f / ringCount * spread;
         Quaternion tilt = Quaternion.AngleAxis(twirl * 360f , Vector3.forward) * (Quaternion.AngleAxis(90, Vector3.forward) * Quaternion.AngleAxis(-90, Vector3.up));
+        Quaternion sp = Quaternion.AngleAxis(spin * 360f, Vector3.up);
         for (int i = 0; i < ringCount; i++)
         {
             Quaternion rot = Quaternion.AngleAxis(step * i, Vector3.up);
             RingState  rS  = states[i];
             TwirlState tS  = twirlStates[i];
-            rings[i].UpdateRing(rot * Vector3.forward * (radius + thickness + tS.distance), rot * (tilt * tS.twirl), thickness, rS.completion, rS.visibility, true);
+            rings[i].UpdateRing(rot * Vector3.forward * (radius + thickness + tS.distance), sp * (rot * (tilt * tS.twirl)), thickness, rS.completion, rS.visibility, true);
         }
     }
     
@@ -77,5 +79,10 @@ public class HoopTorus : AnimTorus
     public void SetTwirl(float twirl)
     {
         this.twirl = twirl;
+    }
+    
+    public void SetSpin(float spin)
+    {
+        this.spin = spin;
     }
 }

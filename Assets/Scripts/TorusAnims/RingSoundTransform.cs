@@ -111,6 +111,15 @@ public class RingSoundTransform : MonoBehaviour
 
         if (child != null)
             child.localScale = Vector3.one * .04f * volume * (SoundInfo.ShowSounds ? 1 : 0);
+            
+        
+        bool shouldBeOn = volume >= .0001f;
+        
+        if(shouldBeOn != audioSource.enabled)
+            audioSource.enabled = shouldBeOn;
+        
+        if(!shouldBeOn)
+            return 0;
 
         audioSource.volume = volume * SoundData.Inst.volume;
         audioSource.spatialBlend = SoundData.Inst.spatialBlend;

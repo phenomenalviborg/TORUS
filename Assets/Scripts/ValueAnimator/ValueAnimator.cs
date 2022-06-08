@@ -5,13 +5,13 @@ public class ValueAnimator : MonoBehaviour
 {
     private void OnEnable()
     {
-        AndyAnimator.AllAnims.Add(this);
+        AndyAnimator.AddAnim(this);
     }
     
     
     private void OnDisable()
     {
-        AndyAnimator.AllAnims.Add(this);
+        AndyAnimator.RemoveAnim(this);
     }
 
 
@@ -81,6 +81,33 @@ public class VectorAnim
             
         
         setValue = Vector3.Lerp(a, b, curve.Evaluate((time - timeSpan.x) / timeSpan.y));
+        return true;
+    }
+}
+
+
+[Serializable]
+public class ColorAnim
+{
+    public Vector2 timeSpan;
+    public AnimationCurve curve;
+    [Space]
+    public Color a;
+    public Color b;
+    
+
+    public bool GetValue(float time, ref Color setValue)
+    {
+        if(time <= timeSpan.x)
+            return false;
+
+        if (time >= timeSpan.x + timeSpan.y)
+        {
+            setValue = b;
+            return false;
+        }
+        
+        setValue = Color.Lerp(a, b, curve.Evaluate((time - timeSpan.x) / timeSpan.y));
         return true;
     }
 }

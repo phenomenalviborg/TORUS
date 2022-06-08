@@ -43,4 +43,10 @@ public class FloorTiles : MonoBehaviour
         Shader.SetGlobalFloat(DistMulti, 1f + Mathf.Sin(Time.realtimeSinceStartup * .6f) * .06f);
         Shader.SetGlobalColor(Tint, tintColor);
     }
+    
+    
+    public void SetColor(Color color)
+    {
+        tintColor = color;
+    }
 }

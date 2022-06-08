@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using ATVR;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;     
+#endif
 
 public class AndyAnimator : MonoBehaviour
 {
@@ -17,7 +20,47 @@ public class AndyAnimator : MonoBehaviour
     [Header("AnimTime ReadOut")]
     public float animTime;
     
-    public static readonly List<ValueAnimator> AllAnims = new List<ValueAnimator>();
+    private static readonly List<ValueAnimator> AllAnims = new List<ValueAnimator>();
+    
+    #if UNITY_EDITOR
+    private static readonly List<GameObject> gameObjects = new List<GameObject>();
+    private static int pick;
+    private static GameObject last;
+    #endif
+
+    public static void AddAnim(ValueAnimator animator)
+    {
+        AllAnims.Add(animator);
+        
+        #if UNITY_EDITOR
+        CollectGameObjects();
+        #endif
+    }
+    
+    public static void RemoveAnim(ValueAnimator animator)
+    {
+        AllAnims.Remove(animator);
+        
+        #if UNITY_EDITOR
+        CollectGameObjects();
+        #endif
+    }
+
+
+    private static void CollectGameObjects()
+    {
+        gameObjects.Clear();
+        
+        int count = AllAnims.Count;
+        for (int i = 0; i < count; i++)
+        {
+            GameObject gO = AllAnims[i].gameObject;
+            if(!gameObjects.Contains(gO))
+                gameObjects.Add(gO);
+        }
+        
+        pick = 0;
+    }
 
 
     private void Update()
@@ -51,5 +94,31 @@ public class AndyAnimator : MonoBehaviour
         int count = AllAnims.Count;
         for (int i = 0; i < count; i++)
             AllAnims[i].Evaluate(animTime);
+        
+        #if UNITY_EDITOR
+        Select();
+        #endif
     }
+
+    #if UNITY_EDITOR
+    private void Select()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+            Select(gameObject);
+        if(Input.GetKeyDown(KeyCode.Alpha2))
+            Select(gameObjects[pick++ % gameObjects.Count]);
+        if(Input.GetKeyDown(KeyCode.Alpha3))
+            Select(last);
+    }
+    
+    
+    private void Select(GameObject go)
+    {
+        if (go != gameObject)
+            last = go;
+            
+        Selection.activeObject = go;
+
+    }
+    #endif
 }

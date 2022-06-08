@@ -1,13 +1,14 @@
+using UnityEngine;
 using UnityEngine.Events;
 
 
-public class FloatAnimator : ValueAnimator
+public class ColorAnimator : ValueAnimator
 {
-    public FloatEvent fEvent;
-    public FloatAnim[] anims;
+    public ColorEvent fEvent;
+    public ColorAnim[] anims;
     
     
-    private FloatAnim a, b;
+    private ColorAnim a, b;
     private int count;
 
     private void Start()
@@ -16,8 +17,7 @@ public class FloatAnimator : ValueAnimator
         a = anims[0];
         b = anims[count - 1];
     }
-
-
+    
     private void OnValidate()
     {
         if(anims == null)
@@ -31,8 +31,7 @@ public class FloatAnimator : ValueAnimator
             b = anims[count - 1];
         }
     }
-
-
+    
     protected override void SetTime(float time)
     {
         if (time <= a.timeSpan.x)
@@ -47,7 +46,7 @@ public class FloatAnimator : ValueAnimator
             return;
         }
         
-        float p = a.a;
+        Color p = a.a;
         for (int i = 0; i < count; i++)
             if (anims[i].GetValue(time, ref p))
                 break;
@@ -58,4 +57,4 @@ public class FloatAnimator : ValueAnimator
 
 
 [System.Serializable]
-public class FloatEvent : UnityEvent<float> { }
+public class ColorEvent : UnityEvent<Color> { }

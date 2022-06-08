@@ -8,7 +8,6 @@ public class FlowerTorus : HoopTorus
     public float startAngle;
     public int seed;
     
-    
     private Vector3[] rotAxis;
     private float[] offsets;
     
@@ -31,7 +30,6 @@ public class FlowerTorus : HoopTorus
     protected override void UpdateTwirlStates()
     {
         const float o = .1f, p = 1 - o;
-        
 
         for (int i = 0; i < ringCount; i++)
         {
