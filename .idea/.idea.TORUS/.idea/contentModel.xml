@@ -742,6 +742,7 @@
             </e>
           </e>
           <e p="Utils" t="Include">
+            <e p="ATScaleRanger.cs" t="Include" />
             <e p="DebugButton" t="Include">
               <e p="DebugButtonAttribute.cs" t="Include" />
               <e p="Editor" t="Include">
@@ -782,6 +783,7 @@
             <e p="LineThickness.cs" t="Include" />
             <e p="MathTorusAnim.cs" t="Include" />
             <e p="RingControll.cs" t="Include" />
+            <e p="Selector.cs" t="Include" />
             <e p="ShowAnimTime.cs" t="Include" />
             <e p="SoundInfo.cs" t="Include" />
           </e>
@@ -811,12 +813,14 @@
           <e p="ValueAnimator" t="Include">
             <e p="AndyAnimator.cs" t="Include" />
             <e p="AnimOffset.cs" t="Include" />
+            <e p="ColorAnimator.cs" t="Include" />
             <e p="FloatAnimator.cs" t="Include" />
             <e p="FloatShifter.cs" t="Include" />
             <e p="MeshRendererAnimator.cs" t="Include" />
             <e p="PositionAnimator.cs" t="Include" />
             <e p="ScaleAnimator.cs" t="Include" />
             <e p="SpinOffsetAnimator.cs" t="Include" />
+            <e p="UpdateShaderColor.cs" t="Include" />
             <e p="ValueAnimator.cs" t="Include" />
           </e>
         </e>
