@@ -46,6 +46,7 @@ public class AndyAnimator : MonoBehaviour
         #endif
     }
 
+#if UNITY_EDITOR
 
     private static void CollectGameObjects()
     {
@@ -61,6 +62,8 @@ public class AndyAnimator : MonoBehaviour
         
         pick = 0;
     }
+#endif
+
 
 
     private void Update()
