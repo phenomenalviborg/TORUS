@@ -20,9 +20,16 @@ public class FloatAnimator : ValueAnimator
 
     private void OnValidate()
     {
+        if(anims == null)
+            return;
+        
         count = anims.Length;
-        a = anims[0];
-        b = anims[count - 1];
+
+        if (count > 0)
+        {
+            a = anims[0];
+            b = anims[count - 1];
+        }
     }
 
 

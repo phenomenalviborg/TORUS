@@ -795,9 +795,12 @@
           <e p="TorusAnims" t="Include">
             <e p="AnimTorus.cs" t="Include" />
             <e p="AppearingRingTorus.cs" t="Include" />
+            <e p="BabyHoops.cs" t="Include" />
+            <e p="BabyManager.cs" t="Include" />
             <e p="CopyRingTorus.cs" t="Include" />
             <e p="FlowerTorus.cs" t="Include" />
             <e p="FountainTorus.cs" t="Include" />
+            <e p="HoopBabyTorus.cs" t="Include" />
             <e p="HoopTorus.cs" t="Include" />
             <e p="HornTorus.cs" t="Include" />
             <e p="PieceTorus.cs" t="Include" />
