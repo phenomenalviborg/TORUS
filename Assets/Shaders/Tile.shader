@@ -82,15 +82,20 @@ Shader "Torus/Tile"
                 
                 fixed2 n2d = fixed2(-(col.x * 2 - 1), (col.y * 2 - 1));
                        n2d *= tint * .75 + .25;
-                       
+                 
+                //return fixed4(n2d, 1, 1);      
                 fixed tint2 = pow(tint, 2);
                 fixed3 n = mul(unity_ObjectToWorld, normalize(fixed3(n2d.x, max(0, 1.0 - n2d.x - n2d.y), n2d.y)));
+                       n = normalize(fixed3(n2d.x, max(0, 1.0 - n2d.x - n2d.y), n2d.y));
+                //return fixed4(n, 1);  
                 fixed matcap = MatCapX(n) * tint2;
-                      
+                     
+                //return fixed4(n, 1);     
                 fixed t = ((d * .895 + .105) * ((1.0 - pow(saturate(dist * .021), 3)))) * 1.2;
                 
+                //float whateverthisis = 
                 float dt = (1.0 - pow(1.0 - saturate(dot(-normalize(i.wP - _WorldSpaceCameraPos), n)), 2)) * tint2 * .85 + .15;
-              
+                   //  dt = 1;
                 return ((lerp(_Black, _White, u) * t * dt  + matcap * t * .2 * k)* (i.tint.y * .1 + .9)) *_Tint;
             }
             ENDCG
