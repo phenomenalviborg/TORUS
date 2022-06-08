@@ -39,6 +39,7 @@ Shader "Torus/Ring"
             UNITY_INSTANCING_BUFFER_END(Props)
 
             sampler2D _MainTex;
+            float4 RingColor;
             
             float _LineS;
 
@@ -71,7 +72,7 @@ Shader "Torus/Ring"
                 
                 float tint  = 1.0 - pow(1.0 - pow(saturate(1.0 - i.uv.y * .03), 7), 4);
                 float trail = saturate((anim - i.uv.x) * 20 * i.uv.z);
-                return tint * 1.5 * i.uv.z * saturate(_LineS); //stex2D(_MainTex, float2(trail, 0));// * tint * 1.5;
+                return RingColor * tint * 1.5 * i.uv.z * saturate(_LineS); //stex2D(_MainTex, float2(trail, 0));// * tint * 1.5;
             }
             ENDCG
         }

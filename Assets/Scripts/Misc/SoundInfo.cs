@@ -21,9 +21,10 @@ public class SoundInfo : Singleton<SoundInfo>
         get { return Inst.soundsPerRing; }
     }
 
-    [Header("Press RightClick or VR Button to toggle")]
-    public bool showSounds;
-
+  
+    private bool showSounds;
+    
+    [Header("Press M or VR Button to toggle Visuals")]
     public Hand hand;
     public Button button;
 
@@ -45,7 +46,7 @@ public class SoundInfo : Singleton<SoundInfo>
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1) || VRInput.Get(hand).GetPressDown(button))
+        if (Input.GetKeyDown(KeyCode.M) || VRInput.Get(hand).GetPressDown(button))
             showSounds = !showSounds;
     }
 
