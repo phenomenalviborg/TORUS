@@ -63,7 +63,7 @@ public class HoopTorus : AnimTorus
     }
     
     
-    public class TwirlState
+    public struct TwirlState
     {
         public readonly float distance;
         public readonly Quaternion twirl;

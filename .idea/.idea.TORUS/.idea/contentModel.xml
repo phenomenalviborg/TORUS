@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\_UNITY_FAST\TORUS\TORUS" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -696,6 +696,16 @@
           <e p="ValueSync.cs" t="Include" />
         </e>
         <e p="MILAN" t="Include">
+          <e p="Antilatency" t="Include">
+            <e p="XrSample" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="AltTrackingXR.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="GradientTwoColors.shader" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Audio" t="Include">
             <e p="Oculus" t="Include">
               <e p="Spatializer" t="Include">
@@ -802,11 +812,13 @@
             <e p="FountainTorus.cs" t="Include" />
             <e p="HoopBabyTorus.cs" t="Include" />
             <e p="HoopTorus.cs" t="Include" />
+            <e p="HoopVisTorus.cs" t="Include" />
             <e p="HornTorus.cs" t="Include" />
             <e p="PieceTorus.cs" t="Include" />
             <e p="RingSoundTransform.cs" t="Include" />
             <e p="RingToHoop.cs" t="Include" />
             <e p="RingTorus.cs" t="Include" />
+            <e p="RingVisTorus.cs" t="Include" />
           </e>
           <e p="Unused" t="Include">
             <e p="TorusCam.cs" t="Include" />
@@ -875,6 +887,7 @@
           </e>
         </e>
       </e>
+      <e p="Library" t="ExcludeRecursive" />
       <e p="Nrjwolf.Tools.AttachAttributes.csproj" t="IncludeRecursive" />
       <e p="Nrjwolf.Tools.Editor.AttachAttributes.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
@@ -884,12 +897,14 @@
       <e p="ShapesEditor.csproj" t="IncludeRecursive" />
       <e p="ShapesRuntime.csproj" t="IncludeRecursive" />
       <e p="ShapesSamples.csproj" t="IncludeRecursive" />
-      <e p="Temp/Bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+      </e>
       <e p="TORUS.sln" t="IncludeFlat" />
       <e p="UnityPlayModeSaver.csproj" t="IncludeRecursive" />
       <e p="UnityPlayModeSaverEditor.csproj" t="IncludeRecursive" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_TORUS.486114941.00" t="ExcludeRecursive" />
+    <e p="C:\Users\janisZappa\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\janisZappa\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_TORUS.852946309.00" t="ExcludeRecursive" />
   </component>
 </project>

@@ -17,7 +17,7 @@ public class AnimTorus : MonoBehaviour
     protected RingControll[] rings;
     protected RingState[] states;
     
-    public class RingState
+    public struct RingState
     {
         public float completion;
         public float visibility;
