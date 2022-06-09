@@ -17,6 +17,10 @@ public class AnimTorus : MonoBehaviour
     protected RingControll[] rings;
     protected RingState[] states;
     
+    
+    protected RingMutation[] mutations;
+    
+    
     public struct RingState
     {
         public float completion;
@@ -49,6 +53,12 @@ public class AnimTorus : MonoBehaviour
             states[i] = new RingState(1, 1);
         
         SoundInfo.SetTorus(this);
+        
+        
+        mutations = GetComponents<RingMutation>();
+        int mutationCount = mutations.Length;
+        for (int i = 0; i < mutationCount; i++)
+            mutations[i].Setup(this);
     }
 
 
@@ -80,4 +90,7 @@ public class AnimTorus : MonoBehaviour
     {
         this.completion = completion;
     }
+    
+    
+    
 }

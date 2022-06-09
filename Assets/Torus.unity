@@ -1007,7 +1007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 98748817}
   m_Layer: 0
-  m_Name: Baby (5)
+  m_Name: Baby 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3011,7 +3011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 313300851}
   m_Layer: 0
-  m_Name: Baby
+  m_Name: Baby3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3519,6 +3519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371723420}
   - component: {fileID: 371723421}
+  - component: {fileID: 371723422}
   m_Layer: 0
   m_Name: Hoops (2)
   m_TagString: Untagged
@@ -3563,6 +3564,25 @@ MonoBehaviour:
   twirl: 0
   spin: 0
   turn: 0.5
+--- !u!114 &371723422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371723419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388c95e83167ed74e9af33fa7d6d5809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vis: 1
+  lerpID: 3
+  radiusMulti: 0
+  thicknessMulti: 1
+  posOffset: {x: 0, y: 0, z: 0}
+  rotOffset: {x: 90, y: 0, z: 0}
+  ring: {fileID: 0}
 --- !u!4 &374086111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -3945,7 +3965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 459384701}
   m_Layer: 0
-  m_Name: Baby
+  m_Name: Baby8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4547,7 +4567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 524645291}
   m_Layer: 0
-  m_Name: Baby (6)
+  m_Name: Baby 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4580,7 +4600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 531800743}
   m_Layer: 0
-  m_Name: Baby
+  m_Name: Baby7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4827,7 +4847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a56df9e04b4401a478ac03b06c1cad59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ringCount: 6
+  ringCount: 3
   radius: 0
   thickness: 0.25
   completion: 1
@@ -5349,6 +5369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 688935669}
   - component: {fileID: 688935670}
+  - component: {fileID: 688935671}
   m_Layer: 0
   m_Name: Hoops (6)
   m_TagString: Untagged
@@ -5393,6 +5414,25 @@ MonoBehaviour:
   twirl: 0
   spin: 0
   turn: 0.5
+--- !u!114 &688935671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688935668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388c95e83167ed74e9af33fa7d6d5809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vis: 1
+  lerpID: 0.26
+  radiusMulti: 0
+  thicknessMulti: 1
+  posOffset: {x: 0, y: 0, z: 0}
+  rotOffset: {x: 0, y: 0, z: 0}
+  ring: {fileID: 0}
 --- !u!4 &689306086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -5636,7 +5676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710368927}
   m_Layer: 0
-  m_Name: Baby (2)
+  m_Name: Baby 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6424,7 +6464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806730855}
   m_Layer: 0
-  m_Name: Baby
+  m_Name: Baby2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7547,7 +7587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 962217223}
   m_Layer: 0
-  m_Name: Baby (4)
+  m_Name: Baby 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8183,7 +8223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044889178}
   m_Layer: 0
-  m_Name: Baby
+  m_Name: Baby6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8973,11 +9013,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586bb820e77a3674aa9eced518ff7ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
+  time: 15.832387
   loopTime: {x: 320, y: 100}
   speed: 1
   useSystemTime: 0
-  animTime: 349.57834
+  animTime: 365.8324
 --- !u!114 &1061691570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9468,7 +9508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1129378668}
   m_Layer: 0
-  m_Name: Baby (3)
+  m_Name: Baby 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10703,6 +10743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306054316}
   - component: {fileID: 1306054317}
+  - component: {fileID: 1306054318}
   m_Layer: 0
   m_Name: Hoops (7)
   m_TagString: Untagged
@@ -10747,6 +10788,25 @@ MonoBehaviour:
   twirl: 0
   spin: 0
   turn: 0.5
+--- !u!114 &1306054318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306054315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388c95e83167ed74e9af33fa7d6d5809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vis: 1
+  lerpID: 4
+  radiusMulti: 0
+  thicknessMulti: 1
+  posOffset: {x: 0, y: -0.18, z: 0}
+  rotOffset: {x: 0, y: 0, z: 0}
+  ring: {fileID: 0}
 --- !u!1001 &1344099869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11978,7 +12038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1417777016}
   m_Layer: 0
-  m_Name: Baby (1)
+  m_Name: Baby 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12391,6 +12451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1483564416}
   - component: {fileID: 1483564417}
+  - component: {fileID: 1483564418}
   m_Layer: 0
   m_Name: Hoops (4)
   m_TagString: Untagged
@@ -12435,6 +12496,25 @@ MonoBehaviour:
   twirl: 0
   spin: 0
   turn: 0.5
+--- !u!114 &1483564418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483564415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388c95e83167ed74e9af33fa7d6d5809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vis: 1
+  lerpID: 0
+  radiusMulti: 0.5
+  thicknessMulti: 1
+  posOffset: {x: 0, y: 0, z: 0}
+  rotOffset: {x: 0, y: 0, z: 0}
+  ring: {fileID: 0}
 --- !u!1001 &1495146688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13211,7 +13291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563965017}
   m_Layer: 0
-  m_Name: Baby
+  m_Name: Baby4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13366,6 +13446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1573330450}
   - component: {fileID: 1573330451}
+  - component: {fileID: 1573330452}
   m_Layer: 0
   m_Name: Rings
   m_TagString: Untagged
@@ -13409,6 +13490,25 @@ MonoBehaviour:
   spinSpeed: 0
   spin: 0
   spinOffset: 0
+--- !u!114 &1573330452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573330449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388c95e83167ed74e9af33fa7d6d5809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vis: 1
+  lerpID: 1.5
+  radiusMulti: 3.4
+  thicknessMulti: 1.08
+  posOffset: {x: 0, y: 0, z: 0}
+  rotOffset: {x: 8.26, y: -89.28, z: 3.76}
+  ring: {fileID: 0}
 --- !u!4 &1573446862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bbe3fa9476bca2f4cb0c1b35f66c7339, type: 3}
@@ -13429,7 +13529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1581949090}
   m_Layer: 0
-  m_Name: Baby
+  m_Name: Baby5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14396,7 +14496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1700140996}
   m_Layer: 0
-  m_Name: Baby
+  m_Name: Baby1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16670,7 +16770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992685494}
   m_Layer: 0
-  m_Name: Baby (8)
+  m_Name: Baby 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18043,7 +18143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111439200}
   m_Layer: 0
-  m_Name: Baby (7)
+  m_Name: Baby 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

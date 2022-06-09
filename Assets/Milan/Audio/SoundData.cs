@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using atomtwist.AudioNodes;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -14,7 +12,7 @@ public class SoundData : Singleton<SoundData>
     public float spatialBlend =1;
     public float maxPitchHeight = 8; 
     public bool randoOffsetInClips = false;
-    public enum PitchMode {Nothing,Radius, Hoopyness, Height, All}
+    public enum PitchMode {Nothing, Radius, Hoopyness, Height, All}
     public PitchMode pitchMode;
 
     public List<SettingsPerTorus> settingsPerTorus;

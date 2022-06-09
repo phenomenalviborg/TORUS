@@ -53,8 +53,7 @@ public class BabyManager : MonoBehaviour
             hoop.SetCompletion(l);
             ring.SetSpin(spin);
             
-            const float multi = 1f / 5;
-            ring.SetCompletion(Mathf.Floor((1f / 5 + l * (1f/* - multi*/)) * 5) / 5.0f);
+            ring.SetCompletion(Mathf.Floor((1f / 5 + l) * 5) / 5.0f);
         }
     }
     

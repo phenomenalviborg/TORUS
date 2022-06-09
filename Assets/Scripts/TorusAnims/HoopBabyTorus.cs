@@ -14,7 +14,6 @@ public class HoopBabyTorus : HoopTorus
     private float vis;
     private Placement[] placements;
     
-    
 
     protected override void CreateRings()
     {
@@ -36,6 +35,7 @@ public class HoopBabyTorus : HoopTorus
         Transform trans = transform;
         Quaternion objectRot = trans.rotation;
         
+        float r = radius;
         
         float step = 360f / ringCount * spread;
         Quaternion tilt = Quaternion.AngleAxis(twirl * 360f , Vector3.forward) * (Quaternion.AngleAxis(90, Vector3.forward) * Quaternion.AngleAxis(-90, Vector3.up));
@@ -46,20 +46,18 @@ public class HoopBabyTorus : HoopTorus
             RingState  rS  = states[i];
             TwirlState tS  = twirlStates[i];
             
-            Vector3 p = rot * Vector3.forward * (radius + thickness + tS.distance);
+            Vector3 p = rot * Vector3.forward * (r + thickness + tS.distance);
                     p = transform.TransformPoint(p);
                     
                     
             float offset = offsets[i] * o;
-            float lerp =Mathf.SmoothStep(0, 1,  Mathf.Max(0, toPositions - offset) / pp);
+            float lerp = Mathf.SmoothStep(0, 1,  Mathf.Max(0, toPositions - offset) / pp);
                     
             Transform goal = positions[i];
                     p = Vector3.Lerp(p, goal.position, lerp);
                     
             Quaternion b = goal.rotation * Quaternion.AngleAxis(180, Vector3.forward);
-                     //  b = Quaternion.LookRotation(Vector3.forward, goal.up);
             Quaternion worldRot = Quaternion.Slerp(objectRot, b, lerp);
-                  //worldRot = trans.rotation;
             Quaternion result = worldRot * (sp * (rot * (tilt * tS.twirl)));
             
             placements[i] = new Placement(p, result);
@@ -91,4 +89,7 @@ public class HoopBabyTorus : HoopTorus
     {
         return placements[id];
     }
+    
+    
+    
 }

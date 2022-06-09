@@ -16,6 +16,37 @@ public class BabyHoops : HoopTorus
             TwirlState tS  = twirlStates[i];
             rings[i].UpdateRing(rot * Vector3.forward * (radius + thickness + tS.distance), sp * (rot * (tilt * (tS.twirl * turnRot))), thickness, rS.completion, rS.visibility, true);
         }
+        
+        
+        int mutationCount = mutations.Length;
+        for (int i = 0; i < mutationCount; i++)
+        {
+            RingMutation mutation = mutations[i];
+            int indexA = Mathf.FloorToInt(mutation.lerpID) % ringCount;
+            int indexB = Mathf.CeilToInt(mutation.lerpID)  % ringCount;
+            float mutationLerp = mutation.lerpID % 1;
+            
+            Quaternion rot = Quaternion.AngleAxis(step * mutation.lerpID, Vector3.up);
+            RingState rSA = states[indexA];
+            RingState rSB = states[indexB];
+            RingState  rS  = new RingState(Mathf.Lerp(rSA.completion, rSB.completion, mutationLerp), 
+                                           Mathf.Lerp(rSA.visibility, rSB.visibility, mutationLerp) * mutation.vis);
+            
+            TwirlState tSA  = twirlStates[indexA];
+            TwirlState tSB  = twirlStates[indexB];
+            TwirlState tS  = new TwirlState(Mathf.Lerp(tSA.distance, tSB.distance, mutationLerp), 
+                Quaternion.Slerp(tSA.twirl, tSB.twirl, mutationLerp));
+            
+            float thick = thickness * mutation.thicknessMulti;
+            float r = radius + mutation.radiusMulti;
+            
+            mutation.ring.UpdateRing(rot * Vector3.forward * (r + thick + tS.distance) + mutation.posOffset, 
+                (sp * (rot * (tilt * (tS.twirl * turnRot)))) * Quaternion.Euler(mutation.rotOffset), 
+                thick, 
+                rS.completion, 
+                rS.visibility, true);
+        }
+        
     }
     
     
