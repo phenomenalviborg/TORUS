@@ -3024,14 +3024,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313300850}
-  m_LocalRotation: {x: 0.17694955, y: -0, z: -0, w: 0.98421997}
-  m_LocalPosition: {x: 1.3, y: 0.55, z: -1.21}
+  m_LocalRotation: {x: 0, y: -0.9724063, z: 0, w: 0.23329395}
+  m_LocalPosition: {x: 0.32, y: 0.4, z: -2.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1334871245}
   m_Father: {fileID: 2056383248}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 20.384, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -153.018, z: 0}
 --- !u!1001 &323294025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5020,7 +5020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a56df9e04b4401a478ac03b06c1cad59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ringCount: 3
+  ringCount: 6
   radius: 0
   thickness: 0.25
   completion: 1
@@ -5601,10 +5601,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vis: 1
   lerpID: 0.26
-  radiusMulti: 0
-  thicknessMulti: 1
+  radiusMulti: -0.25
+  thicknessMulti: 1.67
   posOffset: {x: 0, y: 0, z: 0}
-  rotOffset: {x: 0, y: 0, z: 0}
+  rotOffset: {x: -22.5, y: 211.96, z: 94.15}
   ring: {fileID: 0}
 --- !u!4 &689306086 stripped
 Transform:
@@ -6650,14 +6650,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806730854}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.32, y: 0.4, z: -2.74}
+  m_LocalRotation: {x: 0.17694955, y: 0, z: 0, w: 0.98421997}
+  m_LocalPosition: {x: 1.3, y: 0.55, z: -1.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1698105533}
   m_Father: {fileID: 2056383248}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.384, y: 0, z: 0}
 --- !u!1 &822883997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9e1ddf47b9f09f74e921b7bf7b3a70a6, type: 3}
@@ -8082,9 +8082,6 @@ GameObject:
   m_Component:
   - component: {fileID: 967388029}
   - component: {fileID: 967388030}
-  - component: {fileID: 967388034}
-  - component: {fileID: 967388033}
-  - component: {fileID: 967388032}
   - component: {fileID: 967388031}
   m_Layer: 0
   m_Name: Rings (5)
@@ -8138,53 +8135,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 967388028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 076766c50541e1f4383d016dc16ccb17, type: 3}
+  m_Script: {fileID: 11500000, guid: 388c95e83167ed74e9af33fa7d6d5809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 3
-  scale: 0.7
---- !u!114 &967388032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967388028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 076766c50541e1f4383d016dc16ccb17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 2
-  scale: 0.2
---- !u!114 &967388033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967388028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 076766c50541e1f4383d016dc16ccb17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  scale: 0.3
---- !u!114 &967388034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967388028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 076766c50541e1f4383d016dc16ccb17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 4
-  scale: 0.5
+  vis: 1
+  lerpID: 0
+  radiusMulti: 1
+  thicknessMulti: 0.75
+  posOffset: {x: -0.05, y: -0.205, z: 0.02}
+  rotOffset: {x: 46.18, y: 3.24, z: 44.6}
+  ring: {fileID: 0}
 --- !u!1 &970469239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8828,6 +8788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1048737036}
   - component: {fileID: 1048737037}
+  - component: {fileID: 1048737038}
   m_Layer: 0
   m_Name: Rings (3)
   m_TagString: Untagged
@@ -8871,6 +8832,25 @@ MonoBehaviour:
   spinSpeed: 0
   spin: 0
   spinOffset: 0
+--- !u!114 &1048737038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048737035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388c95e83167ed74e9af33fa7d6d5809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vis: 1
+  lerpID: 0.97
+  radiusMulti: 0
+  thicknessMulti: 0.54
+  posOffset: {x: 0, y: 0.006, z: 0}
+  rotOffset: {x: 57.41, y: 0, z: 0}
+  ring: {fileID: 0}
 --- !u!1 &1050430412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -9588,11 +9568,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586bb820e77a3674aa9eced518ff7ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
+  time: 84.60728
   loopTime: {x: 300, y: 100}
   speed: 0
   useSystemTime: 1
-  animTime: 425.662
+  animTime: 384.60727
 --- !u!114 &1061691570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11546,10 +11526,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vis: 1
-  lerpID: 4
+  lerpID: 0
   radiusMulti: 0
   thicknessMulti: 1
-  posOffset: {x: 0, y: -0.18, z: 0}
+  posOffset: {x: 0, y: -0.16, z: -0.0263}
   rotOffset: {x: 0, y: 0, z: 0}
   ring: {fileID: 0}
 --- !u!1 &1334871244
@@ -14078,11 +14058,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546316648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 076766c50541e1f4383d016dc16ccb17, type: 3}
+  m_Script: {fileID: 11500000, guid: 388c95e83167ed74e9af33fa7d6d5809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
-  scale: 0.5
+  vis: 1
+  lerpID: 0
+  radiusMulti: 0.25
+  thicknessMulti: 0.6
+  posOffset: {x: 0, y: 0.06, z: -0.07}
+  rotOffset: {x: 0, y: 0, z: 0}
+  ring: {fileID: 0}
 --- !u!1001 &1550150381
 PrefabInstance:
   m_ObjectHideFlags: 0
