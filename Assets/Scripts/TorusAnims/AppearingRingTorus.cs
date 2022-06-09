@@ -14,13 +14,17 @@ public class AppearingRingTorus : RingTorus
     {
         spin += Time.deltaTime * spinSpeed;
         
-        float r = radius + thickness;
+        float r = 0;
         float step = 360f / ringCount;
         for (int i = 0; i < ringCount; i++)
         {
+            RingSickness sic = sicknesses[i];
+            float m = sic == null? 1 : sic.scale;
+            float thick = thickness * m;
+                  r = radius + thick;
             float a = (i * step + spin + spinOffset) * Mathf.Deg2Rad;
-            float s = r + Mathf.Cos(a) * thickness;
-            float h = Mathf.Sin(a) * thickness;
+            float s = r + Mathf.Cos(a) * thick;
+            float h = Mathf.Sin(a) * thick;
             
             RingState rS = states[i];
             rings[i].UpdateRing(Vector3.up * h, Quaternion.identity, s, rS.completion, rS.visibility, true);

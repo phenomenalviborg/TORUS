@@ -98,14 +98,14 @@ public class BabyManager : MonoBehaviour
     
     public void SetSpin(float spin)
     { 
-        float l = spin / 540f;
+        float l = spin / 576f;
         const float o = .2f, p = 1 - o;
 
         for (int i = 0; i < count; i++)
         {
             float offset = offsets[i] * o;
             float lerp   = Mathf.Max(0, l - offset) / p;
-            groups[i].SetSpin(Mathf.SmoothStep(0, 540f, lerp));
+            groups[i].SetSpin(Mathf.SmoothStep(0,  576f, lerp));
         }
            
     }

@@ -14,7 +14,11 @@ public class BabyHoops : HoopTorus
             Quaternion rot = Quaternion.AngleAxis(step * i, Vector3.up);
             RingState  rS  = states[i];
             TwirlState tS  = twirlStates[i];
-            rings[i].UpdateRing(rot * Vector3.forward * (radius + thickness + tS.distance), sp * (rot * (tilt * (tS.twirl * turnRot))), thickness, rS.completion, rS.visibility, true);
+            
+            RingSickness sic = sicknesses[i];
+            float m = sic == null? 1 : sic.scale;
+            float thick = thickness * m;
+            rings[i].UpdateRing(rot * Vector3.forward * (radius + thickness + thickness * (1 - m) + tS.distance), sp * (rot * (tilt * (tS.twirl * turnRot))), thick, rS.completion, rS.visibility, true);
         }
         
         

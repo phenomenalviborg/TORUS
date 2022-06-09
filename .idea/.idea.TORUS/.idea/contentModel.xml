@@ -816,6 +816,7 @@
             <e p="HornTorus.cs" t="Include" />
             <e p="PieceTorus.cs" t="Include" />
             <e p="RingMutation.cs" t="Include" />
+            <e p="RingSickness.cs" t="Include" />
             <e p="RingSoundTransform.cs" t="Include" />
             <e p="RingToHoop.cs" t="Include" />
             <e p="RingTorus.cs" t="Include" />

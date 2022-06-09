@@ -19,6 +19,7 @@ public class AnimTorus : MonoBehaviour
     
     
     protected RingMutation[] mutations;
+    protected RingSickness[] sicknesses;
     
     
     public struct RingState
@@ -59,6 +60,15 @@ public class AnimTorus : MonoBehaviour
         int mutationCount = mutations.Length;
         for (int i = 0; i < mutationCount; i++)
             mutations[i].Setup(this);
+        
+        RingSickness[] sicks = GetComponents<RingSickness>();
+        int sC = sicks.Length;
+        sicknesses = new RingSickness[ringCount];
+        for (int i = 0; i < sC; i++)
+        {
+            RingSickness s = sicks[i];
+            sicknesses[s.id] = s;
+        }
     }
 
 
