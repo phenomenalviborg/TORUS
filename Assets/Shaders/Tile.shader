@@ -64,8 +64,7 @@ Shader "Torus/Tile"
                 return fixed2((matCapNormal.r *  .485) + .5, 
                                matCapNormal.g *  .485 + .5);
             }
-                        
-                        
+                          
             float MatCapX(float3 normal)
             {
                 return tex2D(_MatCap, GetMatCapUV(normal)).x;

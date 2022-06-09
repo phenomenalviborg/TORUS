@@ -52,6 +52,7 @@ public class RingTorus : AnimTorus
         this.spinOffset = spinOffset;
     }
     
+    
     public void SetSpin(float spin)
     {
         this.spin = spin;

@@ -24,6 +24,7 @@ public class BabyHoops : HoopTorus
         const float o = .1f, p = 1 - o;
         
         for (int i = 0; i < ringCount; i++)
-            states[i] = new RingState(Mathf.Clamp01(completion * ringCount - i * .4f), 1);
+            states[i] = new RingState(completion, 1);
+            //states[i] = new RingState(Mathf.Clamp01(completion * ringCount - i * .4f), 1);
     }
 }

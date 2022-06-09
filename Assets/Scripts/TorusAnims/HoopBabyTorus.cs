@@ -10,6 +10,11 @@ public class HoopBabyTorus : HoopTorus
     public Transform[] positions;
     
     private float[] offsets;
+    
+    private float vis;
+    private Placement[] placements;
+    
+    
 
     protected override void CreateRings()
     {
@@ -19,6 +24,8 @@ public class HoopBabyTorus : HoopTorus
         offsets = new float[ringCount];
         for (int i = 0; i < ringCount; i++)
             offsets[i] = r.Range(-0f, 1f);
+        
+        placements = new Placement[ringCount];
     }
 
 
@@ -54,6 +61,8 @@ public class HoopBabyTorus : HoopTorus
             Quaternion worldRot = Quaternion.Slerp(objectRot, b, lerp);
                   //worldRot = trans.rotation;
             Quaternion result = worldRot * (sp * (rot * (tilt * tS.twirl)));
+            
+            placements[i] = new Placement(p, result);
             rings[i].UpdateRing(p, result, thickness, rS.completion, rS.visibility);
         }
     }
@@ -62,5 +71,24 @@ public class HoopBabyTorus : HoopTorus
     public void ToPositions(float toPositions)
     {
         this.toPositions = toPositions;
+    }
+
+
+    public void SetVis(float vis)
+    {
+        this.vis = vis;
+    }
+    
+    
+    protected override void UpdateRingStates()
+    {
+        for (int i = 0; i < ringCount; i++)
+            states[i] = new RingState(completion, vis);
+    }
+    
+
+    public Placement GetPlacement(int id)
+    {
+        return placements[id];
     }
 }

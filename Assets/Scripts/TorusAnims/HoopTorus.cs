@@ -81,6 +81,7 @@ public class HoopTorus : AnimTorus
         this.twirl = twirl;
     }
     
+    
     public void SetSpin(float spin)
     {
         this.spin = spin;

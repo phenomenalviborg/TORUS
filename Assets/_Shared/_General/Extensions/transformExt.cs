@@ -30,7 +30,12 @@ public static class transformExt
         trans.position = placement.pos;
         trans.rotation = placement.rot;
     }
-
+    
+    
+    public static Placement Placement(this Transform trans, bool local = false)
+    {
+        return local? new Placement(trans.localPosition, trans.localRotation) : new Placement(trans.position, trans.rotation);
+    }
 
     public static Transform MakeChildOf(this Transform trans, Transform parent)
     {
