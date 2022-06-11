@@ -130,7 +130,7 @@ public class BabyManager : MonoBehaviour
             main.LoadIt((1f - allignment * .6f) * (1f - Mathf.Pow(spinCollaps, 15)), vis);
             
             
-            collapse = Mathf.Pow(spinCollaps * 1.15f, 1.2f);
+            collapse = Mathf.Pow(spinCollaps * 1.125f, 1.2f); //1.15f
             pieceSpin = Mathf.Pow(collapse, 2);
             
             float animOverride = Mathf.Pow(1f - Mathf.Pow(Mathf.Clamp01(collapse * 1.05f), 2), 2); //Mathf.Sin(Time.realtimeSinceStartup * 2) * .5f + .5f;

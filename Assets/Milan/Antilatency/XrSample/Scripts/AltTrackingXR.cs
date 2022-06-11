@@ -28,7 +28,7 @@ public class AltTrackingXR : AltTracking
 
     protected override Pose GetPlacement()
     {
-        var result = Pose.identity;
+        /*var result = Pose.identity;
 
         using (var localStorage = Antilatency.SDK.StorageClient.GetLocalStorage())
         {
@@ -50,7 +50,9 @@ public class AltTrackingXR : AltTracking
             }
 
             return result;
-        }
+        }*/
+        
+        return _trackingLibrary.createPlacement("AAAAAAAGgRW9C0alPR_JKT4AAAAA2w_JPw");
     }
 
     protected virtual void OnFocusChanged(bool focus)

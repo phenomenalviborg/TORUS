@@ -139,6 +139,9 @@ public class RingControll : MonoBehaviour
         //    return;
         
         float d = Mathf.Abs(trans.up.y);
+        if(d > .999f)
+            return;
+        
         float a = Mathf.Acos(d);
         float r = radius;
         float s = Mathf.Sin(a);
