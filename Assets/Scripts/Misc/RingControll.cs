@@ -1,4 +1,5 @@
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 public class RingControll : MonoBehaviour
@@ -24,6 +25,10 @@ public class RingControll : MonoBehaviour
     private Transform spinTrans;
     private int soundCount;
     
+    [HideInInspector]
+    public RingSave save = new RingSave();
+    
+    
     private void Start()
     {
         mR = GetComponent<MeshRenderer>();
@@ -47,7 +52,7 @@ public class RingControll : MonoBehaviour
     }
 
 
-    public RingControll Setup(AnimTorus torus)
+    public RingControll Setup(AnimTorus torus, bool mutation = false)
     {
         this.torus = torus;
         
@@ -64,6 +69,9 @@ public class RingControll : MonoBehaviour
                 Setup(this, Quaternion.AngleAxis(i * step, Vector3.up) * Vector3.right);
         
         spin = Random.Range(0, 360f);
+        
+        if(mutation)
+            gameObject.name = "Mutation";
         
         return this;
     }
@@ -115,8 +123,29 @@ public class RingControll : MonoBehaviour
             
         trans.localScale = Vector3.one * scale;
     }
+    
+    
+    public void SaveIt(Vector3 pos, Quaternion rot, float scale, float anim, float vis)
+    {
+        save.Store(pos, rot, scale, anim, vis);
+    }
 
-
+    public void LoadIt(float animOverride, float visOveride)
+    {
+        UpdateRing(save.pos, save.rot, save.scale, save.anim * animOverride, save.vis * visOveride, true);
+        
+        Vector3 p = trans.position;
+        //if(p.y > radius)
+        //    return;
+        
+        float d = Mathf.Abs(trans.up.y);
+        float a = Mathf.Acos(d);
+        float r = radius;
+        float s = Mathf.Sin(a);
+        
+        trans.position = p.SetY(Mathf.Max(p.y, s * r));
+    }
+    
     private void UpdateSounds()
     {
         if(torus == null)

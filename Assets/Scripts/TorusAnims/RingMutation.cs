@@ -20,7 +20,7 @@ public class RingMutation : MonoBehaviour
     
     public void Setup(AnimTorus torus)
     {
-        ring = Instantiate(RingControll.RingRingDummy, transform).GetComponent<RingControll>().Setup(torus);
+        ring = Instantiate(RingControll.RingRingDummy, transform).GetComponent<RingControll>().Setup(torus, true);
     }
 
 

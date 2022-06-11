@@ -1,6 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class BabyHoops : HoopTorus
+public class MutatedHoopTorus : HoopTorus
 {
     public float turn;
     protected override void UpdateRings()
@@ -15,10 +16,7 @@ public class BabyHoops : HoopTorus
             RingState  rS  = states[i];
             TwirlState tS  = twirlStates[i];
             
-            RingSickness sic = sicknesses[i];
-            float m = sic == null? 1 : sic.scale;
-            float thick = thickness * m;
-            rings[i].UpdateRing(rot * Vector3.forward * (radius + thickness + thickness * (1 - m) + tS.distance), sp * (rot * (tilt * (tS.twirl * turnRot))), thick, rS.completion, rS.visibility, true);
+            rings[i].SaveIt(rot * Vector3.forward * (radius + thickness + tS.distance), sp * (rot * (tilt * (tS.twirl * turnRot))), thickness, rS.completion, rS.visibility);
         }
         
         
@@ -44,11 +42,11 @@ public class BabyHoops : HoopTorus
             float thick = thickness * mutation.thicknessMulti;
             float r = radius + mutation.radiusMulti;
             
-            mutation.ring.UpdateRing(rot * Vector3.forward * (r + thick + tS.distance) + mutation.posOffset, 
+            mutation.ring.SaveIt(rot * Vector3.forward * (r + thick + tS.distance) + mutation.posOffset, 
                 (sp * (rot * (tilt * (tS.twirl * turnRot)))) * Quaternion.Euler(mutation.rotOffset), 
                 thick, 
                 rS.completion, 
-                rS.visibility, true);
+                rS.visibility);
         }
         
     }
@@ -61,5 +59,15 @@ public class BabyHoops : HoopTorus
         for (int i = 0; i < ringCount; i++)
             states[i] = new RingState(completion, 1);
             //states[i] = new RingState(Mathf.Clamp01(completion * ringCount - i * .4f), 1);
+    }
+    
+    
+    public void GetRings(List<RingControll> secondary, ref RingControll mutation)
+    {
+        for (int i = 0; i < ringCount; i++)
+            secondary.Add(rings[i]);
+        
+        if(mutations.Length != 0)
+            mutation = mutations[0].ring;
     }
 }

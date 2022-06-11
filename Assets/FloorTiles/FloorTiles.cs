@@ -7,6 +7,10 @@ public class FloorTiles : MonoBehaviour
     public Transform target;
     
     public Color tintColor;
+    
+    [Range(0, 1)]
+    public float tintAmount;
+    
     private Transform cam;
     private static readonly int HeadPos = Shader.PropertyToID("HeadPos");
     
@@ -14,6 +18,7 @@ public class FloorTiles : MonoBehaviour
     
     private static readonly int DistMulti = Shader.PropertyToID("_DistMulti");
     private static readonly int Tint      = Shader.PropertyToID("_Tint");
+    private static readonly int TintAmount = Shader.PropertyToID("_TintAmount");
 
 
     private void Start()
@@ -42,6 +47,7 @@ public class FloorTiles : MonoBehaviour
         Shader.SetGlobalVector(HeadPos, force.Update(target != null? target.position : cam.position, Time.deltaTime));
         Shader.SetGlobalFloat(DistMulti, 1f + Mathf.Sin(Time.realtimeSinceStartup * .6f) * .06f);
         Shader.SetGlobalColor(Tint, tintColor);
+        Shader.SetGlobalFloat(TintAmount, tintAmount);
     }
     
     

@@ -695,6 +695,10 @@
           </e>
           <e p="ValueSync.cs" t="Include" />
         </e>
+        <e p="FloorTiles" t="Include">
+          <e p="FloorTiles.cs" t="Include" />
+          <e p="Tile.shader" t="Include" />
+        </e>
         <e p="MILAN" t="Include">
           <e p="Antilatency" t="Include">
             <e p="XrSample" t="Include">
@@ -789,7 +793,6 @@
           <e p="Misc" t="Include">
             <e p="AnimUpdater.cs" t="Include" />
             <e p="CameraPosition.cs" t="Include" />
-            <e p="FloorTiles.cs" t="Include" />
             <e p="LineThickness.cs" t="Include" />
             <e p="MathTorusAnim.cs" t="Include" />
             <e p="RingControll.cs" t="Include" />
@@ -799,13 +802,13 @@
           </e>
           <e p="Orb.cs" t="Include" />
           <e p="Player" t="Include">
+            <e p="FlowPath.cs" t="Include" />
             <e p="Halo.cs" t="Include" />
             <e p="WalkPath.cs" t="Include" />
           </e>
           <e p="TorusAnims" t="Include">
             <e p="AnimTorus.cs" t="Include" />
             <e p="AppearingRingTorus.cs" t="Include" />
-            <e p="BabyHoops.cs" t="Include" />
             <e p="BabyManager.cs" t="Include" />
             <e p="CopyRingTorus.cs" t="Include" />
             <e p="FlowerTorus.cs" t="Include" />
@@ -814,9 +817,10 @@
             <e p="HoopTorus.cs" t="Include" />
             <e p="HoopVisTorus.cs" t="Include" />
             <e p="HornTorus.cs" t="Include" />
+            <e p="MutatedHoopTorus.cs" t="Include" />
+            <e p="MutatedRingTorus.cs" t="Include" />
             <e p="PieceTorus.cs" t="Include" />
             <e p="RingMutation.cs" t="Include" />
-            <e p="RingSickness.cs" t="Include" />
             <e p="RingSoundTransform.cs" t="Include" />
             <e p="RingToHoop.cs" t="Include" />
             <e p="RingTorus.cs" t="Include" />
@@ -846,7 +850,6 @@
           <e p="Egg.shader" t="Include" />
           <e p="Ring.shader" t="Include" />
           <e p="T.cginc" t="Include" />
-          <e p="Tile.shader" t="Include" />
           <e p="Torus.shader" t="Include" />
           <e p="Torus_2.shader" t="Include" />
           <e p="Torus_3.shader" t="Include" />
