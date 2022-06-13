@@ -27,6 +27,7 @@ public class RingControll : MonoBehaviour
     
     [HideInInspector]
     public RingSave save = new RingSave();
+    private float volume;
     
     
     private void Start()
@@ -161,7 +162,7 @@ public class RingControll : MonoBehaviour
         
         spin = spin.Wrap(-360f, 360f);
         
-        float volume = mR.enabled? vis : 0;
+        volume = Mathf.Lerp(volume, mR.enabled? vis : 0, Time.deltaTime * 7);
         
         
         float step = 360f / soundCount;
