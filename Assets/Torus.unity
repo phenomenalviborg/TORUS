@@ -236,6 +236,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -2
   spread: 1
   twirl: 0
   spin: 0
@@ -553,6 +554,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -2
   spread: 1
   twirl: 0
   spin: 0
@@ -607,6 +609,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 0
     spinSpeed: 90
+    soundAdd: 0
   spread: 1
   twirl: 0
   spin: 0
@@ -1771,6 +1774,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 0
     spinSpeed: 90
+    soundAdd: 0
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -2116,6 +2120,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 1
     spinSpeed: 90
+    soundAdd: 0
   spread: 1
   twirl: 0.25
   spin: 0
@@ -2809,6 +2814,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 8
     spinSpeed: 90
+    soundAdd: -1
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -3342,6 +3348,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 0
     spinSpeed: 90
+    soundAdd: 0
   spinSpeed: 0
   spin: 194.8
   spinOffset: 0
@@ -3752,6 +3759,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -2
   spread: 1
   twirl: 0
   spin: 0
@@ -4317,6 +4325,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 3
     spinSpeed: 90
+    soundAdd: 0
   spinSpeed: 0
   spin: 0
   spinOffset: 156.13
@@ -4399,6 +4408,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -1
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -5185,6 +5195,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 0
     spinSpeed: 0
+    soundAdd: 0
   spread: 1
   twirl: 0
   spin: 0
@@ -5281,6 +5292,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -2
   spread: 1
   twirl: 0
   spin: 0
@@ -5412,6 +5424,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 3
     spinSpeed: 90
+    soundAdd: 0
   spread: 1
   twirl: 0
   spin: 0
@@ -5837,6 +5850,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -2
   spread: 1
   twirl: 0
   spin: 0
@@ -6224,6 +6238,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -1
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -7294,6 +7309,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -1
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -8101,6 +8117,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 3
     spinSpeed: 90
+    soundAdd: 0
   spread: 1
   twirl: 0
   spin: 0
@@ -8405,6 +8422,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -1
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -9127,6 +9145,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -1
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -9804,6 +9823,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 0
     spinSpeed: 0
+    soundAdd: 0
   spread: 1
   twirl: 0
   spin: 0
@@ -10585,6 +10605,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 0
     spinSpeed: 0
+    soundAdd: 0
   spinSpeed: -2
   spin: 0
   spinOffset: 0
@@ -11795,6 +11816,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -2
   spread: 1
   twirl: 0
   spin: 0
@@ -13870,6 +13892,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 8
     spinSpeed: 90
+    soundAdd: -2
   spread: 1
   twirl: 0
   spin: 0
@@ -14359,6 +14382,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 8
     spinSpeed: 90
+    soundAdd: -2
   spread: 1
   twirl: 0
   spin: 0
@@ -14903,6 +14927,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 6
     spinSpeed: 90
+    soundAdd: -1
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -15032,6 +15057,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 8
     spinSpeed: 90
+    soundAdd: -1
   spinSpeed: 0
   spin: 0
   spinOffset: 0
@@ -15902,6 +15928,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 0
     spinSpeed: 0
+    soundAdd: 0
   spinSpeed: -2
   spin: 0
   spinOffset: 0
@@ -19675,6 +19702,7 @@ MonoBehaviour:
   soundSettings:
     torusID: 2
     spinSpeed: 90
+    soundAdd: 0
   spinSpeed: 0
   spin: 0
   spinOffset: 0

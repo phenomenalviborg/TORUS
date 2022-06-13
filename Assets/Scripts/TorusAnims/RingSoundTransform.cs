@@ -60,6 +60,7 @@ public class RingSoundTransform : MonoBehaviour
     double gain;
     int counter;
 
+    
     public void OnAudioFilterRead(float[] data, int channels)
     {
         for (var i = 0; i < data.Length; ++i)
@@ -116,13 +117,13 @@ public class RingSoundTransform : MonoBehaviour
             child.localScale = Vector3.one * .04f * volume * (SoundInfo.ShowSounds ? 1 : 0);
             
         
-        bool shouldBeOn = volume >= .0001f;
+        /*bool shouldBeOn = volume >= .0001f;
         
         if(shouldBeOn != audioSource.enabled)
             audioSource.enabled = shouldBeOn;
         
         if(!shouldBeOn)
-            return 0;
+            return 0;*/
 
         audioSource.volume = volume * SoundData.Inst.volume;
         audioSource.spatialBlend = SoundData.Inst.spatialBlend;
