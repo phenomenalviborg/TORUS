@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,7 +234,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1.0304174
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -2739,29 +2739,21 @@ MonoBehaviour:
     clips:
     - {fileID: 8300000, guid: dda9ddf56d9cd4158986a65a7a4ac20f, type: 3}
   - transpose: 0
-    mixerGroup: {fileID: 8628530261950150491, guid: 42ac700525a8d46cc983520603993126, type: 2}
+    mixerGroup: {fileID: 4303158612560991464, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: dda9ddf56d9cd4158986a65a7a4ac20f, type: 3}
+    - {fileID: 8300000, guid: fff56b00300654c37a73b6732d8402a8, type: 3}
   - transpose: 0
-    mixerGroup: {fileID: 8628530261950150491, guid: 42ac700525a8d46cc983520603993126, type: 2}
+    mixerGroup: {fileID: -4311868606543893342, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: dda9ddf56d9cd4158986a65a7a4ac20f, type: 3}
+    - {fileID: 8300000, guid: 60469208da38f48838c263580d853259, type: 3}
   - transpose: 0
-    mixerGroup: {fileID: 8628530261950150491, guid: 42ac700525a8d46cc983520603993126, type: 2}
+    mixerGroup: {fileID: -3765835325332851906, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: dda9ddf56d9cd4158986a65a7a4ac20f, type: 3}
+    - {fileID: 8300000, guid: 2bfb5fcf5c2ea4477a5a2022e9dd09ad, type: 3}
   - transpose: 0
-    mixerGroup: {fileID: 8628530261950150491, guid: 42ac700525a8d46cc983520603993126, type: 2}
+    mixerGroup: {fileID: 6380442617430468753, guid: 42ac700525a8d46cc983520603993126, type: 2}
     clips:
-    - {fileID: 8300000, guid: dda9ddf56d9cd4158986a65a7a4ac20f, type: 3}
-  - transpose: 0
-    mixerGroup: {fileID: 8628530261950150491, guid: 42ac700525a8d46cc983520603993126, type: 2}
-    clips:
-    - {fileID: 8300000, guid: dda9ddf56d9cd4158986a65a7a4ac20f, type: 3}
-  - transpose: 0
-    mixerGroup: {fileID: 8628530261950150491, guid: 42ac700525a8d46cc983520603993126, type: 2}
-    clips:
-    - {fileID: 8300000, guid: dda9ddf56d9cd4158986a65a7a4ac20f, type: 3}
+    - {fileID: 8300000, guid: 60469208da38f48838c263580d853259, type: 3}
 --- !u!4 &276558850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -2815,7 +2807,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 8
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
@@ -3758,7 +3750,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -4405,7 +4397,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
@@ -5287,7 +5279,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -5843,7 +5835,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -6230,7 +6222,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
@@ -6643,6 +6635,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 785862290}
     m_Modifications:
+    - target: {fileID: 494346266473871560, guid: 37d7e8c149ba07e4284788aab6574a50, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4416867889500384138, guid: 37d7e8c149ba07e4284788aab6574a50, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -6697,6 +6693,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675559291275593773, guid: 37d7e8c149ba07e4284788aab6574a50, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822946927193137541, guid: 37d7e8c149ba07e4284788aab6574a50, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7292,7 +7292,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
@@ -8403,7 +8403,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
@@ -9125,7 +9125,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
@@ -9866,10 +9866,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586bb820e77a3674aa9eced518ff7ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 402
+  time: 250
   loopTime: {x: 4, y: 506}
-  speed: 0
-  useSystemTime: 1
+  speed: 1.67
+  useSystemTime: 0
   animTime: 402.09192
 --- !u!114 &1061691570
 MonoBehaviour:
@@ -11793,7 +11793,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -13868,7 +13868,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1.0882186
   soundSettings:
-    torusID: 0
+    torusID: 8
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -14357,7 +14357,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 8
     spinSpeed: 90
   spread: 1
   twirl: 0
@@ -14901,7 +14901,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 6
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
@@ -15030,7 +15030,7 @@ MonoBehaviour:
   thickness: 0.25
   completion: 1
   soundSettings:
-    torusID: 0
+    torusID: 8
     spinSpeed: 90
   spinSpeed: 0
   spin: 0
