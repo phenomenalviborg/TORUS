@@ -61,7 +61,7 @@ public class RingControll : MonoBehaviour
         spinTrans = new GameObject("SpinTrans").transform;
         spinTrans.SetParent(trans, false);
         
-        soundCount = SoundInfo.SoundsPerRing;
+        soundCount = SoundInfo.SoundsPerRing + torus.soundSettings.soundAdd;
         sounds = new RingSoundTransform[soundCount];
         float step = 360f / soundCount;
         for (int i = 0; i < soundCount; i++)

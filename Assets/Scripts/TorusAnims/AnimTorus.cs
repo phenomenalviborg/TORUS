@@ -38,6 +38,7 @@ public class AnimTorus : MonoBehaviour
     {
         public int torusID;
         public float spinSpeed = 90;
+        public int soundAdd;
     }
 
 
