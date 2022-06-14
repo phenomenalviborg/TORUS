@@ -5,7 +5,7 @@ Shader "Unlit/Egg"
         Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
         Blend SrcAlpha One              //1st change here
         LOD 100
-        ZWRITE ON
+        ZWRITE OFF
 
         Pass
         {
@@ -26,7 +26,7 @@ Shader "Unlit/Egg"
             {
                 float3 normal : TEXCOORD0;
                 float3 viewDir : TEXCOORD1;
-                float t : TEXCOORD2;
+                float3 color : TEXCOORD2;
                 float dist : TEXCOORD3;
                 float4 vertex : SV_POSITION;
             };
@@ -40,7 +40,7 @@ Shader "Unlit/Egg"
                 o.normal = v.normal;
                 o.viewDir = ObjSpaceViewDir(v.vertex);
                 o.dist = length(mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz - _WorldSpaceCameraPos);
-                o.t = v.color.x;
+                o.color = v.color;
                 return o;
             }
 
@@ -48,9 +48,9 @@ Shader "Unlit/Egg"
             {
                 float3 n = mul(unity_ObjectToWorld, i.normal).xyz;
                 float d = dot(normalize(i.normal), normalize(i.viewDir));
-                float t = (1.0 - pow(1.0 - i.t, 8)) * i.t;
-                float dist = pow(saturate(1 - i.dist * .01), 6);
-                float u = (sin(_Time.y * 2 - i.t * 16) + 1) * .065 + .925;
+                float t = (1.0 - pow(1.0 - i.color.x, 8)) * i.color.x;
+                float dist = pow(saturate(1 - i.dist * (.01 * (1 + (1.0 - i.color.y)))), 6);
+                float u = (sin(_Time.y * 2 - i.color.x * 16) + 1) * .065 + .925;
                 return saturate(pow(d, 6)) * .7 * t * dist * u;
             }
             ENDCG

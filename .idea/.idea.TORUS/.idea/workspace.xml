@@ -15,15 +15,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/BabyManager.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="3" />
+                <state relative-caret-position="15">
+                  <caret line="2" selection-start-line="2" selection-end-line="3" />
                   <folding>
-                    <marker date="1654967921580" expanded="true" signature="6:52" ph="..." />
+                    <marker date="1654967921580" expanded="false" signature="6:52" ph="..." />
                     <marker date="1654967921580" expanded="true" signature="95:8775" ph="{...}" />
                     <marker date="1654967921580" expanded="true" signature="451:7421" ph="{...}" />
                     <marker date="1654967921580" expanded="false" signature="1144:1384" ph="{...}" />
                     <marker date="1654967921580" expanded="false" signature="1531:2915" ph="{...}" />
-                    <marker date="1654967921580" expanded="true" signature="3043:7044" ph="{...}" />
+                    <marker date="1654967921580" expanded="false" signature="3043:7044" ph="{...}" />
                     <marker date="1654967921580" expanded="true" signature="6297:7033" ph="{...}" />
                     <marker date="1654967921580" expanded="false" signature="7102:7327" ph="{...}" />
                     <marker date="1654967921580" expanded="false" signature="7367:7415" ph="{...}" />
@@ -86,13 +86,12 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/Misc/RingControll.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="531">
-                  <caret line="164" column="51" lean-forward="true" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
+                <state relative-caret-position="1470">
+                  <caret line="164" column="51" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
                   <folding>
-                    <marker date="1655127189573" expanded="false" signature="6:53" ph="..." />
                     <marker date="1655127189573" expanded="true" signature="97:5616" ph="{...}" />
                     <marker date="1655127189573" expanded="false" signature="687:878" ph="{...}" />
                     <marker date="1655127189573" expanded="false" signature="914:1130" ph="{...}" />
@@ -116,11 +115,24 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/EggScaler.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+                  <folding>
+                    <marker date="1655158256280" expanded="true" signature="58:269" ph="{...}" />
+                    <marker date="1655158256280" expanded="true" signature="122:267" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/RingSoundTransform.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="681">
-                  <caret line="108" column="25" lean-forward="true" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+                <state relative-caret-position="660">
+                  <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
                   <folding>
                     <marker date="1655128987286" expanded="false" signature="6:105" ph="..." />
                     <marker date="1655128987286" expanded="true" signature="155:5747" ph="{...}" />
@@ -128,14 +140,14 @@
                     <marker date="1655128987286" expanded="false" signature="472:582" ph="{...}" />
                     <marker date="1655128987286" expanded="false" signature="685:857" ph="{...}" />
                     <marker date="1655128987286" expanded="false" signature="910:1085" ph="{...}" />
-                    <marker date="1655128987286" expanded="true" signature="1213:1919" ph="{...}" />
+                    <marker date="1655128987286" expanded="false" signature="1213:1919" ph="{...}" />
                     <marker date="1655128987286" expanded="true" signature="1265:1913" ph="{...}" />
                     <marker date="1655128987286" expanded="true" signature="1301:1533" ph="{...}" />
                     <marker date="1655128987286" expanded="true" signature="1415:1519" ph="{...}" />
                     <marker date="1655128987286" expanded="true" signature="1561:1794" ph="{...}" />
                     <marker date="1655128987286" expanded="true" signature="1675:1780" ph="{...}" />
-                    <marker date="1655128987286" expanded="true" signature="1987:2181" ph="{...}" />
-                    <marker date="1655128987286" expanded="true" signature="2226:4656" ph="{...}" />
+                    <marker date="1655128987286" expanded="false" signature="1987:2181" ph="{...}" />
+                    <marker date="1655128987286" expanded="false" signature="2226:4656" ph="{...}" />
                     <marker date="1655128987286" expanded="true" signature="2563:2758" ph="/* bool shouldBeOn = volume &gt;= .0001f; ... */" />
                     <marker date="1655128987286" expanded="true" signature="2986:3648" ph="{...}" />
                     <marker date="1655128987286" expanded="true" signature="3658:4621" ph="/* set stuff on soundsources ... */" />
@@ -332,6 +344,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Misc/AnimUpdater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Misc/RingControll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ValueAnimator/PositionAnimator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EggScaler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Shared/_General/Extensions/randomExt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Shared/_General/Extensions/transformExt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Misc/PlayModeComponentSaver/Editor/UnityPlayModeSaver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -350,7 +363,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ValueAnimator/ThicknessAnimator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RingTorus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FlowerTorus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HoopTorus.cs" />
@@ -401,6 +413,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TorusAnims/BabyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TorusAnims/AnimTorus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Misc/RingControll.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EggScaler.cs" />
       </list>
     </option>
   </component>
@@ -498,7 +511,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/FlowerTorus.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HoopTorus.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CopyRingTorus.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RingToHoop.cs" />
@@ -957,6 +969,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/BabyManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+          <folding>
+            <marker date="1654967921580" expanded="false" signature="6:52" ph="..." />
+            <marker date="1654967921580" expanded="true" signature="95:8775" ph="{...}" />
+            <marker date="1654967921580" expanded="true" signature="451:7421" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="1144:1384" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="1531:2915" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="3043:7044" ph="{...}" />
+            <marker date="1654967921580" expanded="true" signature="6297:7033" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="7102:7327" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="7367:7415" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="7495:7976" ph="{...}" />
+            <marker date="1654967921580" expanded="true" signature="7677:7970" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="8008:8171" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="8207:8304" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="8350:8672" ph="{...}" />
+            <marker date="1654967921580" expanded="true" signature="8469:8654" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="8726:8773" ph="{...}" />
+            <marker date="1654967921580" expanded="true" signature="8799:9166" ph="{...}" />
+            <marker date="1654967921580" expanded="false" signature="9009:9154" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/HoopTorus.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -990,6 +1029,55 @@
             <marker date="1654855825274" expanded="true" signature="535:875" ph="{...}" />
             <marker date="1654855825274" expanded="true" signature="979:2014" ph="{...}" />
             <marker date="1654855825274" expanded="false" signature="2127:2405" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/RingSoundTransform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+          <folding>
+            <marker date="1655128987286" expanded="false" signature="6:105" ph="..." />
+            <marker date="1655128987286" expanded="true" signature="155:5747" ph="{...}" />
+            <marker date="1655128987286" expanded="false" signature="384:447" ph="{...}" />
+            <marker date="1655128987286" expanded="false" signature="472:582" ph="{...}" />
+            <marker date="1655128987286" expanded="false" signature="685:857" ph="{...}" />
+            <marker date="1655128987286" expanded="false" signature="910:1085" ph="{...}" />
+            <marker date="1655128987286" expanded="false" signature="1213:1919" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="1265:1913" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="1301:1533" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="1415:1519" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="1561:1794" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="1675:1780" ph="{...}" />
+            <marker date="1655128987286" expanded="false" signature="1987:2181" ph="{...}" />
+            <marker date="1655128987286" expanded="false" signature="2226:4656" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="2563:2758" ph="/* bool shouldBeOn = volume &gt;= .0001f; ... */" />
+            <marker date="1655128987286" expanded="true" signature="2986:3648" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="3658:4621" ph="/* set stuff on soundsources ... */" />
+            <marker date="1655128987286" expanded="false" signature="4737:5602" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="5319:5596" ph="/* soundID = SoundSystem.Instance.Play(settings.clips, transform, style: SoundStyle.Random, ... */" />
+            <marker date="1655128987286" expanded="false" signature="5624:5745" ph="{...}" />
+            <marker date="1655128987286" expanded="true" signature="5655:5739" ph="/* if(SoundSystem.Instance != null) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/AnimTorus.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <marker date="1655125437502" expanded="true" signature="58:2026" ph="{...}" />
+            <marker date="1655125437502" expanded="true" signature="439:683" ph="{...}" />
+            <marker date="1655125437502" expanded="false" signature="573:677" ph="{...}" />
+            <marker date="1655125437502" expanded="true" signature="741:847" ph="{...}" />
+            <marker date="1655125437502" expanded="false" signature="890:1493" ph="{...}" />
+            <marker date="1655125437502" expanded="false" signature="1541:1642" ph="{...}" />
+            <marker date="1655125437502" expanded="false" signature="1693:1705" ph="{...}" />
+            <marker date="1655125437502" expanded="false" signature="1755:1797" ph="{...}" />
+            <marker date="1655125437502" expanded="false" signature="1853:1901" ph="{...}" />
+            <marker date="1655125437502" expanded="false" signature="1959:2009" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1080,61 +1168,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/AnimTorus.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding>
-            <marker date="1655125437502" expanded="true" signature="58:2026" ph="{...}" />
-            <marker date="1655125437502" expanded="true" signature="439:683" ph="{...}" />
-            <marker date="1655125437502" expanded="false" signature="573:677" ph="{...}" />
-            <marker date="1655125437502" expanded="true" signature="741:847" ph="{...}" />
-            <marker date="1655125437502" expanded="false" signature="890:1493" ph="{...}" />
-            <marker date="1655125437502" expanded="false" signature="1541:1642" ph="{...}" />
-            <marker date="1655125437502" expanded="false" signature="1693:1705" ph="{...}" />
-            <marker date="1655125437502" expanded="false" signature="1755:1797" ph="{...}" />
-            <marker date="1655125437502" expanded="false" signature="1853:1901" ph="{...}" />
-            <marker date="1655125437502" expanded="false" signature="1959:2009" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/RingSoundTransform.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="108" column="25" lean-forward="true" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
-          <folding>
-            <marker date="1655128987286" expanded="false" signature="6:105" ph="..." />
-            <marker date="1655128987286" expanded="true" signature="155:5747" ph="{...}" />
-            <marker date="1655128987286" expanded="false" signature="384:447" ph="{...}" />
-            <marker date="1655128987286" expanded="false" signature="472:582" ph="{...}" />
-            <marker date="1655128987286" expanded="false" signature="685:857" ph="{...}" />
-            <marker date="1655128987286" expanded="false" signature="910:1085" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="1213:1919" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="1265:1913" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="1301:1533" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="1415:1519" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="1561:1794" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="1675:1780" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="1987:2181" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="2226:4656" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="2563:2758" ph="/* bool shouldBeOn = volume &gt;= .0001f; ... */" />
-            <marker date="1655128987286" expanded="true" signature="2986:3648" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="3658:4621" ph="/* set stuff on soundsources ... */" />
-            <marker date="1655128987286" expanded="false" signature="4737:5602" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="5319:5596" ph="/* soundID = SoundSystem.Instance.Play(settings.clips, transform, style: SoundStyle.Random, ... */" />
-            <marker date="1655128987286" expanded="false" signature="5624:5745" ph="{...}" />
-            <marker date="1655128987286" expanded="true" signature="5655:5739" ph="/* if(SoundSystem.Instance != null) ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Misc/RingControll.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="164" column="51" lean-forward="true" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
+        <state relative-caret-position="1470">
+          <caret line="164" column="51" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
           <folding>
-            <marker date="1655127189573" expanded="false" signature="6:53" ph="..." />
             <marker date="1655127189573" expanded="true" signature="97:5616" ph="{...}" />
             <marker date="1655127189573" expanded="false" signature="687:878" ph="{...}" />
             <marker date="1655127189573" expanded="false" signature="914:1130" ph="{...}" />
@@ -1157,29 +1195,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TorusAnims/BabyManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EggScaler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="3" />
+        <state relative-caret-position="105">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
-            <marker date="1654967921580" expanded="true" signature="6:52" ph="..." />
-            <marker date="1654967921580" expanded="true" signature="95:8775" ph="{...}" />
-            <marker date="1654967921580" expanded="true" signature="451:7421" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="1144:1384" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="1531:2915" ph="{...}" />
-            <marker date="1654967921580" expanded="true" signature="3043:7044" ph="{...}" />
-            <marker date="1654967921580" expanded="true" signature="6297:7033" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="7102:7327" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="7367:7415" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="7495:7976" ph="{...}" />
-            <marker date="1654967921580" expanded="true" signature="7677:7970" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="8008:8171" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="8207:8304" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="8350:8672" ph="{...}" />
-            <marker date="1654967921580" expanded="true" signature="8469:8654" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="8726:8773" ph="{...}" />
-            <marker date="1654967921580" expanded="true" signature="8799:9166" ph="{...}" />
-            <marker date="1654967921580" expanded="false" signature="9009:9154" ph="{...}" />
+            <marker date="1655158256280" expanded="true" signature="58:269" ph="{...}" />
+            <marker date="1655158256280" expanded="true" signature="122:267" ph="{...}" />
           </folding>
         </state>
       </provider>
