@@ -10077,7 +10077,7 @@ MonoBehaviour:
   time: 480
   loopTime: {x: 4, y: 510}
   speed: 1.67
-  useSystemTime: 0
+  useSystemTime: 1
   animTime: 402.09192
 --- !u!114 &1061691570
 MonoBehaviour:
