@@ -1245,6 +1245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftHand
       objectReference: {fileID: 0}
+    - target: {fileID: 6237040698163708343, guid: f3dd5b62cd63dd14a81f626ddf303b08, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dde37f8bdadcecd47a58c20f64e32f5c, type: 2}
     - target: {fileID: 8963889626284012666, guid: f3dd5b62cd63dd14a81f626ddf303b08, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1403,6 +1407,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7534529145700260140, guid: 8e0dfd5744837f9419725303c8811742, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dde37f8bdadcecd47a58c20f64e32f5c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0dfd5744837f9419725303c8811742, type: 3}
 --- !u!4 &4109951802375173650 stripped
