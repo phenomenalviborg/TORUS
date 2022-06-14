@@ -49,7 +49,7 @@ Shader "Unlit/Egg"
                 float3 n = mul(unity_ObjectToWorld, i.normal).xyz;
                 float d = dot(normalize(i.normal), normalize(i.viewDir));
                 float t = (1.0 - pow(1.0 - i.color.x, 8)) * i.color.x;
-                float dist = pow(saturate(1 - i.dist * (.01 * (1 + (1.0 - i.color.y) * 5))), 6);
+                float dist = pow(saturate(1 - i.dist * (.01 * (1 + (1.0 - i.color.y) * 3))), 6);
                 float u = (sin(_Time.y * 2 - i.color.x * 16) + 1) * .065 + .925;
                 return saturate(pow(d, 6)) * .7 * t * dist * u * i.color.z;
             }
