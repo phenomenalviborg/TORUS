@@ -46,7 +46,7 @@ public class SoundInfo : Singleton<SoundInfo>
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M) || VRInput.Get(hand).GetPressDown(button))
+        if (Input.GetKeyDown(KeyCode.M)/* || VRInput.Get(hand).GetPressDown(button)*/)
             showSounds = !showSounds;
     }
 

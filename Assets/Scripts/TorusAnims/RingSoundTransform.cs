@@ -114,7 +114,7 @@ public class RingSoundTransform : MonoBehaviour
             child.gameObject.SetActive(SoundInfo.ShowSounds); 
         
         if(SoundInfo.ShowSounds)
-            child.localScale = Vector3.one * .04f * volume * (SoundInfo.ShowSounds ? 1 : 0);
+            child.localScale = Vector3.one * .04f * volume;
             
         
         /*bool shouldBeOn = volume >= .0001f;
