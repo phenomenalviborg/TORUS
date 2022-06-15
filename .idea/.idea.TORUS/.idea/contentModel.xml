@@ -1088,6 +1088,7 @@
         <e p="Shaders" t="Include">
           <e p="Dot.shader" t="Include" />
           <e p="Egg.shader" t="Include" />
+          <e p="Invisible.shader" t="Include" />
           <e p="Ring.shader" t="Include" />
           <e p="T.cginc" t="Include" />
           <e p="Torus.shader" t="Include" />

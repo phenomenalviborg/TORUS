@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class FingerTips : MonoBehaviour
 {
+    public Transform head;
     public SkinnedMeshRenderer smr;
     private MeshRenderer mR;
 
@@ -14,7 +15,11 @@ public class FingerTips : MonoBehaviour
     
     private void LateUpdate()
     {
-        if(mR.enabled != smr.enabled)
-            mR.enabled = smr.enabled;
+        Vector3 dir = head.position - transform.position;
+        float mag = dir.sqrMagnitude;
+        const float thresh = .9f * .9f;
+        bool showit = smr.enabled && mag < thresh;
+        if(mR.enabled != showit)
+            mR.enabled = showit;
     }
 }
