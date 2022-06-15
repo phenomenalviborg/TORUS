@@ -48,10 +48,9 @@ public class HandTips : MonoBehaviour
             if (showit)
             {
                 Quaternion rot = a.rotation;
-                b.position = a.position + rot * Vector3.forward * (i < 5? 0 : palmOffset);
+                b.position = a.position + rot * Vector3.right * (i < 5? 0 : palmOffset);
                 b.rotation = rot;
             }
         }
-     
     }
 }
