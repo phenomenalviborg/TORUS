@@ -875,7 +875,7 @@ MonoBehaviour:
   - {fileID: 4109951802375173650}
   - {fileID: 2913921637700547370}
   - {fileID: 6956724164200215854}
-  palmOffset: 0.065
+  palmOffset: -0.065
 --- !u!1 &7702881422801652551
 GameObject:
   m_ObjectHideFlags: 0
