@@ -1030,6 +1030,7 @@
         <e p="Scripts" t="Include">
           <e p="EggScaler.cs" t="Include" />
           <e p="FingerTips.cs" t="Include" />
+          <e p="HandTips.cs" t="Include" />
           <e p="Misc" t="Include">
             <e p="AnimUpdater.cs" t="Include" />
             <e p="CameraPosition.cs" t="Include" />

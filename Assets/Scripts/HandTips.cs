@@ -38,7 +38,7 @@ public class HandTips : MonoBehaviour
             Vector3 dir = h - a.position;
             float mag = dir.sqrMagnitude;
             const float thresh = .9f * .9f;
-            bool showit = smr.enabled && mag < thresh;
+            bool showit = i == 5 && smr.enabled && mag < thresh;
             
             MeshRenderer mR = mrs[i];
             
