@@ -8,7 +8,8 @@ public class PlaySoundAtTimeStamp : MonoBehaviour
     public AudioSource audioSource;
     public AndyAnimator andyAnimator;
     public float time;
-
+    public bool oneShot = true;
+    
     public bool shouldPlay;
     private bool hasPlayed;
     // Start is called before the first frame update
@@ -33,7 +34,12 @@ public class PlaySoundAtTimeStamp : MonoBehaviour
         
         if(shouldPlay && !hasPlayed)
         {
-            audioSource.PlayOneShot(audioSource.clip);
+            if(oneShot)
+                audioSource.PlayOneShot(audioSource.clip);
+            else
+            {
+                audioSource.Play();
+            }
             Debug.Log("I should have played");
             hasPlayed = true;
         }
