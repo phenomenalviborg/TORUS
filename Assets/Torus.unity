@@ -10221,10 +10221,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586bb820e77a3674aa9eced518ff7ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 490
+  time: 0
   loopTime: {x: 0, y: 510}
   speed: 1
-  useSystemTime: 0
+  useSystemTime: 1
   animTime: 0
 --- !u!114 &1061691570
 MonoBehaviour:
@@ -12762,6 +12762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1982241213}
     m_Modifications:
+    - target: {fileID: 1396124075806127351, guid: 7bfb18a52e98747ed974dc12a79c36c1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1396124075806127351, guid: 7bfb18a52e98747ed974dc12a79c36c1, type: 3}
       propertyPath: playerToMove
       value: 
