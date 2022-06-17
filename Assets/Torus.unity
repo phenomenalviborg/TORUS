@@ -5538,7 +5538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 619530097}
   andyAnimator: {fileID: 1061691569}
-  time: 479.3
+  time: 480
   oneShot: 1
   shouldPlay: 0
 --- !u!82 &619530097
