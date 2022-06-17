@@ -5538,8 +5538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 619530097}
   andyAnimator: {fileID: 1061691569}
-  time: 498
-  oneShot: 0
+  time: 479.3
+  oneShot: 1
   shouldPlay: 0
 --- !u!82 &619530097
 AudioSource:
@@ -5551,11 +5551,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8694379398816170813, guid: 42ac700525a8d46cc983520603993126, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 6d4367180db224d0cba2cf8e560a358b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a5b5a4c97a5ea470abcf0c03e93f5b6f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 1
   SpatializePostEffects: 0
@@ -9283,7 +9283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1043694421}
   andyAnimator: {fileID: 1061691569}
-  time: 504.5
+  time: 504
   oneShot: 1
   shouldPlay: 0
 --- !u!82 &1043694421
@@ -10221,10 +10221,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586bb820e77a3674aa9eced518ff7ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
+  time: 470
   loopTime: {x: 0, y: 510}
   speed: 1
-  useSystemTime: 1
+  useSystemTime: 0
   animTime: 0
 --- !u!114 &1061691570
 MonoBehaviour:
