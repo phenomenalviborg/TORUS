@@ -12117,6 +12117,128 @@ MonoBehaviour:
   hoopines: 0
   torus: {fileID: 0}
   sounds: []
+--- !u!1001 &1283187035
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4534475358732845598, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203865424227183164, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_Name
+      value: THE_TABLET_CAM
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203865424227183164, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287501011245560044, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287501011852692886, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996713534906620142, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130655605320023723, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130655605320023723, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130655605320023723, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130655606055076817, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130655606055076817, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130655606055076817, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+--- !u!1 &1283187036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5203865424227183164, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+  m_PrefabInstance: {fileID: 1283187035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1283187037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2569611794435949928, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+  m_PrefabInstance: {fileID: 1283187035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1283187038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4150209427655267570, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+  m_PrefabInstance: {fileID: 1283187035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1283187039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3208162069603087258, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+  m_PrefabInstance: {fileID: 1283187035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1283187040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 834824756265485654, guid: 56895124fc39a4116a9fcb13bcf70252, type: 3}
+  m_PrefabInstance: {fileID: 1283187035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1284676650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b7dfd44aaa312140bdc4b7cdcc9f470, type: 3}
@@ -20039,6 +20161,16 @@ MonoBehaviour:
     _prefab: Assets/Meshes/MathTorus.fbx
   - _gameObject: {fileID: 1056834905}
     _prefab: Assets/Meshes/MathTorus.fbx
+  - _gameObject: {fileID: 1283187036}
+    _prefab: Assets/MUCO_TabletCam/THE_TABLET_CAM.prefab
+  - _gameObject: {fileID: 1283187040}
+    _prefab: Assets/MUCO_TabletCam/TabletCamUI/TabletCam UI Canvas.prefab
+  - _gameObject: {fileID: 1283187039}
+    _prefab: Assets/MUCO_TabletCam/TabletCAMPosition.prefab
+  - _gameObject: {fileID: 1283187038}
+    _prefab: Assets/MUCO_TabletCam/TabletCam.prefab
+  - _gameObject: {fileID: 1283187037}
+    _prefab: Assets/Milan/Utils/FPS Counter/FPS Counter.prefab
 --- !u!4 &2035510333
 Transform:
   m_ObjectHideFlags: 11
