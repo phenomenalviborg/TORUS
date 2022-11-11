@@ -742,6 +742,8 @@
               </e>
             </e>
             <e p="PlaySoundAtTimeStamp.cs" t="Include" />
+            <e p="PlaySoundWithRandoPitch.cs" t="Include" />
+            <e p="SetTimelineTime.cs" t="Include" />
             <e p="SoundData.cs" t="Include" />
             <e p="SoundSystem" t="Include">
               <e p="AudioBlendParameter.cs" t="Include" />
@@ -1003,6 +1005,27 @@
             </e>
           </e>
         </e>
+        <e p="MUCO_TabletCam" t="Include">
+          <e p="AndroidManifest_TabletCam.xml" t="Include" />
+          <e p="AndroidTabletPermissions.cs" t="Include" />
+          <e p="TabletBuildScript" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TabletBuildScript.cs" t="Include" />
+              <e p="TabletBuildScriptOLD.cs" t="Include" />
+              <e p="TabletBuildScriptPrefs.cs" t="Include" />
+              <e p="TabletBuildWindow.cs" t="Include" />
+              <e p="TabletManifestoWriter.cs" t="Include" />
+            </e>
+          </e>
+          <e p="TabletCam.cs" t="Include" />
+          <e p="TabletCamAvatar.cs" t="Include" />
+          <e p="TabletCamPos.cs" t="Include" />
+          <e p="TabletCamUI" t="Include">
+            <e p="TabletCamUIController.cs" t="Include" />
+            <e p="TabletCamUIObject.cs" t="Include" />
+          </e>
+          <e p="TabletXMLManifest_UniqueName123456789.xml" t="Include" />
+        </e>
         <e p="Normal" t="Include">
           <e p="Examples" t="Include">
             <e p="VR Player" t="Include">
@@ -1021,6 +1044,9 @@
         <e p="Samples" t="Include">
           <e p="Unity Recorder" t="Include">
             <e p="2.5.7" t="Include">
+              <e p="Movie Recorder Sample" t="Include">
+                <e p="MovieRecorderExample.cs" t="Include" />
+              </e>
               <e p="Screenshot Capture Sample" t="Include">
                 <e p="CaptureScreenShotExample.cs" t="Include" />
               </e>
