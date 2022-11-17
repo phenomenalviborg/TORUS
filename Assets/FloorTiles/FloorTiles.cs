@@ -16,8 +16,8 @@ public class FloorTiles : MonoBehaviour
     
     private readonly Vector3Force force = new Vector3Force(200).SetSpeed(7).SetDamp(3);
     
-    private static readonly int DistMulti = Shader.PropertyToID("_DistMulti");
-    private static readonly int Tint      = Shader.PropertyToID("_Tint");
+    private static readonly int DistMulti  = Shader.PropertyToID("_DistMulti");
+    private static readonly int Tint       = Shader.PropertyToID("_Tint");
     private static readonly int TintAmount = Shader.PropertyToID("_TintAmount");
 
 

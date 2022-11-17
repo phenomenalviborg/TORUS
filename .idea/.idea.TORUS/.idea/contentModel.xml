@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\_UNITY_FAST\TORUS\TORUS" t="IncludeRecursive">
+    <e p="C:\Users\janisZappa\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\janisZappa\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_TORUS.-174274597.00" t="ExcludeRecursive" />
+    <e p="D:\_UNITY\TORUS\TORUS" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -697,6 +699,8 @@
         </e>
         <e p="FloorTiles" t="Include">
           <e p="FloorTiles.cs" t="Include" />
+          <e p="FloorTint.cs" t="Include" />
+          <e p="ReactorFloor.shader" t="Include" />
           <e p="Tile.shader" t="Include" />
         </e>
         <e p="MILAN" t="Include">
@@ -1173,14 +1177,10 @@
       <e p="ShapesEditor.csproj" t="IncludeRecursive" />
       <e p="ShapesRuntime.csproj" t="IncludeRecursive" />
       <e p="ShapesSamples.csproj" t="IncludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="Bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="TORUS.sln" t="IncludeFlat" />
       <e p="UnityPlayModeSaver.csproj" t="IncludeRecursive" />
       <e p="UnityPlayModeSaverEditor.csproj" t="IncludeRecursive" />
     </e>
-    <e p="C:\Users\janisZappa\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\janisZappa\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_TORUS.852946309.00" t="ExcludeRecursive" />
   </component>
 </project>
