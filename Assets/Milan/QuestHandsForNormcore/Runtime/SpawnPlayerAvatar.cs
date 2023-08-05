@@ -17,8 +17,15 @@ namespace absurdjoy
         
         protected override void RealtimeConnected(Realtime realtime)
         {
+
+            var avatar = Realtime.Instantiate(prefab.name, ownedByClient, preventOwnershipTakeover, destroyWhenOwnerOrLastClientLeaves);
             
+                // Connect the local control components with the avatar components (and only for our local avatar, not the remote avatars);
+                avatar.GetComponent<PlayerAvatar>().LinkWithLocal(localHeadReference, localLeftSkeleton, localRightSkeleton, localRootReference);
+
+            /* 
             ///Check if we have VR, if not spawn the tabletCam Avatar
+            
 
             if (TabletCamPos.Inst.IsVREnabled())
             {
@@ -30,7 +37,7 @@ namespace absurdjoy
             else
             {
                 var avatar = Realtime.Instantiate("TabletCamAvatar", ownedByClient, preventOwnershipTakeover, destroyWhenOwnerOrLastClientLeaves);
-            }
+            } */
             
             
             
